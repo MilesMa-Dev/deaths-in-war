@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: deaths-in-war-backend
+    runtime: node
+    region: singapore
+    plan: free
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
+    healthCheckPath: /health
