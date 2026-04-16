@@ -14,6 +14,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        // @ts-expect-error Vite 8 SCSS modern API opt-in
         api: 'modern-compiler',
       },
     },
