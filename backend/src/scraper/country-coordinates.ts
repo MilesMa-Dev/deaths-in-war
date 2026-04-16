@@ -1,0 +1,225 @@
+interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
+const COUNTRY_COORDINATES: Record<string, Coordinates> = {
+  'Afghanistan': { lat: 33.93, lng: 67.71 },
+  'Albania': { lat: 41.15, lng: 20.17 },
+  'Algeria': { lat: 28.03, lng: 1.66 },
+  'Angola': { lat: -11.20, lng: 17.87 },
+  'Argentina': { lat: -38.42, lng: -63.62 },
+  'Armenia': { lat: 40.07, lng: 45.04 },
+  'Australia': { lat: -25.27, lng: 133.78 },
+  'Azerbaijan': { lat: 40.14, lng: 47.58 },
+  'Bahrain': { lat: 26.07, lng: 50.55 },
+  'Bangladesh': { lat: 23.68, lng: 90.36 },
+  'Belarus': { lat: 53.71, lng: 27.95 },
+  'Benin': { lat: 9.31, lng: 2.32 },
+  'Bolivia': { lat: -16.29, lng: -63.59 },
+  'Bosnia and Herzegovina': { lat: 43.92, lng: 17.68 },
+  'Brazil': { lat: -14.24, lng: -51.93 },
+  'Burkina Faso': { lat: 12.24, lng: -1.56 },
+  'Burundi': { lat: -3.37, lng: 29.92 },
+  'Cambodia': { lat: 12.57, lng: 104.99 },
+  'Cameroon': { lat: 7.37, lng: 12.35 },
+  'Canada': { lat: 56.13, lng: -106.35 },
+  'Central African Republic': { lat: 6.61, lng: 20.94 },
+  'Chad': { lat: 15.45, lng: 18.73 },
+  'Chile': { lat: -35.68, lng: -71.54 },
+  'China': { lat: 35.86, lng: 104.20 },
+  'Colombia': { lat: 4.57, lng: -74.30 },
+  'Comoros': { lat: -11.88, lng: 43.87 },
+  'Costa Rica': { lat: 9.75, lng: -83.75 },
+  'Croatia': { lat: 45.10, lng: 15.20 },
+  'Cuba': { lat: 21.52, lng: -77.78 },
+  'Cyprus': { lat: 35.13, lng: 33.43 },
+  'Czech Republic': { lat: 49.82, lng: 15.47 },
+  'DR Congo': { lat: -4.04, lng: 21.76 },
+  'Democratic Republic of the Congo': { lat: -4.04, lng: 21.76 },
+  'Denmark': { lat: 56.26, lng: 9.50 },
+  'Djibouti': { lat: 11.83, lng: 42.59 },
+  'Ecuador': { lat: -1.83, lng: -78.18 },
+  'Egypt': { lat: 26.82, lng: 30.80 },
+  'El Salvador': { lat: 13.79, lng: -88.90 },
+  'Equatorial Guinea': { lat: 1.65, lng: 10.27 },
+  'Eritrea': { lat: 15.18, lng: 39.78 },
+  'Estonia': { lat: 58.60, lng: 25.01 },
+  'Eswatini': { lat: -26.52, lng: 31.47 },
+  'Ethiopia': { lat: 9.15, lng: 40.49 },
+  'Finland': { lat: 61.92, lng: 25.75 },
+  'France': { lat: 46.23, lng: 2.21 },
+  'Gabon': { lat: -0.80, lng: 11.61 },
+  'Gambia': { lat: 13.44, lng: -15.31 },
+  'Georgia': { lat: 42.32, lng: 43.36 },
+  'Germany': { lat: 51.17, lng: 10.45 },
+  'Ghana': { lat: 7.95, lng: -1.02 },
+  'Greece': { lat: 39.07, lng: 21.82 },
+  'Guatemala': { lat: 15.78, lng: -90.23 },
+  'Guinea': { lat: 9.95, lng: -9.70 },
+  'Guinea-Bissau': { lat: 11.80, lng: -15.18 },
+  'Haiti': { lat: 18.97, lng: -72.29 },
+  'Honduras': { lat: 15.20, lng: -86.24 },
+  'Hungary': { lat: 47.16, lng: 19.50 },
+  'India': { lat: 20.59, lng: 78.96 },
+  'Indonesia': { lat: -0.79, lng: 113.92 },
+  'Iran': { lat: 32.43, lng: 53.69 },
+  'Iraq': { lat: 33.22, lng: 43.68 },
+  'Ireland': { lat: 53.14, lng: -7.69 },
+  'Israel': { lat: 31.05, lng: 34.85 },
+  'Italy': { lat: 41.87, lng: 12.57 },
+  'Ivory Coast': { lat: 7.54, lng: -5.55 },
+  "Côte d'Ivoire": { lat: 7.54, lng: -5.55 },
+  'Jamaica': { lat: 18.11, lng: -77.30 },
+  'Japan': { lat: 36.20, lng: 138.25 },
+  'Jordan': { lat: 30.59, lng: 36.24 },
+  'Kazakhstan': { lat: 48.02, lng: 66.92 },
+  'Kenya': { lat: -0.02, lng: 37.91 },
+  'Kosovo': { lat: 42.60, lng: 20.90 },
+  'Kuwait': { lat: 29.31, lng: 47.48 },
+  'Kyrgyzstan': { lat: 41.20, lng: 74.77 },
+  'Laos': { lat: 19.86, lng: 102.50 },
+  'Latvia': { lat: 56.88, lng: 24.60 },
+  'Lebanon': { lat: 33.85, lng: 35.86 },
+  'Lesotho': { lat: -29.61, lng: 28.23 },
+  'Liberia': { lat: 6.43, lng: -9.43 },
+  'Libya': { lat: 26.34, lng: 17.23 },
+  'Lithuania': { lat: 55.17, lng: 23.88 },
+  'Madagascar': { lat: -18.77, lng: 46.87 },
+  'Malawi': { lat: -13.25, lng: 34.30 },
+  'Malaysia': { lat: 4.21, lng: 101.98 },
+  'Mali': { lat: 17.57, lng: -4.00 },
+  'Mauritania': { lat: 21.01, lng: -10.94 },
+  'Mexico': { lat: 23.63, lng: -102.55 },
+  'Moldova': { lat: 47.41, lng: 28.37 },
+  'Mongolia': { lat: 46.86, lng: 103.85 },
+  'Montenegro': { lat: 42.71, lng: 19.37 },
+  'Morocco': { lat: 31.79, lng: -7.09 },
+  'Mozambique': { lat: -18.67, lng: 35.53 },
+  'Myanmar': { lat: 21.91, lng: 95.96 },
+  'Namibia': { lat: -22.96, lng: 18.49 },
+  'Nepal': { lat: 28.39, lng: 84.12 },
+  'Netherlands': { lat: 52.13, lng: 5.29 },
+  'New Zealand': { lat: -40.90, lng: 174.89 },
+  'Nicaragua': { lat: 12.87, lng: -85.21 },
+  'Niger': { lat: 17.61, lng: 8.08 },
+  'Nigeria': { lat: 9.08, lng: 8.68 },
+  'North Korea': { lat: 40.34, lng: 127.51 },
+  'North Macedonia': { lat: 41.51, lng: 21.75 },
+  'Norway': { lat: 60.47, lng: 8.47 },
+  'Oman': { lat: 21.47, lng: 55.98 },
+  'Pakistan': { lat: 30.38, lng: 69.35 },
+  'Palestine': { lat: 31.95, lng: 35.23 },
+  'State of Palestine': { lat: 31.95, lng: 35.23 },
+  'Palestinian territories': { lat: 31.95, lng: 35.23 },
+  'Gaza Strip': { lat: 31.35, lng: 34.31 },
+  'West Bank': { lat: 31.95, lng: 35.30 },
+  'Panama': { lat: 8.54, lng: -80.78 },
+  'Papua New Guinea': { lat: -6.31, lng: 143.96 },
+  'Paraguay': { lat: -23.44, lng: -58.44 },
+  'Peru': { lat: -9.19, lng: -75.02 },
+  'Philippines': { lat: 12.88, lng: 121.77 },
+  'Poland': { lat: 51.92, lng: 19.15 },
+  'Portugal': { lat: 39.40, lng: -8.22 },
+  'Qatar': { lat: 25.35, lng: 51.18 },
+  'Republic of the Congo': { lat: -0.23, lng: 15.83 },
+  'Romania': { lat: 45.94, lng: 24.97 },
+  'Russia': { lat: 61.52, lng: 105.32 },
+  'Rwanda': { lat: -1.94, lng: 29.87 },
+  'Saudi Arabia': { lat: 23.89, lng: 45.08 },
+  'Senegal': { lat: 14.50, lng: -14.45 },
+  'Serbia': { lat: 44.02, lng: 21.01 },
+  'Sierra Leone': { lat: 8.46, lng: -11.78 },
+  'Singapore': { lat: 1.35, lng: 103.82 },
+  'Slovakia': { lat: 48.67, lng: 19.70 },
+  'Slovenia': { lat: 46.15, lng: 14.99 },
+  'Somalia': { lat: 5.15, lng: 46.20 },
+  'South Africa': { lat: -30.56, lng: 22.94 },
+  'South Korea': { lat: 35.91, lng: 127.77 },
+  'South Sudan': { lat: 6.88, lng: 31.31 },
+  'Spain': { lat: 40.46, lng: -3.75 },
+  'Sri Lanka': { lat: 7.87, lng: 80.77 },
+  'Sudan': { lat: 12.86, lng: 30.22 },
+  'Sweden': { lat: 60.13, lng: 18.64 },
+  'Switzerland': { lat: 46.82, lng: 8.23 },
+  'Syria': { lat: 34.80, lng: 38.99 },
+  'Taiwan': { lat: 23.70, lng: 120.96 },
+  'Tajikistan': { lat: 38.86, lng: 71.28 },
+  'Tanzania': { lat: -6.37, lng: 34.89 },
+  'Thailand': { lat: 15.87, lng: 100.99 },
+  'Togo': { lat: 8.62, lng: 1.21 },
+  'Trinidad and Tobago': { lat: 10.69, lng: -61.22 },
+  'Tunisia': { lat: 33.89, lng: 9.54 },
+  'Turkey': { lat: 38.96, lng: 35.24 },
+  'Turkmenistan': { lat: 38.97, lng: 59.56 },
+  'Uganda': { lat: 1.37, lng: 32.29 },
+  'Ukraine': { lat: 48.38, lng: 31.17 },
+  'United Arab Emirates': { lat: 23.42, lng: 53.85 },
+  'United Kingdom': { lat: 55.38, lng: -3.44 },
+  'United States': { lat: 37.09, lng: -95.71 },
+  'Uruguay': { lat: -32.52, lng: -55.77 },
+  'Uzbekistan': { lat: 41.38, lng: 64.59 },
+  'Venezuela': { lat: 6.42, lng: -66.59 },
+  'Vietnam': { lat: 14.06, lng: 108.28 },
+  'Yemen': { lat: 15.55, lng: 48.52 },
+  'Zambia': { lat: -13.13, lng: 27.85 },
+  'Zimbabwe': { lat: -19.02, lng: 29.15 },
+  // Regions
+  'Sahel': { lat: 14.50, lng: 0.00 },
+  'Western Sahara': { lat: 24.22, lng: -12.89 },
+  'Kashmir': { lat: 34.08, lng: 74.80 },
+  'Sinai': { lat: 29.50, lng: 33.80 },
+  'Balochistan': { lat: 28.49, lng: 65.09 },
+  'Donbas': { lat: 48.00, lng: 38.00 },
+  'Crimea': { lat: 45.30, lng: 34.10 },
+  'Nagorno-Karabakh': { lat: 39.82, lng: 46.77 },
+  'Darfur': { lat: 13.50, lng: 25.00 },
+  'Cabo Delgado': { lat: -12.19, lng: 40.58 },
+  'Tigray': { lat: 13.50, lng: 39.48 },
+  'Mindanao': { lat: 7.19, lng: 125.46 },
+  'Rakhine': { lat: 20.10, lng: 93.00 },
+  'Shan': { lat: 21.00, lng: 98.00 },
+  'Kurdistan': { lat: 36.40, lng: 44.35 },
+  'Ogaden': { lat: 7.00, lng: 44.00 },
+  'Kivu': { lat: -2.00, lng: 28.80 },
+  'Ituri': { lat: 1.70, lng: 30.30 },
+};
+
+export function getCoordinates(locationStr: string): Coordinates | null {
+  const normalized = locationStr.trim();
+
+  // Exact match
+  if (COUNTRY_COORDINATES[normalized]) {
+    return COUNTRY_COORDINATES[normalized];
+  }
+
+  // Case-insensitive exact match
+  const lc = normalized.toLowerCase();
+  for (const [key, coords] of Object.entries(COUNTRY_COORDINATES)) {
+    if (key.toLowerCase() === lc) {
+      return coords;
+    }
+  }
+
+  return null;
+}
+
+export function getCoordinatesForCountries(countries: string[]): Coordinates {
+  // Pass 1: exact match on each country
+  for (const country of countries) {
+    const coords = getCoordinates(country);
+    if (coords) return coords;
+  }
+
+  // Pass 2: fuzzy substring match as fallback
+  for (const country of countries) {
+    const lc = country.toLowerCase();
+    for (const [key, coords] of Object.entries(COUNTRY_COORDINATES)) {
+      if (lc.includes(key.toLowerCase()) || key.toLowerCase().includes(lc)) {
+        return coords;
+      }
+    }
+  }
+
+  return { lat: 0, lng: 0 };
+}

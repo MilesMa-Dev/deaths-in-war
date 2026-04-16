@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+$font-intro: 'Cinzel', 'Times New Roman', serif;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: $bg-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 $space-2xl;
+
+  @include respond-to($bp-mobile) {
+    padding: 0 $space-md;
+  }
+}
+
+.sentence {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0 clamp(6px, 0.8vw, 14px);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.wordMask {
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.word {
+  display: block;
+  font-family: $font-intro;
+  font-weight: 400;
+  font-size: clamp(13px, 2.5vw, 38px);
+  line-height: 1.4;
+  color: $text-medium;
+  letter-spacing: 0.12em;
+  opacity: 0;
+  transform: translateY(110%);
+}
+
+.accent {
+  font-weight: 600;
+  font-size: clamp(15px, 3.2vw, 50px);
+  color: $color-accent;
+  letter-spacing: 0.02em;
+}

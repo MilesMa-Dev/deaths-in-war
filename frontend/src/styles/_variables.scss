@@ -1,0 +1,70 @@
+// Material Design 3 Dark Theme - Solemn Variant
+$bg-primary: #0a0a0c;
+$bg-surface: #121214;
+$bg-surface-variant: #1a1a1e;
+$bg-surface-elevated: #1e1e22;
+
+// Text opacity levels (Material Design)
+$text-high: rgba(255, 255, 255, 0.87);
+$text-medium: rgba(255, 255, 255, 0.60);
+$text-low: rgba(255, 255, 255, 0.38);
+$text-disabled: rgba(255, 255, 255, 0.12);
+
+// Conflict intensity colors
+$color-major-war: #b71c1c;
+$color-war: #c62828;
+$color-minor-conflict: #d32f2f;
+$color-skirmish: #e57373;
+
+// Accent
+$color-accent: #ff6f61;
+$color-accent-dim: rgba(255, 111, 97, 0.6);
+
+// Map
+$color-border: rgba(255, 255, 255, 0.06);
+$color-land: rgba(255, 255, 255, 0.03);
+
+// Scrim
+$color-scrim: rgba(0, 0, 0, 0.6);
+
+// Glass surface
+$glass-bg: rgba(18, 18, 28, 0.18);
+$glass-bg-heavy: rgba(16, 16, 26, 0.35);
+$glass-blur: 6px;
+$glass-border: rgba(255, 255, 255, 0.1);
+
+// Typography
+$font-title: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+$font-body: 'Roboto', 'Helvetica Neue', sans-serif;
+$font-mono: 'Roboto Mono', 'Courier New', monospace;
+
+// Spacing (Material 4dp grid)
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-2xl: 48px;
+$space-3xl: 64px;
+
+// Border radius (Material Design)
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 28px;
+
+// Elevation (Material Design dark)
+$elevation-1: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.7);
+$elevation-2: 0 3px 6px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.7);
+$elevation-3: 0 10px 20px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.7);
+
+// Breakpoints
+$bp-mobile: 600px;
+$bp-tablet: 960px;
+$bp-desktop: 1280px;
+
+// Z-index layers
+$z-map: 1;
+$z-overlay: 10;
+$z-panel: 100;
+$z-scrim: 90;

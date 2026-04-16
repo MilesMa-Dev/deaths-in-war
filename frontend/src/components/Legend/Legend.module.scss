@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.legend {
+  position: absolute;
+  bottom: $space-lg;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: $z-overlay;
+  display: flex;
+  gap: $space-lg;
+  padding: $space-sm $space-lg;
+  @include surface-card;
+  pointer-events: none;
+
+  @include respond-to($bp-mobile) {
+    gap: $space-md;
+    padding: $space-sm $space-md;
+    bottom: $space-md;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.label {
+  @include text-body-medium;
+  color: $text-medium;
+  white-space: nowrap;
+
+  @include respond-to($bp-mobile) {
+    font-size: 11px;
+  }
+}

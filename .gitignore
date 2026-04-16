@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+.env
+*.log
+.DS_Store
+backend/src/data/*.json
+!backend/src/data/.gitkeep
+debug-*.png

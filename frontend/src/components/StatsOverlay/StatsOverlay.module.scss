@@ -1,0 +1,125 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $z-overlay;
+  padding: $space-lg $space-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+  pointer-events: none;
+  max-width: 360px;
+
+  @include respond-to($bp-mobile) {
+    padding: $space-md;
+    max-width: 280px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: $space-md;
+}
+
+.icon {
+  width: 20px;
+  height: 28px;
+  color: $text-medium;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-family: $font-title;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: $text-medium;
+  line-height: 1.2;
+}
+
+.updated {
+  @include text-body-medium;
+  color: $text-low;
+  font-size: 12px;
+}
+
+.statsCards {
+  @include surface-card;
+  padding: $space-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  pointer-events: auto;
+  min-width: 264px;
+
+  @include respond-to($bp-mobile) {
+    min-width: 200px;
+  }
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+}
+
+.statLabel {
+  @include text-label;
+  color: $text-low;
+}
+
+.statValue {
+  @include text-display;
+  color: $color-accent;
+  white-space: nowrap;
+
+  @include respond-to($bp-mobile) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.statValueSmall {
+  @include text-headline;
+  color: $text-high;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sourceLink {
+  @include text-body-medium;
+  color: $text-low;
+  display: inline-flex;
+  align-items: center;
+  gap: $space-sm;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  font-size: 12px;
+
+  svg {
+    flex-shrink: 0;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    color: $text-medium;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}

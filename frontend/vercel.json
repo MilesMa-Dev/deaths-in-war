@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://deaths-in-war-backend.onrender.com/api/:path*"
+    }
+  ]
+}

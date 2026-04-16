@@ -1,0 +1,164 @@
+@use 'sass:color';
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: $color-scrim;
+  z-index: $z-scrim;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  z-index: $z-panel;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      transparent 30%
+    ),
+    $glass-bg-heavy;
+  backdrop-filter: blur($glass-blur);
+  -webkit-backdrop-filter: blur($glass-blur);
+  border-left: 1px solid $glass-border;
+  padding: $space-2xl $space-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+  overflow-y: auto;
+  box-shadow: $elevation-3;
+
+  @include respond-to($bp-mobile) {
+    width: 100%;
+    top: auto;
+    height: 70vh;
+    border-left: none;
+    border-top: 1px solid $glass-border;
+    border-radius: $radius-lg $radius-lg 0 0;
+    padding: $space-xl $space-lg;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: $space-md;
+  right: $space-md;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: $text-medium;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s ease;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: $text-high;
+  }
+}
+
+.conflictName {
+  @include text-title-large;
+  color: $text-high;
+  padding-right: $space-2xl;
+  margin-top: $space-sm;
+}
+
+.intensityBadge {
+  @include text-label;
+  display: inline-flex;
+  align-items: center;
+  padding: $space-xs $space-md;
+  border-radius: $radius-xl;
+  width: fit-content;
+  letter-spacing: 1px;
+
+  &[data-intensity='major_war'] {
+    background: rgba($color-major-war, 0.2);
+    color: color.adjust($color-major-war, $lightness: 25%);
+  }
+
+  &[data-intensity='war'] {
+    background: rgba($color-war, 0.2);
+    color: color.adjust($color-war, $lightness: 25%);
+  }
+
+  &[data-intensity='minor_conflict'] {
+    background: rgba($color-minor-conflict, 0.2);
+    color: color.adjust($color-minor-conflict, $lightness: 20%);
+  }
+
+  &[data-intensity='skirmish'] {
+    background: rgba($color-skirmish, 0.15);
+    color: $color-skirmish;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+}
+
+.sectionLabel {
+  @include text-label;
+  color: $text-low;
+}
+
+.deathCount {
+  font-family: $font-mono;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+  color: $color-accent;
+  font-variant-numeric: tabular-nums;
+}
+
+.recentCount {
+  font-family: $font-mono;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: $text-high;
+  font-variant-numeric: tabular-nums;
+}
+
+.detailText {
+  @include text-body-large;
+  color: $text-medium;
+}
+
+.sourceLink {
+  margin-top: auto;
+  padding-top: $space-lg;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  a {
+    @include text-body-medium;
+    color: $color-accent-dim;
+    display: inline-flex;
+    align-items: center;
+    gap: $space-sm;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $color-accent;
+      text-decoration: none;
+    }
+  }
+}

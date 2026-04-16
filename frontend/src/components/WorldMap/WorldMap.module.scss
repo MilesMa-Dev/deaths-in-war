@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.mapContainer {
+  position: absolute;
+  inset: 0;
+  z-index: $z-map;
+  opacity: 0;
+  background: $bg-primary;
+}
+
+.landFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+  opacity: 0.03;
+  overflow: hidden;
+}
+
+.grainSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: $z-map + 1;
+  opacity: 0.04;
+  mix-blend-mode: screen;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: $z-map + 2;
+  background:
+    radial-gradient(ellipse at center, transparent 40%, rgba(10, 8, 6, 0.3) 75%, rgba(10, 8, 6, 0.6) 100%),
+    radial-gradient(ellipse at center, transparent 60%, rgba(80, 20, 15, 0.06) 100%);
+}
+
+.tooltip {
+  position: fixed;
+  bottom: $space-3xl;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-xs;
+  padding: $space-sm $space-lg;
+  @include surface-card;
+  z-index: $z-overlay;
+  pointer-events: none;
+}
+
+.tooltipName {
+  @include text-title-medium;
+  color: $text-high;
+}
+
+.tooltipDeaths {
+  @include text-body-medium;
+  color: $color-accent;
+  font-family: $font-mono;
+}
