@@ -43,3 +43,14 @@
     font-size: 11px;
   }
 }
+
+.description {
+  @include text-body-medium;
+  color: $text-low;
+  font-size: 11px;
+  white-space: nowrap;
+
+  @include respond-to($bp-mobile) {
+    display: none;
+  }
+}

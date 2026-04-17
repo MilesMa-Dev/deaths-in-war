@@ -39,6 +39,7 @@ export default function Legend({ ready }: LegendProps) {
         <div key={item.label} className={styles.item}>
           <span className={styles.dot} style={{ backgroundColor: item.color }} />
           <span className={styles.label}>{item.label}</span>
+          <span className={styles.description}>{item.description}</span>
         </div>
       ))}
     </div>

@@ -114,7 +114,7 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
         onClick={handleClose}
         style={{ opacity: 0 }}
       />
-      <div ref={panelRef} className={styles.panel} style={{ opacity: 0 }}>
+      <aside ref={panelRef} className={styles.panel} style={{ opacity: 0 }} role="complementary" aria-label="Conflict details">
         <button className={styles.closeBtn} onClick={handleClose} aria-label="Close">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="18" y1="6" x2="6" y2="18" />
@@ -122,9 +122,9 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
           </svg>
         </button>
 
-        <div ref={setRef(0)} className={styles.conflictName}>
+        <h2 ref={setRef(0)} className={styles.conflictName}>
           {displayConflict.name}
-        </div>
+        </h2>
 
         <div ref={setRef(1)} className={styles.intensityBadge} data-intensity={displayConflict.intensity}>
           {INTENSITY_LABELS[displayConflict.intensity] || displayConflict.intensity}
@@ -164,7 +164,7 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
             </svg>
           </a>
         </div>
-      </div>
+      </aside>
     </>
   );
 }

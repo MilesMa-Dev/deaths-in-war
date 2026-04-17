@@ -916,10 +916,10 @@ export default function WorldMap({
 
   return (
     <div ref={containerRef} className={styles.mapContainer}>
-      <canvas ref={canvasRef} className={styles.threeCanvas} />
+      <canvas ref={canvasRef} className={styles.threeCanvas} role="img" aria-label="Interactive 3D globe showing ongoing armed conflicts worldwide" />
 
       {/* Film grain texture */}
-      <svg className={styles.grainSvg}>
+      <svg className={styles.grainSvg} aria-hidden="true">
         <filter id="grain-filter">
           <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
         </filter>

@@ -4,15 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0c" />
-    <meta name="description" content="Tracking ongoing armed conflicts and their human cost" />
-    <title>Deaths in War — Ongoing Conflicts Tracker</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>✦</text></svg>" />
+    <meta name="description" content="Interactive 3D globe tracking ongoing armed conflicts worldwide and their human cost. Daily updated death toll data sourced from Wikipedia." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Deaths in War" />
+    <meta name="keywords" content="armed conflicts, war deaths, death toll, ongoing wars, conflict tracker, global conflicts, war casualties" />
+    <meta name="citation_title" content="Deaths in War — Ongoing Armed Conflicts & Death Toll Tracker" />
+    <meta name="citation_public_url" content="https://deaths-in-war.vercel.app/" />
+    <meta name="citation_author" content="Deaths in War Project" />
+    <title>Deaths in War — Ongoing Armed Conflicts & Death Toll Tracker</title>
+    <link rel="canonical" href="https://deaths-in-war.vercel.app/" />
+    <link rel="icon" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Deaths in War" />
+    <meta property="og:title" content="Deaths in War — Ongoing Armed Conflicts Tracker" />
+    <meta property="og:description" content="Interactive 3D globe tracking ongoing armed conflicts worldwide and their human cost. Daily updated data from Wikipedia." />
+    <meta property="og:url" content="https://deaths-in-war.vercel.app/" />
+    <meta property="og:image" content="https://deaths-in-war.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="3D globe visualization of ongoing armed conflicts and death tolls worldwide" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Deaths in War — Ongoing Armed Conflicts Tracker" />
+    <meta name="twitter:description" content="Interactive 3D globe tracking ongoing armed conflicts worldwide and their human cost." />
+    <meta name="twitter:image" content="https://deaths-in-war.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="3D globe visualization of ongoing armed conflicts and death tolls worldwide" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Deaths in War",
+      "url": "https://deaths-in-war.vercel.app/",
+      "description": "Interactive 3D globe tracking ongoing armed conflicts and their human cost worldwide"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Ongoing Armed Conflicts Death Toll",
+      "description": "Daily updated data on ongoing armed conflicts worldwide, including death tolls, locations, and intensity levels. Sourced from Wikipedia's list of ongoing armed conflicts.",
+      "url": "https://deaths-in-war.vercel.app/",
+      "temporalCoverage": "2024/..",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": {
+        "@type": "Organization",
+        "name": "Deaths in War"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://deaths-in-war-backend.onrender.com/api/conflicts"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=block&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789%2C." />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789%2C." />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700&family=Roboto+Mono:wght@100;300;400&family=Roboto:wght@300;400;500;700&display=swap" />
   </head>
   <body>
+    <noscript>
+      <h1>Deaths in War — Ongoing Armed Conflicts Tracker</h1>
+      <p>An interactive 3D visualization tracking ongoing armed conflicts worldwide and their human cost. Data sourced from Wikipedia's list of ongoing armed conflicts, updated daily.</p>
+      <p>This site displays a 3D globe showing the locations, death tolls, and intensity levels of all currently active armed conflicts around the world. Conflicts are classified into four intensity levels: Major Wars (10,000+ deaths/year), Wars (1,000–9,999 deaths/year), Minor Conflicts (100–999 deaths/year), and Skirmishes (under 100 deaths/year).</p>
+      <p>The data is automatically scraped daily and includes conflict name, location, countries involved, start year, estimated death toll, and geographic coordinates.</p>
+      <p>Access the raw data via our API: <a href="https://deaths-in-war.vercel.app/api/conflicts">JSON API</a></p>
+      <p>Learn more at <a href="https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts">Wikipedia's List of Ongoing Armed Conflicts</a>.</p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

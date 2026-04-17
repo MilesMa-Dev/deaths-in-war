@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import compression from 'compression';
+import helmet from 'helmet';
 import cron from 'node-cron';
 import { conflictsRouter } from './routes/conflicts.js';
 import { scrapeConflicts } from './scraper/wikipedia.js';
@@ -9,6 +11,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const DATA_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 
+app.use(helmet({ crossOriginResourcePolicy: false }));
+app.use(compression());
 app.use(cors({
   origin: process.env.CORS_ORIGIN || '*',
 }));
