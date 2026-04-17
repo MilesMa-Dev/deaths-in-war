@@ -21,47 +21,24 @@ export default function StatsOverlay({ stats, ready }: StatsOverlayProps) {
 
     const tl = gsap.timeline({ delay: 0.8 });
 
-    // Fade in the container
     tl.fromTo(
       containerRef.current,
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: MD_DURATION.long, ease: GSAP_EASE.emphasizedDecelerate }
     );
 
-    // Count up death toll
-    const counter = { val: 0 };
-    tl.to(
-      counter,
+    const valueEls = [deathCountRef.current, conflictCountRef.current].filter(Boolean);
+    tl.fromTo(
+      valueEls,
+      { y: '110%', opacity: 0 },
       {
-        val: stats.totalDeaths,
-        duration: 2.5,
+        y: '0%',
+        opacity: 1,
+        duration: 1.2,
+        stagger: 0.18,
         ease: GSAP_EASE.emphasizedDecelerate,
-        snap: { val: 1 },
-        onUpdate: () => {
-          if (deathCountRef.current) {
-            deathCountRef.current.textContent = Math.floor(counter.val).toLocaleString('en-US');
-          }
-        },
       },
-      '-=0.3'
-    );
-
-    // Count up conflicts
-    const conflictCounter = { val: 0 };
-    tl.to(
-      conflictCounter,
-      {
-        val: stats.totalConflicts,
-        duration: 1.5,
-        ease: GSAP_EASE.emphasizedDecelerate,
-        snap: { val: 1 },
-        onUpdate: () => {
-          if (conflictCountRef.current) {
-            conflictCountRef.current.textContent = Math.floor(conflictCounter.val).toString();
-          }
-        },
-      },
-      '-=2.0'
+      '-=0.1'
     );
 
     return () => { tl.kill(); };
@@ -91,12 +68,20 @@ export default function StatsOverlay({ stats, ready }: StatsOverlayProps) {
       <div className={styles.statsCards}>
         <div className={styles.statCard}>
           <span className={styles.statLabel}>Total Deaths</span>
-          <span ref={deathCountRef} className={styles.statValue}>0</span>
+          <span className={styles.valueMask}>
+            <span ref={deathCountRef} className={styles.statValue}>
+              {stats.totalDeaths.toLocaleString('en-US')}
+            </span>
+          </span>
         </div>
         <div className={styles.divider} />
         <div className={styles.statCard}>
           <span className={styles.statLabel}>Active Conflicts</span>
-          <span ref={conflictCountRef} className={styles.statValueSmall}>0</span>
+          <span className={styles.valueMask}>
+            <span ref={conflictCountRef} className={styles.statValueSmall}>
+              {stats.totalConflicts}
+            </span>
+          </span>
         </div>
         <div className={styles.divider} />
         <a

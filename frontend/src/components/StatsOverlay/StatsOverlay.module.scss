@@ -79,10 +79,17 @@
   color: $text-low;
 }
 
+.valueMask {
+  overflow: hidden;
+  display: inline-flex;
+}
+
 .statValue {
   @include text-display;
   color: $color-accent;
   white-space: nowrap;
+  opacity: 0;
+  transform: translateY(110%);
 
   @include respond-to($bp-mobile) {
     font-size: 28px;
@@ -93,6 +100,8 @@
 .statValueSmall {
   @include text-headline;
   color: $text-high;
+  opacity: 0;
+  transform: translateY(110%);
 }
 
 .divider {

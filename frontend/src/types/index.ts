@@ -1,3 +1,10 @@
+export interface AffectedRegion {
+  name: string;
+  lat: number;
+  lng: number;
+  eventCount: number;
+}
+
 export interface Conflict {
   id: string;
   name: string;
@@ -13,6 +20,7 @@ export interface Conflict {
   intensity: 'major_war' | 'war' | 'minor_conflict' | 'skirmish';
   sourceUrl: string;
   lastUpdated: string;
+  affectedRegions?: AffectedRegion[];
 }
 
 export interface StatsResponse {

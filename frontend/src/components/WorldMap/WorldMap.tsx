@@ -30,10 +30,10 @@ const INTENSITY_COLORS: Record<string, [number, number, number]> = {
 };
 
 const INTENSITY_GLOW: Record<string, [number, number, number, number]> = {
-  major_war: [183, 28, 28, 120],
-  war: [198, 40, 40, 90],
-  minor_conflict: [211, 47, 47, 60],
-  skirmish: [229, 115, 115, 40],
+  major_war: [183, 28, 28, 180],
+  war: [198, 40, 40, 140],
+  minor_conflict: [211, 47, 47, 100],
+  skirmish: [229, 115, 115, 70],
 };
 
 function lngToX(lng: number): number {
@@ -86,7 +86,7 @@ function getRadius(conflict: Conflict): number {
 }
 
 function getGlowRadius(conflict: Conflict): number {
-  return getRadius(conflict) * 2.5;
+  return getRadius(conflict) * 3;
 }
 
 // --- Three.js geometry builders ---
@@ -105,14 +105,54 @@ function buildLineGeometry(mesh: any): THREE.BufferGeometry {
   return geom;
 }
 
-function buildLandFillGeometry(featureCollection: any): THREE.BufferGeometry {
+const LAND_TEX_SIZE = 4096;
+
+function crossesAntiMeridian(ring: number[][]): boolean {
+  for (let i = 1; i < ring.length; i++) {
+    if (Math.abs(ring[i][0] - ring[i - 1][0]) > 180) return true;
+  }
+  return false;
+}
+
+function splitRingAtAntiMeridian(ring: number[][]): number[][][] {
+  // Split a polygon ring into two halves: one for the eastern hemisphere, one for western
+  const west: number[][] = [];
+  const east: number[][] = [];
+  for (const pt of ring) {
+    if (pt[0] < 0) {
+      west.push(pt);
+      east.push([pt[0] + 360, pt[1]]);
+    } else {
+      east.push(pt);
+      west.push([pt[0] - 360, pt[1]]);
+    }
+  }
+  return [east, west];
+}
+
+function drawRingOnCanvas(ctx: CanvasRenderingContext2D, ring: number[][]) {
+  if (ring.length < 3) return;
+  const sx = (ring[0][0] + 180) / 360 * LAND_TEX_SIZE;
+  const sy = latToTexY(ring[0][1]);
+  ctx.moveTo(sx, sy);
+  for (let i = 1; i < ring.length; i++) {
+    ctx.lineTo((ring[i][0] + 180) / 360 * LAND_TEX_SIZE, latToTexY(ring[i][1]));
+  }
+  ctx.closePath();
+}
+
+function renderLandToCanvasTexture(featureCollection: any): THREE.CanvasTexture {
+  const canvas = document.createElement('canvas');
+  canvas.width = LAND_TEX_SIZE;
+  canvas.height = LAND_TEX_SIZE;
+  const ctx = canvas.getContext('2d')!;
+
   const features = featureCollection.type === 'FeatureCollection'
     ? featureCollection.features
     : [featureCollection];
 
-  const allPositions: number[] = [];
-  const allIndices: number[] = [];
-  let vertexOffset = 0;
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
 
   for (const f of features) {
     const geom = f.geometry || f;
@@ -124,38 +164,29 @@ function buildLandFillGeometry(featureCollection: any): THREE.BufferGeometry {
       const exterior = polygon[0];
       if (!exterior || exterior.length < 3) continue;
 
-      const shape = new THREE.Shape();
-      const x0 = lngToX(exterior[0][0]);
-      const y0 = -latToY(exterior[0][1]);
-      shape.moveTo(x0, y0);
-      for (let i = 1; i < exterior.length; i++) {
-        shape.lineTo(lngToX(exterior[i][0]), -latToY(exterior[i][1]));
-      }
-
-      try {
-        const shapeGeom = new THREE.ShapeGeometry(shape);
-        const posAttr = shapeGeom.getAttribute('position');
-        const idx = shapeGeom.getIndex();
-        if (!posAttr || !idx) { shapeGeom.dispose(); continue; }
-
-        for (let i = 0; i < posAttr.count; i++) {
-          allPositions.push(posAttr.getX(i), posAttr.getY(i), 0);
-        }
-        for (let i = 0; i < idx.count; i++) {
-          allIndices.push(idx.getX(i) + vertexOffset);
-        }
-        vertexOffset += posAttr.count;
-        shapeGeom.dispose();
-      } catch {
-        // skip degenerate polygons
+      if (crossesAntiMeridian(exterior)) {
+        const [east, west] = splitRingAtAntiMeridian(exterior);
+        drawRingOnCanvas(ctx, east);
+        drawRingOnCanvas(ctx, west);
+      } else {
+        drawRingOnCanvas(ctx, exterior);
       }
     }
   }
+  ctx.fill();
 
-  const merged = new THREE.BufferGeometry();
-  merged.setAttribute('position', new THREE.Float32BufferAttribute(allPositions, 3));
-  merged.setIndex(allIndices);
-  return merged;
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.minFilter = THREE.LinearFilter;
+  tex.magFilter = THREE.LinearFilter;
+  tex.wrapS = THREE.ClampToEdgeWrapping;
+  tex.wrapT = THREE.ClampToEdgeWrapping;
+  return tex;
+}
+
+function latToTexY(lat: number): number {
+  const clamped = Math.max(-85, Math.min(85, lat));
+  const latRad = (clamped * Math.PI) / 180;
+  return ((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2) * LAND_TEX_SIZE;
 }
 
 // --- Marker shaders ---
@@ -180,7 +211,22 @@ const markerFragmentShader = `
   void main() {
     float dist = length(vUv);
     if (dist > 1.0) discard;
-    float alpha = vColor.a * smoothstep(1.0, 0.85, dist);
+    float fill = smoothstep(1.0, 0.8, dist);
+    float ring = smoothstep(0.65, 0.82, dist) * smoothstep(1.0, 0.88, dist);
+    float alpha = vColor.a * fill;
+    vec3 col = vColor.rgb + vec3(ring * 0.45);
+    gl_FragColor = vec4(col, alpha);
+  }
+`;
+
+const regionDotFragmentShader = `
+  varying vec2 vUv;
+  varying vec4 vColor;
+  void main() {
+    float dist = length(vUv);
+    if (dist > 1.0) discard;
+    float falloff = 1.0 - dist * dist;
+    float alpha = vColor.a * falloff;
     gl_FragColor = vec4(vColor.rgb, alpha);
   }
 `;
@@ -208,8 +254,8 @@ const glowFragmentShader = `
   void main() {
     float dist = length(vUv);
     if (dist > 1.0) discard;
-    float falloff = 1.0 - dist;
-    float pulse = 0.4 + sin(uPulse * 6.2832) * 0.15;
+    float falloff = 1.0 - dist * dist;
+    float pulse = 0.6 + sin(uPulse * 6.2832) * 0.25;
     float alpha = vColor.a * falloff * falloff * pulse;
     gl_FragColor = vec4(vColor.rgb, alpha);
   }
@@ -241,8 +287,11 @@ export default function WorldMap({
     camera: THREE.OrthographicCamera;
     glowMaterial: THREE.ShaderMaterial;
     markerMaterial: THREE.ShaderMaterial;
-    glowMesh: THREE.InstancedMesh | null;
-    markerMesh: THREE.InstancedMesh | null;
+    regionDotMaterial: THREE.ShaderMaterial;
+    glowMesh: THREE.Mesh | null;
+    markerMesh: THREE.Mesh | null;
+    regionGlowMesh: THREE.Mesh | null;
+    regionMarkerMesh: THREE.Mesh | null;
     markerPlanes: THREE.Mesh[];
     raycaster: THREE.Raycaster;
     mouse: THREE.Vector2;
@@ -325,13 +374,22 @@ export default function WorldMap({
       depthTest: false,
     });
 
+    const regionDotMaterial = new THREE.ShaderMaterial({
+      vertexShader: markerVertexShader,
+      fragmentShader: regionDotFragmentShader,
+      transparent: true,
+      depthTest: false,
+      blending: THREE.NormalBlending,
+    });
+
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
     threeRef.current = {
       renderer, scene, camera,
-      glowMaterial, markerMaterial,
+      glowMaterial, markerMaterial, regionDotMaterial,
       glowMesh: null, markerMesh: null,
+      regionGlowMesh: null, regionMarkerMesh: null,
       markerPlanes: [],
       raycaster, mouse,
     };
@@ -349,12 +407,18 @@ export default function WorldMap({
           );
           const countries = topojson.feature(topology, topology.objects.countries);
 
-          // Land fill
-          const landGeom = buildLandFillGeometry(countries);
-          const landMesh = new THREE.Mesh(landGeom, new THREE.MeshBasicMaterial({
-            color: 0xffffff, transparent: true, opacity: 0.03,
+          // Land fill via Canvas 2D texture (avoids triangulation artifacts)
+          const landTex = renderLandToCanvasTexture(countries);
+          const x0 = lngToX(-180);
+          const x1 = lngToX(180);
+          const y0 = -latToY(85);
+          const y1 = -latToY(-85);
+          const landQuadGeom = new THREE.PlaneGeometry(x1 - x0, y0 - y1);
+          const landMesh = new THREE.Mesh(landQuadGeom, new THREE.MeshBasicMaterial({
+            map: landTex, transparent: true, opacity: 0.03,
             depthTest: false, side: THREE.DoubleSide,
           }));
+          landMesh.position.set((x0 + x1) / 2, (y0 + y1) / 2, 0);
           landMesh.renderOrder = 0;
           scene.add(landMesh);
 
@@ -445,6 +509,7 @@ export default function WorldMap({
       renderer.dispose();
       threeRef.current = null;
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [updateCamera]);
 
   // --- Update markers when conflicts change ---
@@ -453,36 +518,27 @@ export default function WorldMap({
     if (!t || conflicts.length === 0) return;
 
     // Remove old meshes
-    if (t.glowMesh) { t.scene.remove(t.glowMesh); t.glowMesh.dispose(); }
-    if (t.markerMesh) { t.scene.remove(t.markerMesh); t.markerMesh.dispose(); }
+    if (t.glowMesh) { t.scene.remove(t.glowMesh); t.glowMesh.geometry.dispose(); }
+    if (t.markerMesh) { t.scene.remove(t.markerMesh); t.markerMesh.geometry.dispose(); }
     t.markerPlanes.forEach(m => { t.scene.remove(m); m.geometry.dispose(); });
     t.markerPlanes = [];
 
     const count = conflicts.length;
-    const quadGeom = new THREE.PlaneGeometry(2, 2);
 
-    // Glow instances
-    const glowMesh = new THREE.InstancedMesh(quadGeom, t.glowMaterial, count);
+    // Build per-instance data
     const glowPos = new Float32Array(count * 3);
     const glowRadius = new Float32Array(count);
     const glowColor = new Float32Array(count * 4);
-
-    // Marker instances
-    const markerMesh = new THREE.InstancedMesh(quadGeom, t.markerMaterial, count);
     const mPos = new Float32Array(count * 3);
     const mRadius = new Float32Array(count);
     const mColor = new Float32Array(count * 4);
-
-    const dummy = new THREE.Matrix4();
 
     for (let i = 0; i < count; i++) {
       const c = conflicts[i];
       const x = lngToX(c.coordinates.lng);
       const y = -latToY(c.coordinates.lat);
-      const rMeters = getRadius(c);
-      const rWorld = rMeters / 111320 * (WORLD_SIZE / 360);
-      const grMeters = getGlowRadius(c);
-      const grWorld = grMeters / 111320 * (WORLD_SIZE / 360);
+      const rWorld = getRadius(c) / 111320 * (WORLD_SIZE / 360);
+      const grWorld = getGlowRadius(c) / 111320 * (WORLD_SIZE / 360);
 
       glowPos[i * 3] = x;
       glowPos[i * 3 + 1] = y;
@@ -499,18 +555,14 @@ export default function WorldMap({
       mPos[i * 3 + 2] = 0;
       mRadius[i] = rWorld;
       const mc = INTENSITY_COLORS[c.intensity] || [229, 115, 115];
-      const isHov = hoveredConflict?.id === c.id;
       mColor[i * 4] = mc[0];
       mColor[i * 4 + 1] = mc[1];
       mColor[i * 4 + 2] = mc[2];
-      mColor[i * 4 + 3] = isHov ? 240 : 200;
+      mColor[i * 4 + 3] = 200;
 
-      dummy.identity();
-      glowMesh.setMatrixAt(i, dummy);
-      markerMesh.setMatrixAt(i, dummy);
-
-      // Create invisible plane for raycasting
-      const planeGeom = new THREE.PlaneGeometry(rWorld * 2, rWorld * 2);
+      // Invisible plane for raycasting — use glow radius for a larger hit area
+      const hitSize = grWorld * 2;
+      const planeGeom = new THREE.PlaneGeometry(hitSize, hitSize);
       const planeMat = new THREE.MeshBasicMaterial({ visible: false });
       const plane = new THREE.Mesh(planeGeom, planeMat);
       plane.position.set(x, y, 0.01);
@@ -519,24 +571,94 @@ export default function WorldMap({
       t.markerPlanes.push(plane);
     }
 
-    glowMesh.geometry.setAttribute('instancePosition', new THREE.InstancedBufferAttribute(glowPos, 3));
-    glowMesh.geometry.setAttribute('instanceRadius', new THREE.InstancedBufferAttribute(glowRadius, 1));
-    glowMesh.geometry.setAttribute('instanceColor', new THREE.InstancedBufferAttribute(glowColor, 4));
+    // Use InstancedBufferGeometry for full control (no InstancedMesh conflicts)
+    const baseQuad = new THREE.PlaneGeometry(2, 2);
+
+    const glowGeom = new THREE.InstancedBufferGeometry();
+    glowGeom.index = baseQuad.index;
+    glowGeom.setAttribute('position', baseQuad.getAttribute('position'));
+    glowGeom.setAttribute('instancePosition', new THREE.InstancedBufferAttribute(glowPos, 3));
+    glowGeom.setAttribute('instanceRadius', new THREE.InstancedBufferAttribute(glowRadius, 1));
+    glowGeom.setAttribute('instanceColor', new THREE.InstancedBufferAttribute(glowColor, 4));
+    glowGeom.instanceCount = count;
+    const glowMesh = new THREE.Mesh(glowGeom, t.glowMaterial);
     glowMesh.renderOrder = 4;
     glowMesh.frustumCulled = false;
     t.scene.add(glowMesh);
     t.glowMesh = glowMesh;
 
-    markerMesh.geometry.setAttribute('instancePosition', new THREE.InstancedBufferAttribute(mPos, 3));
-    markerMesh.geometry.setAttribute('instanceRadius', new THREE.InstancedBufferAttribute(mRadius, 1));
-    markerMesh.geometry.setAttribute('instanceColor', new THREE.InstancedBufferAttribute(mColor, 4));
+    const markerGeom = new THREE.InstancedBufferGeometry();
+    markerGeom.index = baseQuad.index;
+    markerGeom.setAttribute('position', baseQuad.getAttribute('position'));
+    markerGeom.setAttribute('instancePosition', new THREE.InstancedBufferAttribute(mPos, 3));
+    markerGeom.setAttribute('instanceRadius', new THREE.InstancedBufferAttribute(mRadius, 1));
+    markerGeom.setAttribute('instanceColor', new THREE.InstancedBufferAttribute(mColor, 4));
+    markerGeom.instanceCount = count;
+    const markerMesh = new THREE.Mesh(markerGeom, t.markerMaterial);
     markerMesh.renderOrder = 5;
     markerMesh.frustumCulled = false;
     t.scene.add(markerMesh);
     t.markerMesh = markerMesh;
 
+    // --- Render affected region dots (subtle, no glow) ---
+    if (t.regionGlowMesh) { t.scene.remove(t.regionGlowMesh); t.regionGlowMesh.geometry.dispose(); }
+    if (t.regionMarkerMesh) { t.scene.remove(t.regionMarkerMesh); t.regionMarkerMesh.geometry.dispose(); }
+    t.regionGlowMesh = null;
+
+    const allRegions: { lat: number; lng: number; eventCount: number; intensity: string }[] = [];
+    for (const c of conflicts) {
+      if (!c.affectedRegions) continue;
+      for (const r of c.affectedRegions) {
+        allRegions.push({ ...r, intensity: c.intensity });
+      }
+    }
+
+    if (allRegions.length > 0) {
+      const rCount = allRegions.length;
+      const rMPos = new Float32Array(rCount * 3);
+      const rMRadius = new Float32Array(rCount);
+      const rMColor = new Float32Array(rCount * 4);
+
+      const REGION_COLOR: [number, number, number] = [140, 35, 25];
+      const BASE_DOT_RADIUS = 0.3;
+      const MAX_DOT_RADIUS = 1.0;
+
+      for (let i = 0; i < rCount; i++) {
+        const reg = allRegions[i];
+        const rx = lngToX(reg.lng);
+        const ry = -latToY(reg.lat);
+
+        const scaleFactor = Math.min(MAX_DOT_RADIUS, BASE_DOT_RADIUS + Math.log10(Math.max(reg.eventCount, 1)) * 0.2);
+        const dotWorld = scaleFactor * (WORLD_SIZE / 360);
+
+        rMPos[i * 3] = rx;
+        rMPos[i * 3 + 1] = ry;
+        rMPos[i * 3 + 2] = 0;
+        rMRadius[i] = dotWorld;
+        const alphaScale = Math.min(1, 0.3 + reg.eventCount / 150);
+        rMColor[i * 4] = REGION_COLOR[0];
+        rMColor[i * 4 + 1] = REGION_COLOR[1];
+        rMColor[i * 4 + 2] = REGION_COLOR[2];
+        rMColor[i * 4 + 3] = 180 * alphaScale;
+      }
+
+      const regionMarkerGeom = new THREE.InstancedBufferGeometry();
+      regionMarkerGeom.index = baseQuad.index;
+      regionMarkerGeom.setAttribute('position', baseQuad.getAttribute('position'));
+      regionMarkerGeom.setAttribute('instancePosition', new THREE.InstancedBufferAttribute(rMPos, 3));
+      regionMarkerGeom.setAttribute('instanceRadius', new THREE.InstancedBufferAttribute(rMRadius, 1));
+      regionMarkerGeom.setAttribute('instanceColor', new THREE.InstancedBufferAttribute(rMColor, 4));
+      regionMarkerGeom.instanceCount = rCount;
+      const rMarkerMesh = new THREE.Mesh(regionMarkerGeom, t.regionDotMaterial);
+      rMarkerMesh.renderOrder = 3.5;
+      rMarkerMesh.frustumCulled = false;
+      t.scene.add(rMarkerMesh);
+      t.regionMarkerMesh = rMarkerMesh;
+    }
+
     updateCamera();
-  }, [conflicts, hoveredConflict, updateCamera]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conflicts, updateCamera]);
 
   // --- Pointer interactions ---
   useEffect(() => {
@@ -653,6 +775,7 @@ export default function WorldMap({
     };
 
     // Hover / click via raycaster
+    let lastHoveredIndex = -1;
     const onPointerMove = (e: PointerEvent) => {
       const t = threeRef.current;
       if (!t || panRef.current.active) return;
@@ -664,10 +787,31 @@ export default function WorldMap({
 
       const intersects = t.raycaster.intersectObjects(t.markerPlanes, false);
       if (intersects.length > 0) {
-        const conflict = intersects[0].object.userData.conflict as Conflict;
-        onConflictHoverRef.current(conflict);
+        const hit = intersects[0].object.userData as { conflict: Conflict; index: number };
+        if (hit.index !== lastHoveredIndex) {
+          // Restore previous hovered marker alpha
+          if (lastHoveredIndex >= 0 && t.markerMesh) {
+            const attr = t.markerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
+            attr.setW(lastHoveredIndex, 200);
+            attr.needsUpdate = true;
+          }
+          // Highlight new marker
+          if (t.markerMesh) {
+            const attr = t.markerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
+            attr.setW(hit.index, 240);
+            attr.needsUpdate = true;
+          }
+          lastHoveredIndex = hit.index;
+          onConflictHoverRef.current(hit.conflict);
+        }
         el.style.cursor = 'pointer';
-      } else {
+      } else if (lastHoveredIndex >= 0) {
+        if (t.markerMesh) {
+          const attr = t.markerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
+          attr.setW(lastHoveredIndex, 200);
+          attr.needsUpdate = true;
+        }
+        lastHoveredIndex = -1;
         onConflictHoverRef.current(null);
         el.style.cursor = 'grab';
       }

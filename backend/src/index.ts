@@ -50,13 +50,20 @@ async function bootstrap() {
     }
   }
 
+  let consecutiveFailures = 0;
+
   cron.schedule('0 3 * * *', async () => {
     console.log('[Cron] Starting daily scrape...');
     try {
       await scrapeConflicts();
+      consecutiveFailures = 0;
       console.log('[Cron] Daily scrape completed.');
     } catch (err) {
-      console.error('[Cron] Daily scrape failed:', err);
+      consecutiveFailures++;
+      console.error(`[Cron] Daily scrape failed (${consecutiveFailures} consecutive failure(s)):`, err);
+      if (consecutiveFailures >= 3) {
+        console.error('[Cron][ALERT] 3+ consecutive scrape failures — Wikipedia page structure may have changed');
+      }
     }
   });
 

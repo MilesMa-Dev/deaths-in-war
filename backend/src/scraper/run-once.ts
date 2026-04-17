@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { scrapeConflicts } from './wikipedia.js';
 
 scrapeConflicts()
