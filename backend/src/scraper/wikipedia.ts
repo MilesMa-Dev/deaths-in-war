@@ -4,6 +4,7 @@ import type { Element } from 'domhandler';
 import type { Conflict, ConflictsData } from '../types/index.js';
 import { getCoordinatesForCountries } from './country-coordinates.js';
 import { saveData, loadData } from './storage.js';
+import { enrichAllConflicts } from './acled.js';
 import { loadStaticRegions } from './static-regions.js';
 
 const WIKI_API = 'https://en.wikipedia.org/w/api.php';
@@ -376,17 +377,31 @@ export async function scrapeConflicts(): Promise<ConflictsData> {
     console.warn('[Scraper] No existing data to fall back to — saving partial data');
   }
 
-  const regionMap = loadStaticRegions();
-  if (regionMap) {
-    let enriched = 0;
-    for (const conflict of allConflicts) {
-      const regions = regionMap[conflict.name];
-      if (regions && regions.length > 0) {
-        conflict.affectedRegions = regions;
-        enriched++;
-      }
+  let acledSuccess = false;
+  try {
+    await enrichAllConflicts(allConflicts);
+    acledSuccess = allConflicts.some(c => c.affectedRegions && c.affectedRegions.length > 0);
+    if (acledSuccess) {
+      console.log('[Scraper] ACLED enrichment succeeded.');
     }
-    console.log(`[Scraper] Applied static region data to ${enriched}/${allConflicts.length} conflicts.`);
+  } catch (err) {
+    console.warn('[Scraper] ACLED enrichment failed:', err instanceof Error ? err.message : err);
+  }
+
+  if (!acledSuccess) {
+    console.log('[Scraper] Falling back to static UCDP region data...');
+    const regionMap = loadStaticRegions();
+    if (regionMap) {
+      let enriched = 0;
+      for (const conflict of allConflicts) {
+        const regions = regionMap[conflict.name];
+        if (regions && regions.length > 0) {
+          conflict.affectedRegions = regions;
+          enriched++;
+        }
+      }
+      console.log(`[Scraper] Applied static region data to ${enriched}/${allConflicts.length} conflicts.`);
+    }
   }
 
   const totalDeaths = allConflicts.reduce((sum, c) => sum + c.deathToll.total, 0);
