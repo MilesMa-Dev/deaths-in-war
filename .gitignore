@@ -6,5 +6,6 @@ build/
 .DS_Store
 backend/src/data/*.json
 !backend/src/data/regions-static.json
+!backend/src/data/conflicts.json
 !backend/src/data/.gitkeep
 debug-*.png

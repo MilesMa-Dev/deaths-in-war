@@ -1,0 +1,5766 @@
+{
+  "conflicts": [
+    {
+      "id": "arab-israeli",
+      "name": "Arab–Israeli",
+      "location": "Israel\n Palestine\n Lebanon\n Syria\n Iran\n Jordan\n Iraq\n Saudi Arabia\n Kuwait\n Bahrain\n Qatar\n United Arab Emirates\n Oman\n Yemen\n Turkey\n Azerbaijan\n Cyprus\n United Kingdom\n Akrotiri and Dhekelia\n British Indian Ocean Territory\n Sri Lanka",
+      "countries": [
+        "Israel",
+        "Palestine",
+        "Lebanon",
+        "Syria",
+        "Iran",
+        "Jordan",
+        "Iraq",
+        "Saudi Arabia",
+        "Kuwait",
+        "Bahrain",
+        "Qatar",
+        "United Arab Emirates",
+        "Oman",
+        "Yemen",
+        "Turkey",
+        "Azerbaijan",
+        "Cyprus",
+        "United Kingdom",
+        "Akrotiri and Dhekelia",
+        "British Indian Ocean Territory",
+        "Sri Lanka"
+      ],
+      "coordinates": {
+        "lat": 31.05,
+        "lng": 34.85
+      },
+      "startYear": 1948,
+      "deathToll": {
+        "total": 254000,
+        "totalDisplay": "254,000+",
+        "recent": 28111
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arab%E2%80%93Israeli_conflict",
+      "lastUpdated": "2026-04-17T09:10:53.346Z",
+      "affectedRegions": [
+        {
+          "name": "Gaza Strip",
+          "lat": 31.4362,
+          "lng": 34.3866,
+          "eventCount": 6124
+        },
+        {
+          "name": "West Bank",
+          "lat": 32.1308,
+          "lng": 35.2047,
+          "eventCount": 1269
+        },
+        {
+          "name": "Southern district",
+          "lat": 31.261,
+          "lng": 34.5464,
+          "eventCount": 153
+        },
+        {
+          "name": "Northern district",
+          "lat": 32.9529,
+          "lng": 35.3823,
+          "eventCount": 81
+        },
+        {
+          "name": "Jerusalem district",
+          "lat": 31.7844,
+          "lng": 35.2152,
+          "eventCount": 80
+        },
+        {
+          "name": "Unknown",
+          "lat": 31.8224,
+          "lng": 34.7634,
+          "eventCount": 50
+        },
+        {
+          "name": "Tel Aviv district",
+          "lat": 32.0679,
+          "lng": 34.7845,
+          "eventCount": 38
+        },
+        {
+          "name": "Central district",
+          "lat": 32.0015,
+          "lng": 34.8729,
+          "eventCount": 33
+        },
+        {
+          "name": "Haifa district",
+          "lat": 32.5023,
+          "lng": 34.982,
+          "eventCount": 31
+        }
+      ]
+    },
+    {
+      "id": "myanmar-civil-war",
+      "name": "Myanmar civil war",
+      "location": "Myanmar India Bangladesh Thailand China",
+      "countries": [
+        "Myanmar",
+        "India",
+        "Bangladesh",
+        "Thailand",
+        "China"
+      ],
+      "coordinates": {
+        "lat": 21.91,
+        "lng": 95.96
+      },
+      "startYear": 1948,
+      "deathToll": {
+        "total": 214000,
+        "totalDisplay": "214,000+",
+        "recent": 15699
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Myanmar_conflict",
+      "lastUpdated": "2026-04-17T09:10:53.347Z",
+      "affectedRegions": [
+        {
+          "name": "Sagaing region",
+          "lat": 22.7329,
+          "lng": 95.2478,
+          "eventCount": 1207
+        },
+        {
+          "name": "Shan state",
+          "lat": 22.0562,
+          "lng": 97.9218,
+          "eventCount": 1080
+        },
+        {
+          "name": "Kayin state",
+          "lat": 17.3606,
+          "lng": 97.8037,
+          "eventCount": 719
+        },
+        {
+          "name": "Rakhine state",
+          "lat": 20.335,
+          "lng": 93.0796,
+          "eventCount": 508
+        },
+        {
+          "name": "Unknown",
+          "lat": 21.2987,
+          "lng": 97.7137,
+          "eventCount": 451
+        },
+        {
+          "name": "Magway region",
+          "lat": 21.4301,
+          "lng": 94.6988,
+          "eventCount": 416
+        },
+        {
+          "name": "Kachin state",
+          "lat": 25.293,
+          "lng": 97.0389,
+          "eventCount": 400
+        },
+        {
+          "name": "Mandalay region",
+          "lat": 21.9373,
+          "lng": 95.9387,
+          "eventCount": 386
+        },
+        {
+          "name": "Chin state",
+          "lat": 21.9769,
+          "lng": 93.522,
+          "eventCount": 291
+        },
+        {
+          "name": "Kayah state",
+          "lat": 19.4213,
+          "lng": 97.2706,
+          "eventCount": 289
+        },
+        {
+          "name": "Bago region",
+          "lat": 18.3767,
+          "lng": 96.2873,
+          "eventCount": 232
+        },
+        {
+          "name": "Mon state",
+          "lat": 16.4617,
+          "lng": 97.5491,
+          "eventCount": 208
+        },
+        {
+          "name": "Tanintharyi region",
+          "lat": 13.2414,
+          "lng": 98.5586,
+          "eventCount": 173
+        },
+        {
+          "name": "Bago division",
+          "lat": 18.2716,
+          "lng": 96.3491,
+          "eventCount": 143
+        },
+        {
+          "name": "Yangon region",
+          "lat": 16.8252,
+          "lng": 96.1356,
+          "eventCount": 138
+        },
+        {
+          "name": "Tanintharyi division",
+          "lat": 12.9299,
+          "lng": 98.7752,
+          "eventCount": 117
+        },
+        {
+          "name": "Yangon division",
+          "lat": 16.8487,
+          "lng": 96.1255,
+          "eventCount": 28
+        },
+        {
+          "name": "Karen state",
+          "lat": 16.8355,
+          "lng": 98.4363,
+          "eventCount": 15
+        },
+        {
+          "name": "Naypyidaw Union territory",
+          "lat": 19.7335,
+          "lng": 96.1513,
+          "eventCount": 15
+        },
+        {
+          "name": "Ayeyarwady division",
+          "lat": 16.6885,
+          "lng": 95.1892,
+          "eventCount": 12
+        }
+      ]
+    },
+    {
+      "id": "sudanese-civil-wars",
+      "name": "Sudanese civil wars",
+      "location": "Sudan South Sudan Chad Central African Republic Egypt Ethiopia Libya",
+      "countries": [
+        "Sudan",
+        "South Sudan",
+        "Chad",
+        "Central African Republic",
+        "Egypt",
+        "Ethiopia",
+        "Libya"
+      ],
+      "coordinates": {
+        "lat": 12.86,
+        "lng": 30.22
+      },
+      "startYear": 1955,
+      "deathToll": {
+        "total": 1521000,
+        "totalDisplay": "1,521,000+",
+        "recent": 21691
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sudanese_Civil_War",
+      "lastUpdated": "2026-04-17T09:10:53.347Z",
+      "affectedRegions": [
+        {
+          "name": "North Darfur state",
+          "lat": 13.898,
+          "lng": 25.1618,
+          "eventCount": 329
+        },
+        {
+          "name": "Unknown",
+          "lat": 10.0597,
+          "lng": 28.9712,
+          "eventCount": 255
+        },
+        {
+          "name": "Southern Darfur state",
+          "lat": 11.8479,
+          "lng": 25.0053,
+          "eventCount": 244
+        },
+        {
+          "name": "Khartoum state",
+          "lat": 15.6447,
+          "lng": 32.5033,
+          "eventCount": 243
+        },
+        {
+          "name": "Northern Darfur state",
+          "lat": 14.5327,
+          "lng": 25.1184,
+          "eventCount": 243
+        },
+        {
+          "name": "Southern Kordofan state",
+          "lat": 11.2174,
+          "lng": 30.0756,
+          "eventCount": 180
+        },
+        {
+          "name": "Western Darfur state",
+          "lat": 13.2472,
+          "lng": 22.8122,
+          "eventCount": 173
+        },
+        {
+          "name": "Unity state",
+          "lat": 8.7765,
+          "lng": 29.8706,
+          "eventCount": 156
+        },
+        {
+          "name": "Central Equatoria state",
+          "lat": 4.2852,
+          "lng": 31.1502,
+          "eventCount": 156
+        },
+        {
+          "name": "South Darfur state",
+          "lat": 12.0931,
+          "lng": 24.7151,
+          "eventCount": 147
+        },
+        {
+          "name": "Jonglei state",
+          "lat": 7.1341,
+          "lng": 32.3039,
+          "eventCount": 140
+        },
+        {
+          "name": "Central Darfur state",
+          "lat": 12.7337,
+          "lng": 23.9132,
+          "eventCount": 123
+        },
+        {
+          "name": "Upper Nile state",
+          "lat": 8.8904,
+          "lng": 32.0689,
+          "eventCount": 122
+        },
+        {
+          "name": "Gezira state",
+          "lat": 14.6576,
+          "lng": 33.2778,
+          "eventCount": 120
+        },
+        {
+          "name": "Blue Nile state",
+          "lat": 11.3381,
+          "lng": 34.1271,
+          "eventCount": 117
+        },
+        {
+          "name": "South Kordofan state",
+          "lat": 11.4523,
+          "lng": 30.2807,
+          "eventCount": 111
+        },
+        {
+          "name": "Western Equatoria state",
+          "lat": 4.9912,
+          "lng": 28.6919,
+          "eventCount": 110
+        },
+        {
+          "name": "West Kordofan state",
+          "lat": 10.7276,
+          "lng": 28.3046,
+          "eventCount": 98
+        },
+        {
+          "name": "Bahr-al-Jabal state",
+          "lat": 4.434,
+          "lng": 31.3232,
+          "eventCount": 90
+        },
+        {
+          "name": "Upper Nile state",
+          "lat": 9.8336,
+          "lng": 32.6197,
+          "eventCount": 84
+        }
+      ]
+    },
+    {
+      "id": "congolese-conflicts",
+      "name": "Congolese conflicts",
+      "location": "Democratic Republic of the Congo Central African Republic South Sudan Rwanda Burundi Uganda",
+      "countries": [
+        "Democratic Republic of the Congo",
+        "Central African Republic",
+        "South Sudan",
+        "Rwanda",
+        "Burundi",
+        "Uganda"
+      ],
+      "coordinates": {
+        "lat": -2.5,
+        "lng": 28.8
+      },
+      "startYear": 1960,
+      "deathToll": {
+        "total": 219700,
+        "totalDisplay": "219,700+",
+        "recent": 7754
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Congolese_Civil_War_(disambiguation)",
+      "lastUpdated": "2026-04-17T09:10:53.348Z",
+      "affectedRegions": [
+        {
+          "name": "Nord Kivu province",
+          "lat": -0.4112,
+          "lng": 29.2698,
+          "eventCount": 2975
+        },
+        {
+          "name": "Ituri province",
+          "lat": 1.5953,
+          "lng": 30.1111,
+          "eventCount": 1797
+        },
+        {
+          "name": "Sud Kivu province",
+          "lat": -3.262,
+          "lng": 28.7641,
+          "eventCount": 709
+        },
+        {
+          "name": "Orientale province",
+          "lat": 3.358,
+          "lng": 28.3425,
+          "eventCount": 400
+        },
+        {
+          "name": "Katanga province",
+          "lat": -7.4583,
+          "lng": 27.7817,
+          "eventCount": 140
+        },
+        {
+          "name": "Kasaï-Central province",
+          "lat": -6.3917,
+          "lng": 22.4755,
+          "eventCount": 135
+        },
+        {
+          "name": "Nord Kivu region",
+          "lat": -1.0752,
+          "lng": 29.1327,
+          "eventCount": 119
+        },
+        {
+          "name": "Sud Kivu region",
+          "lat": -3.0843,
+          "lng": 28.8008,
+          "eventCount": 110
+        },
+        {
+          "name": "Kasaï province",
+          "lat": -6.4931,
+          "lng": 21.0371,
+          "eventCount": 102
+        },
+        {
+          "name": "Tanganyika province",
+          "lat": -5.9658,
+          "lng": 28.1523,
+          "eventCount": 70
+        },
+        {
+          "name": "Équateur province",
+          "lat": 1.9284,
+          "lng": 19.9906,
+          "eventCount": 57
+        },
+        {
+          "name": "Kasaï Oriental province",
+          "lat": -5.9013,
+          "lng": 23.4325,
+          "eventCount": 53
+        },
+        {
+          "name": "Maniema province",
+          "lat": -3.1932,
+          "lng": 26.7341,
+          "eventCount": 48
+        },
+        {
+          "name": "Sankuru province",
+          "lat": -3.5163,
+          "lng": 23.4422,
+          "eventCount": 47
+        },
+        {
+          "name": "Unknown",
+          "lat": -0.0802,
+          "lng": 26.7792,
+          "eventCount": 34
+        },
+        {
+          "name": "Kinshasa city region",
+          "lat": -4.3337,
+          "lng": 15.3158,
+          "eventCount": 29
+        },
+        {
+          "name": "Kongo Central province",
+          "lat": -5.437,
+          "lng": 13.4039,
+          "eventCount": 28
+        },
+        {
+          "name": "Mai-Ndombe province",
+          "lat": -3.4275,
+          "lng": 16.695,
+          "eventCount": 27
+        },
+        {
+          "name": "Kinshasa city province",
+          "lat": -4.3339,
+          "lng": 15.3176,
+          "eventCount": 23
+        },
+        {
+          "name": "Haut-Katanga province",
+          "lat": -9.7974,
+          "lng": 27.7604,
+          "eventCount": 21
+        }
+      ]
+    },
+    {
+      "id": "somali-civil-war",
+      "name": "Somali Civil War",
+      "location": "Somalia Kenya",
+      "countries": [
+        "Somalia",
+        "Kenya"
+      ],
+      "coordinates": {
+        "lat": 5.15,
+        "lng": 46.2
+      },
+      "startYear": 1981,
+      "deathToll": {
+        "total": 376200,
+        "totalDisplay": "376,200+",
+        "recent": 10783
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Somali_Civil_War",
+      "lastUpdated": "2026-04-17T09:10:53.348Z",
+      "affectedRegions": [
+        {
+          "name": "Banaadir region",
+          "lat": 2.0661,
+          "lng": 45.3654,
+          "eventCount": 2102
+        },
+        {
+          "name": "Lower Shabelle region",
+          "lat": 1.9554,
+          "lng": 44.7971,
+          "eventCount": 771
+        },
+        {
+          "name": "Lower Juba region",
+          "lat": -0.1414,
+          "lng": 42.2122,
+          "eventCount": 657
+        },
+        {
+          "name": "Bay region",
+          "lat": 2.9787,
+          "lng": 43.5516,
+          "eventCount": 459
+        },
+        {
+          "name": "Hiran region",
+          "lat": 4.3651,
+          "lng": 45.4207,
+          "eventCount": 373
+        },
+        {
+          "name": "Gedo region",
+          "lat": 3.1063,
+          "lng": 42.0321,
+          "eventCount": 366
+        },
+        {
+          "name": "Middle Shabelle region",
+          "lat": 2.8042,
+          "lng": 45.6901,
+          "eventCount": 284
+        },
+        {
+          "name": "Galgudud region",
+          "lat": 5.0886,
+          "lng": 46.564,
+          "eventCount": 226
+        },
+        {
+          "name": "Bakool region",
+          "lat": 4.2168,
+          "lng": 43.7769,
+          "eventCount": 168
+        },
+        {
+          "name": "Mudug region",
+          "lat": 6.0072,
+          "lng": 47.8229,
+          "eventCount": 151
+        },
+        {
+          "name": "Bari region",
+          "lat": 10.9611,
+          "lng": 49.3824,
+          "eventCount": 144
+        },
+        {
+          "name": "Middle Juba region",
+          "lat": 0.8096,
+          "lng": 42.8404,
+          "eventCount": 114
+        },
+        {
+          "name": "Woqooyi Galbeed region",
+          "lat": 9.1713,
+          "lng": 44.3157,
+          "eventCount": 68
+        },
+        {
+          "name": "Unknown",
+          "lat": 4.1816,
+          "lng": 45.7192,
+          "eventCount": 45
+        },
+        {
+          "name": "Sool region",
+          "lat": 8.4882,
+          "lng": 47.3084,
+          "eventCount": 39
+        },
+        {
+          "name": "Togdheer region",
+          "lat": 9.0456,
+          "lng": 45.7531,
+          "eventCount": 23
+        },
+        {
+          "name": "Sanaag region",
+          "lat": 10.428,
+          "lng": 47.9112,
+          "eventCount": 19
+        },
+        {
+          "name": "Nugaal region",
+          "lat": 8.1671,
+          "lng": 48.5256,
+          "eventCount": 12
+        },
+        {
+          "name": "Awdal region",
+          "lat": 10.8151,
+          "lng": 43.2993,
+          "eventCount": 4
+        }
+      ]
+    },
+    {
+      "id": "islamist-insurgencies-in-the-maghreb",
+      "name": "Islamist insurgencies in the Maghreb",
+      "location": "Algeria Benin Burkina Faso Cameroon Chad Ivory Coast Libya Mali Mauritania Morocco Niger Nigeria Togo Tunisia",
+      "countries": [
+        "Algeria",
+        "Benin",
+        "Burkina Faso",
+        "Cameroon",
+        "Chad",
+        "Ivory Coast",
+        "Libya",
+        "Mali",
+        "Mauritania",
+        "Morocco",
+        "Niger",
+        "Nigeria",
+        "Togo",
+        "Tunisia"
+      ],
+      "coordinates": {
+        "lat": 28.03,
+        "lng": 1.66
+      },
+      "startYear": 2002,
+      "deathToll": {
+        "total": 485500,
+        "totalDisplay": "485,500+",
+        "recent": 21185
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_the_Maghreb_(2002%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:53.349Z",
+      "affectedRegions": [
+        {
+          "name": "Mopti region",
+          "lat": 14.4781,
+          "lng": -3.425,
+          "eventCount": 786
+        },
+        {
+          "name": "Sahel region",
+          "lat": 14.171,
+          "lng": -0.6274,
+          "eventCount": 543
+        },
+        {
+          "name": "Boumerdes province",
+          "lat": 36.757,
+          "lng": 3.67,
+          "eventCount": 540
+        },
+        {
+          "name": "Algiers province",
+          "lat": 36.7419,
+          "lng": 3.0397,
+          "eventCount": 431
+        },
+        {
+          "name": "Tizi Ouzou province",
+          "lat": 36.7155,
+          "lng": 4.1458,
+          "eventCount": 338
+        },
+        {
+          "name": "Gao region",
+          "lat": 16.1751,
+          "lng": 0.5298,
+          "eventCount": 301
+        },
+        {
+          "name": "Centre Nord region",
+          "lat": 13.3836,
+          "lng": -1.0682,
+          "eventCount": 274
+        },
+        {
+          "name": "Tombouctou region",
+          "lat": 16.5447,
+          "lng": -3.1008,
+          "eventCount": 266
+        },
+        {
+          "name": "Unknown",
+          "lat": 30.3842,
+          "lng": 3.1872,
+          "eventCount": 263
+        },
+        {
+          "name": "Blida province",
+          "lat": 36.5374,
+          "lng": 2.9794,
+          "eventCount": 259
+        },
+        {
+          "name": "Segou region",
+          "lat": 14.2757,
+          "lng": -5.7236,
+          "eventCount": 247
+        },
+        {
+          "name": "Tillabéri region",
+          "lat": 14.3085,
+          "lng": 1.7286,
+          "eventCount": 236
+        },
+        {
+          "name": "Bouira province",
+          "lat": 36.3576,
+          "lng": 3.7475,
+          "eventCount": 227
+        },
+        {
+          "name": "Diffa region",
+          "lat": 13.6056,
+          "lng": 12.8643,
+          "eventCount": 227
+        },
+        {
+          "name": "Tripoli district",
+          "lat": 32.8283,
+          "lng": 13.1638,
+          "eventCount": 219
+        },
+        {
+          "name": "Est region",
+          "lat": 12.2264,
+          "lng": 0.7868,
+          "eventCount": 218
+        },
+        {
+          "name": "Ménaka region",
+          "lat": 15.9431,
+          "lng": 2.5283,
+          "eventCount": 217
+        },
+        {
+          "name": "Benghazi district",
+          "lat": 32.1129,
+          "lng": 20.1303,
+          "eventCount": 214
+        },
+        {
+          "name": "Surt district",
+          "lat": 31.1227,
+          "lng": 16.7988,
+          "eventCount": 192
+        },
+        {
+          "name": "Kidal region",
+          "lat": 19.2826,
+          "lng": 1.4651,
+          "eventCount": 190
+        }
+      ]
+    },
+    {
+      "id": "mexican-drug-war",
+      "name": "Mexican drug war",
+      "location": "Mexico Belize El Salvador Honduras Guatemala Nicaragua United States",
+      "countries": [
+        "Mexico",
+        "Belize",
+        "El Salvador",
+        "Honduras",
+        "Guatemala",
+        "Nicaragua",
+        "United States"
+      ],
+      "coordinates": {
+        "lat": 23.63,
+        "lng": -102.55
+      },
+      "startYear": 2006,
+      "deathToll": {
+        "total": 135000,
+        "totalDisplay": "135,000",
+        "recent": 8699
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mexican_drug_war",
+      "lastUpdated": "2026-04-17T09:10:53.349Z",
+      "affectedRegions": [
+        {
+          "name": "Chihuahua state",
+          "lat": 31.0656,
+          "lng": -106.4919,
+          "eventCount": 3337
+        },
+        {
+          "name": "Baja California state",
+          "lat": 32.4466,
+          "lng": -116.9274,
+          "eventCount": 2993
+        },
+        {
+          "name": "Guanajuato state",
+          "lat": 20.6473,
+          "lng": -101.132,
+          "eventCount": 2417
+        },
+        {
+          "name": "Guerrero state",
+          "lat": 17.3396,
+          "lng": -99.8236,
+          "eventCount": 1983
+        },
+        {
+          "name": "Michoacán state",
+          "lat": 19.589,
+          "lng": -101.7427,
+          "eventCount": 1400
+        },
+        {
+          "name": "Sinaloa state",
+          "lat": 24.7794,
+          "lng": -107.4249,
+          "eventCount": 1242
+        },
+        {
+          "name": "Zacatecas state",
+          "lat": 22.9181,
+          "lng": -102.7752,
+          "eventCount": 850
+        },
+        {
+          "name": "Nuevo León state",
+          "lat": 25.6795,
+          "lng": -100.2057,
+          "eventCount": 791
+        },
+        {
+          "name": "Jalisco state",
+          "lat": 20.5528,
+          "lng": -103.3865,
+          "eventCount": 790
+        },
+        {
+          "name": "Sonora state",
+          "lat": 29.2224,
+          "lng": -111.1157,
+          "eventCount": 636
+        },
+        {
+          "name": "Tamaulipas state",
+          "lat": 25.253,
+          "lng": -98.7139,
+          "eventCount": 460
+        },
+        {
+          "name": "Veracruz state",
+          "lat": 19.1298,
+          "lng": -96.2879,
+          "eventCount": 398
+        },
+        {
+          "name": "Puebla state",
+          "lat": 18.9857,
+          "lng": -98.1204,
+          "eventCount": 345
+        },
+        {
+          "name": "Coahuila state",
+          "lat": 25.748,
+          "lng": -103.1207,
+          "eventCount": 268
+        },
+        {
+          "name": "Durango state",
+          "lat": 24.7699,
+          "lng": -104.7226,
+          "eventCount": 190
+        },
+        {
+          "name": "Colima state",
+          "lat": 19.1767,
+          "lng": -103.8718,
+          "eventCount": 168
+        },
+        {
+          "name": "Quintana Roo state",
+          "lat": 20.5917,
+          "lng": -87.278,
+          "eventCount": 155
+        },
+        {
+          "name": "Chiapas state",
+          "lat": 15.9185,
+          "lng": -92.4697,
+          "eventCount": 126
+        },
+        {
+          "name": "Baja California Sur state",
+          "lat": 24.1743,
+          "lng": -110.4549,
+          "eventCount": 122
+        },
+        {
+          "name": "Morelos state",
+          "lat": 18.8194,
+          "lng": -99.1417,
+          "eventCount": 115
+        }
+      ]
+    },
+    {
+      "id": "russo-ukrainian-war",
+      "name": "Russo-Ukrainian war",
+      "location": "Ukraine Russia Belarus",
+      "countries": [
+        "Ukraine",
+        "Russia",
+        "Belarus"
+      ],
+      "coordinates": {
+        "lat": 48.38,
+        "lng": 31.17
+      },
+      "startYear": 2014,
+      "deathToll": {
+        "total": 172226,
+        "totalDisplay": "172,226+",
+        "recent": 80205
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
+      "lastUpdated": "2026-04-17T09:10:53.350Z",
+      "affectedRegions": [
+        {
+          "name": "Donetsk oblast",
+          "lat": 48.2337,
+          "lng": 37.746,
+          "eventCount": 15840
+        },
+        {
+          "name": "Luhansk oblast",
+          "lat": 48.9197,
+          "lng": 38.5487,
+          "eventCount": 3086
+        },
+        {
+          "name": "Kharkiv oblast",
+          "lat": 49.805,
+          "lng": 37.1346,
+          "eventCount": 3050
+        },
+        {
+          "name": "Kherson oblast",
+          "lat": 46.7261,
+          "lng": 32.8924,
+          "eventCount": 2625
+        },
+        {
+          "name": "Zaporizhzhya oblast",
+          "lat": 47.5596,
+          "lng": 35.7494,
+          "eventCount": 2231
+        },
+        {
+          "name": "Unknown",
+          "lat": 48.6046,
+          "lng": 34.199,
+          "eventCount": 2136
+        },
+        {
+          "name": "Chechnya republic",
+          "lat": 43.224,
+          "lng": 45.7901,
+          "eventCount": 1970
+        },
+        {
+          "name": "Dagestan republic",
+          "lat": 42.9479,
+          "lng": 47.1865,
+          "eventCount": 887
+        },
+        {
+          "name": "Kursk oblast",
+          "lat": 51.3463,
+          "lng": 35.2875,
+          "eventCount": 517
+        },
+        {
+          "name": "Ingushetia republic",
+          "lat": 43.2717,
+          "lng": 44.8534,
+          "eventCount": 397
+        },
+        {
+          "name": "Sumy oblast",
+          "lat": 51.0306,
+          "lng": 34.4676,
+          "eventCount": 361
+        },
+        {
+          "name": "Dnipropetrovsk oblast",
+          "lat": 48.0956,
+          "lng": 34.7963,
+          "eventCount": 326
+        },
+        {
+          "name": "Mykolayiv oblast",
+          "lat": 46.982,
+          "lng": 32.1246,
+          "eventCount": 265
+        },
+        {
+          "name": "Kyiv oblast",
+          "lat": 50.5156,
+          "lng": 30.247,
+          "eventCount": 255
+        },
+        {
+          "name": "Chernihiv oblast",
+          "lat": 51.4711,
+          "lng": 31.7648,
+          "eventCount": 252
+        },
+        {
+          "name": "Belgorod oblast",
+          "lat": 50.4923,
+          "lng": 36.7375,
+          "eventCount": 244
+        },
+        {
+          "name": "Kabardino-Balkaria republic",
+          "lat": 43.5407,
+          "lng": 43.5312,
+          "eventCount": 217
+        },
+        {
+          "name": "Odessa oblast",
+          "lat": 46.2825,
+          "lng": 30.4935,
+          "eventCount": 82
+        },
+        {
+          "name": "Unknown",
+          "lat": 45.7755,
+          "lng": 43.2588,
+          "eventCount": 58
+        },
+        {
+          "name": "Kyiv Special Republican city",
+          "lat": 50.4515,
+          "lng": 30.5204,
+          "eventCount": 58
+        }
+      ]
+    },
+    {
+      "id": "colombian-conflict",
+      "name": "Colombian conflict",
+      "location": "Colombia Venezuela Ecuador",
+      "countries": [
+        "Colombia",
+        "Venezuela",
+        "Ecuador"
+      ],
+      "coordinates": {
+        "lat": 4.57,
+        "lng": -74.3
+      },
+      "startYear": 1964,
+      "deathToll": {
+        "total": 460300,
+        "totalDisplay": "460,300+",
+        "recent": 2728
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colombian_conflict",
+      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "affectedRegions": [
+        {
+          "name": "Antioquia department",
+          "lat": 6.8719,
+          "lng": -75.4872,
+          "eventCount": 1077
+        },
+        {
+          "name": "Cauca department",
+          "lat": 2.6436,
+          "lng": -76.651,
+          "eventCount": 596
+        },
+        {
+          "name": "Norte de Santander department",
+          "lat": 8.2904,
+          "lng": -72.8501,
+          "eventCount": 399
+        },
+        {
+          "name": "Bolívar department",
+          "lat": 8.8145,
+          "lng": -74.5457,
+          "eventCount": 344
+        },
+        {
+          "name": "Arauca department",
+          "lat": 6.6668,
+          "lng": -71.4489,
+          "eventCount": 293
+        },
+        {
+          "name": "Meta department",
+          "lat": 3.2259,
+          "lng": -73.5166,
+          "eventCount": 283
+        },
+        {
+          "name": "Caquetá department",
+          "lat": 1.4646,
+          "lng": -74.9619,
+          "eventCount": 282
+        },
+        {
+          "name": "Valle del Cauca department",
+          "lat": 3.7283,
+          "lng": -76.5141,
+          "eventCount": 246
+        },
+        {
+          "name": "Santander department",
+          "lat": 6.9908,
+          "lng": -73.5758,
+          "eventCount": 244
+        },
+        {
+          "name": "Nariño department",
+          "lat": 1.5149,
+          "lng": -77.9716,
+          "eventCount": 224
+        },
+        {
+          "name": "Unknown",
+          "lat": 4.0199,
+          "lng": -72.3634,
+          "eventCount": 216
+        },
+        {
+          "name": "Tolima department",
+          "lat": 4.0764,
+          "lng": -75.3173,
+          "eventCount": 210
+        },
+        {
+          "name": "Putumayo department",
+          "lat": 0.4894,
+          "lng": -76.2677,
+          "eventCount": 199
+        },
+        {
+          "name": "Magdalena department",
+          "lat": 10.5976,
+          "lng": -74.1466,
+          "eventCount": 194
+        },
+        {
+          "name": "Huila department",
+          "lat": 2.5319,
+          "lng": -75.5169,
+          "eventCount": 186
+        },
+        {
+          "name": "Chocó department",
+          "lat": 6.0467,
+          "lng": -76.8578,
+          "eventCount": 179
+        },
+        {
+          "name": "Cundinamarca department",
+          "lat": 4.7256,
+          "lng": -74.1869,
+          "eventCount": 157
+        },
+        {
+          "name": "Cesar department",
+          "lat": 9.483,
+          "lng": -73.4783,
+          "eventCount": 155
+        },
+        {
+          "name": "Bogotá district",
+          "lat": 4.6117,
+          "lng": -74.0726,
+          "eventCount": 113
+        },
+        {
+          "name": "Sucre department",
+          "lat": 9.3298,
+          "lng": -75.2341,
+          "eventCount": 107
+        }
+      ]
+    },
+    {
+      "id": "afghan-conflict",
+      "name": "Afghan conflict",
+      "location": "Afghanistan Pakistan Tajikistan",
+      "countries": [
+        "Afghanistan",
+        "Pakistan",
+        "Tajikistan"
+      ],
+      "coordinates": {
+        "lat": 33.93,
+        "lng": 67.71
+      },
+      "startYear": 1978,
+      "deathToll": {
+        "total": 380000,
+        "totalDisplay": "380,000+",
+        "recent": 4409
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Afghan_conflict",
+      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "affectedRegions": [
+        {
+          "name": "Hilmand province",
+          "lat": 31.6259,
+          "lng": 64.3696,
+          "eventCount": 4580
+        },
+        {
+          "name": "Kandahar province",
+          "lat": 31.4915,
+          "lng": 65.665,
+          "eventCount": 3700
+        },
+        {
+          "name": "Nangarhar province",
+          "lat": 34.2315,
+          "lng": 70.4553,
+          "eventCount": 3206
+        },
+        {
+          "name": "Ghazni province",
+          "lat": 33.2792,
+          "lng": 68.1324,
+          "eventCount": 2553
+        },
+        {
+          "name": "Kunduz province",
+          "lat": 36.8188,
+          "lng": 68.8674,
+          "eventCount": 1727
+        },
+        {
+          "name": "Kabul province",
+          "lat": 34.5369,
+          "lng": 69.1976,
+          "eventCount": 1665
+        },
+        {
+          "name": "Uruzgan province",
+          "lat": 32.7698,
+          "lng": 65.9127,
+          "eventCount": 1623
+        },
+        {
+          "name": "Hirat province",
+          "lat": 34.1561,
+          "lng": 62.2859,
+          "eventCount": 1534
+        },
+        {
+          "name": "Zabul province",
+          "lat": 32.2487,
+          "lng": 67.0966,
+          "eventCount": 1516
+        },
+        {
+          "name": "Faryab province",
+          "lat": 36.0238,
+          "lng": 64.7617,
+          "eventCount": 1367
+        },
+        {
+          "name": "Farah province",
+          "lat": 32.521,
+          "lng": 62.4057,
+          "eventCount": 1265
+        },
+        {
+          "name": "Kunar province",
+          "lat": 34.9477,
+          "lng": 71.1112,
+          "eventCount": 1165
+        },
+        {
+          "name": "Baghlan province",
+          "lat": 35.9347,
+          "lng": 68.8291,
+          "eventCount": 1065
+        },
+        {
+          "name": "Logar province",
+          "lat": 33.9938,
+          "lng": 69.106,
+          "eventCount": 1055
+        },
+        {
+          "name": "Paktika province",
+          "lat": 32.7117,
+          "lng": 68.8755,
+          "eventCount": 1040
+        },
+        {
+          "name": "Wardak province",
+          "lat": 34.1829,
+          "lng": 68.4777,
+          "eventCount": 1014
+        },
+        {
+          "name": "Paktya province",
+          "lat": 33.6196,
+          "lng": 69.3753,
+          "eventCount": 995
+        },
+        {
+          "name": "Balkh province",
+          "lat": 36.6597,
+          "lng": 66.8901,
+          "eventCount": 993
+        },
+        {
+          "name": "Khost province",
+          "lat": 33.3948,
+          "lng": 69.8899,
+          "eventCount": 894
+        },
+        {
+          "name": "Badghis province",
+          "lat": 35.173,
+          "lng": 63.4347,
+          "eventCount": 853
+        }
+      ]
+    },
+    {
+      "id": "insurgency-in-ecuador",
+      "name": "Insurgency in Ecuador",
+      "location": "Ecuador Colombia",
+      "countries": [
+        "Ecuador",
+        "Colombia"
+      ],
+      "coordinates": {
+        "lat": -1.83,
+        "lng": -78.18
+      },
+      "startYear": 1993,
+      "deathToll": {
+        "total": 13000,
+        "totalDisplay": "13,000+",
+        "recent": 4051
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Ecuador",
+      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "affectedRegions": [
+        {
+          "name": "Manabí province",
+          "lat": -0.9713,
+          "lng": -80.5238,
+          "eventCount": 307
+        },
+        {
+          "name": "Guayas province",
+          "lat": -2.2341,
+          "lng": -79.9127,
+          "eventCount": 221
+        },
+        {
+          "name": "Santa Elena province",
+          "lat": -2.2221,
+          "lng": -80.8752,
+          "eventCount": 34
+        },
+        {
+          "name": "Los Ríos province",
+          "lat": -1.5998,
+          "lng": -79.5169,
+          "eventCount": 32
+        },
+        {
+          "name": "El Oro province",
+          "lat": -3.3105,
+          "lng": -79.9451,
+          "eventCount": 29
+        },
+        {
+          "name": "Esmeraldas province",
+          "lat": 0.9592,
+          "lng": -79.654,
+          "eventCount": 11
+        },
+        {
+          "name": "Azuay province",
+          "lat": -2.9614,
+          "lng": -79.2794,
+          "eventCount": 8
+        },
+        {
+          "name": "Pichincha province",
+          "lat": -0.2298,
+          "lng": -78.525,
+          "eventCount": 5
+        },
+        {
+          "name": "Morona-Santiago  province",
+          "lat": -3.4722,
+          "lng": -78.2148,
+          "eventCount": 4
+        },
+        {
+          "name": "Sucumbíos province",
+          "lat": 0.1501,
+          "lng": -76.8508,
+          "eventCount": 3
+        },
+        {
+          "name": "Cotopaxi province",
+          "lat": -0.9352,
+          "lng": -78.6155,
+          "eventCount": 3
+        },
+        {
+          "name": "Santo Domingo de los Tsáchilas province",
+          "lat": -0.2386,
+          "lng": -79.1147,
+          "eventCount": 3
+        },
+        {
+          "name": "Unknown",
+          "lat": -2,
+          "lng": -77.5,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "civil-conflicts-in-nigeria",
+      "name": "Civil conflicts in Nigeria",
+      "location": "Nigeria Niger Cameroon Chad",
+      "countries": [
+        "Nigeria",
+        "Niger",
+        "Cameroon",
+        "Chad"
+      ],
+      "coordinates": {
+        "lat": 9.08,
+        "lng": 8.68
+      },
+      "startYear": 1998,
+      "deathToll": {
+        "total": 107300,
+        "totalDisplay": "107,300+",
+        "recent": 3200
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Communal_conflicts_in_Nigeria",
+      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "affectedRegions": [
+        {
+          "name": "Borno state",
+          "lat": 11.8494,
+          "lng": 13.3609,
+          "eventCount": 3361
+        },
+        {
+          "name": "Plateau state",
+          "lat": 9.5735,
+          "lng": 8.9957,
+          "eventCount": 396
+        },
+        {
+          "name": "Benue state",
+          "lat": 7.6802,
+          "lng": 8.7746,
+          "eventCount": 358
+        },
+        {
+          "name": "Yobe state",
+          "lat": 11.889,
+          "lng": 11.7725,
+          "eventCount": 278
+        },
+        {
+          "name": "Adamawa state",
+          "lat": 10.2803,
+          "lng": 13.0432,
+          "eventCount": 250
+        },
+        {
+          "name": "Taraba state",
+          "lat": 8.0499,
+          "lng": 10.4104,
+          "eventCount": 193
+        },
+        {
+          "name": "Kaduna state",
+          "lat": 10.1113,
+          "lng": 7.9912,
+          "eventCount": 184
+        },
+        {
+          "name": "Rivers state",
+          "lat": 4.8337,
+          "lng": 7.0204,
+          "eventCount": 165
+        },
+        {
+          "name": "Lagos state",
+          "lat": 6.509,
+          "lng": 3.4034,
+          "eventCount": 140
+        },
+        {
+          "name": "Nasarawa state",
+          "lat": 8.3663,
+          "lng": 8.5031,
+          "eventCount": 115
+        },
+        {
+          "name": "Delta state",
+          "lat": 5.6745,
+          "lng": 5.9064,
+          "eventCount": 113
+        },
+        {
+          "name": "Imo state",
+          "lat": 5.6432,
+          "lng": 7.062,
+          "eventCount": 108
+        },
+        {
+          "name": "Anambra state",
+          "lat": 6.1006,
+          "lng": 6.9012,
+          "eventCount": 103
+        },
+        {
+          "name": "Kano state",
+          "lat": 11.9473,
+          "lng": 8.5047,
+          "eventCount": 91
+        },
+        {
+          "name": "Edo state",
+          "lat": 6.4747,
+          "lng": 5.7777,
+          "eventCount": 78
+        },
+        {
+          "name": "Enugu state",
+          "lat": 6.5109,
+          "lng": 7.4995,
+          "eventCount": 67
+        },
+        {
+          "name": "Ogun state",
+          "lat": 6.9385,
+          "lng": 3.439,
+          "eventCount": 65
+        },
+        {
+          "name": "Bauchi state",
+          "lat": 10.4891,
+          "lng": 9.8844,
+          "eventCount": 64
+        },
+        {
+          "name": "Bayelsa state",
+          "lat": 4.873,
+          "lng": 6.2256,
+          "eventCount": 51
+        },
+        {
+          "name": "Kogi state",
+          "lat": 7.6569,
+          "lng": 6.8039,
+          "eventCount": 47
+        }
+      ]
+    },
+    {
+      "id": "venezuelan-conflict",
+      "name": "Venezuelan conflict",
+      "location": "Venezuela Colombia",
+      "countries": [
+        "Venezuela",
+        "Colombia"
+      ],
+      "coordinates": {
+        "lat": 6.42,
+        "lng": -66.59
+      },
+      "startYear": 2010,
+      "deathToll": {
+        "total": 460300,
+        "totalDisplay": "460,300+",
+        "recent": 2602
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crisis_in_Venezuela",
+      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "affectedRegions": [
+        {
+          "name": "Unknown",
+          "lat": 10.3853,
+          "lng": -66.8429,
+          "eventCount": 218
+        },
+        {
+          "name": "Distrito Federal",
+          "lat": 10.4905,
+          "lng": -66.882,
+          "eventCount": 201
+        },
+        {
+          "name": "Miranda state",
+          "lat": 10.3216,
+          "lng": -66.7298,
+          "eventCount": 123
+        },
+        {
+          "name": "Zulia state",
+          "lat": 10.4579,
+          "lng": -71.6994,
+          "eventCount": 86
+        },
+        {
+          "name": "Anzoátegui state",
+          "lat": 9.9088,
+          "lng": -64.6202,
+          "eventCount": 86
+        },
+        {
+          "name": "Bolívar state",
+          "lat": 7.7839,
+          "lng": -62.9379,
+          "eventCount": 78
+        },
+        {
+          "name": "Aragua state",
+          "lat": 10.1323,
+          "lng": -67.3878,
+          "eventCount": 71
+        },
+        {
+          "name": "Carabobo state",
+          "lat": 10.1931,
+          "lng": -68.0073,
+          "eventCount": 69
+        },
+        {
+          "name": "Lara state",
+          "lat": 10.0685,
+          "lng": -69.4738,
+          "eventCount": 47
+        },
+        {
+          "name": "Táchira state",
+          "lat": 7.83,
+          "lng": -72.2215,
+          "eventCount": 29
+        },
+        {
+          "name": "Sucre state",
+          "lat": 10.4673,
+          "lng": -63.8111,
+          "eventCount": 21
+        },
+        {
+          "name": "Vargas state",
+          "lat": 10.5907,
+          "lng": -66.9436,
+          "eventCount": 20
+        },
+        {
+          "name": "Apure state",
+          "lat": 7.1827,
+          "lng": -69.6228,
+          "eventCount": 15
+        },
+        {
+          "name": "Trujillo state",
+          "lat": 9.3685,
+          "lng": -70.5454,
+          "eventCount": 11
+        },
+        {
+          "name": "Mérida state",
+          "lat": 8.5493,
+          "lng": -71.3546,
+          "eventCount": 9
+        },
+        {
+          "name": "Falcón state",
+          "lat": 11.3331,
+          "lng": -69.6527,
+          "eventCount": 9
+        },
+        {
+          "name": "Monagas state",
+          "lat": 9.5825,
+          "lng": -63.072,
+          "eventCount": 8
+        },
+        {
+          "name": "Portuguesa state",
+          "lat": 9.4569,
+          "lng": -69.2641,
+          "eventCount": 8
+        },
+        {
+          "name": "Distrito Capital state",
+          "lat": 10.4527,
+          "lng": -66.8281,
+          "eventCount": 8
+        },
+        {
+          "name": "Guárico state",
+          "lat": 9.1228,
+          "lng": -66.5491,
+          "eventCount": 6
+        }
+      ]
+    },
+    {
+      "id": "yemeni-civil-war",
+      "name": "Yemeni civil war",
+      "location": "Yemen Saudi Arabia United Arab Emirates Israel",
+      "countries": [
+        "Yemen",
+        "Saudi Arabia",
+        "United Arab Emirates",
+        "Israel"
+      ],
+      "coordinates": {
+        "lat": 15.55,
+        "lng": 48.52
+      },
+      "startYear": 2011,
+      "deathToll": {
+        "total": 384900,
+        "totalDisplay": "384,900",
+        "recent": 2895
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "affectedRegions": [
+        {
+          "name": "Abyan governorate",
+          "lat": 13.5354,
+          "lng": 45.8366,
+          "eventCount": 599
+        },
+        {
+          "name": "Taiz governorate",
+          "lat": 13.5023,
+          "lng": 43.9252,
+          "eventCount": 595
+        },
+        {
+          "name": "Marib governorate",
+          "lat": 15.351,
+          "lng": 45.2184,
+          "eventCount": 588
+        },
+        {
+          "name": "Hudaydah governorate",
+          "lat": 14.4773,
+          "lng": 43.1558,
+          "eventCount": 585
+        },
+        {
+          "name": "Şa‘dah governorate",
+          "lat": 17.0768,
+          "lng": 43.4419,
+          "eventCount": 553
+        },
+        {
+          "name": "Bayda governorate",
+          "lat": 14.345,
+          "lng": 45.2456,
+          "eventCount": 369
+        },
+        {
+          "name": "Shabwah governorate",
+          "lat": 14.679,
+          "lng": 46.6736,
+          "eventCount": 261
+        },
+        {
+          "name": "al-Jawf governorate",
+          "lat": 16.4502,
+          "lng": 45.1364,
+          "eventCount": 212
+        },
+        {
+          "name": "Ḩaḑramawt governorate",
+          "lat": 15.3852,
+          "lng": 48.8621,
+          "eventCount": 202
+        },
+        {
+          "name": "Amānat al ‘Āşimah governorate",
+          "lat": 15.3579,
+          "lng": 44.2079,
+          "eventCount": 184
+        },
+        {
+          "name": "Ḩajjah governorate",
+          "lat": 16.2501,
+          "lng": 43.1028,
+          "eventCount": 180
+        },
+        {
+          "name": "Dali governorate",
+          "lat": 13.9024,
+          "lng": 44.682,
+          "eventCount": 173
+        },
+        {
+          "name": "Aden governorate",
+          "lat": 12.7853,
+          "lng": 45.0314,
+          "eventCount": 161
+        },
+        {
+          "name": "Unknown",
+          "lat": 15.4821,
+          "lng": 45.5294,
+          "eventCount": 156
+        },
+        {
+          "name": "Laḩij governorate",
+          "lat": 13.2809,
+          "lng": 44.6742,
+          "eventCount": 143
+        },
+        {
+          "name": "Şan‘ā’ governorate",
+          "lat": 15.6274,
+          "lng": 44.4408,
+          "eventCount": 123
+        },
+        {
+          "name": "‘Adan governorate",
+          "lat": 12.7828,
+          "lng": 45.0326,
+          "eventCount": 72
+        },
+        {
+          "name": "Ibb governorate",
+          "lat": 14.029,
+          "lng": 44.2303,
+          "eventCount": 48
+        },
+        {
+          "name": "al-Bayḑā’ governorate",
+          "lat": 14.3159,
+          "lng": 45.1183,
+          "eventCount": 45
+        },
+        {
+          "name": "Amran governorate",
+          "lat": 16.2096,
+          "lng": 43.9248,
+          "eventCount": 36
+        }
+      ]
+    },
+    {
+      "id": "syrian-conflict",
+      "name": "Syrian conflict",
+      "location": "Syria Israel Lebanon Iraq Turkey",
+      "countries": [
+        "Syria",
+        "Israel",
+        "Lebanon",
+        "Iraq",
+        "Turkey"
+      ],
+      "coordinates": {
+        "lat": 34.8,
+        "lng": 38.99
+      },
+      "startYear": 2011,
+      "deathToll": {
+        "total": 664800,
+        "totalDisplay": "664,800+",
+        "recent": 8330
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Syrian_conflict_(2024%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "affectedRegions": [
+        {
+          "name": "Rif Dimashq governorate",
+          "lat": 33.5498,
+          "lng": 36.4466,
+          "eventCount": 17141
+        },
+        {
+          "name": "Aleppo governorate",
+          "lat": 36.2829,
+          "lng": 37.2986,
+          "eventCount": 15791
+        },
+        {
+          "name": "Idlib governorate",
+          "lat": 35.7605,
+          "lng": 36.6335,
+          "eventCount": 9712
+        },
+        {
+          "name": "Daraa governorate",
+          "lat": 32.7789,
+          "lng": 36.1502,
+          "eventCount": 8274
+        },
+        {
+          "name": "Homs governorate",
+          "lat": 34.6884,
+          "lng": 37.1839,
+          "eventCount": 7941
+        },
+        {
+          "name": "Deir ez Zor governorate",
+          "lat": 35.1173,
+          "lng": 40.3667,
+          "eventCount": 7370
+        },
+        {
+          "name": "Hamah governorate",
+          "lat": 35.2835,
+          "lng": 36.8433,
+          "eventCount": 6470
+        },
+        {
+          "name": "Damascus governorate",
+          "lat": 33.5134,
+          "lng": 36.2916,
+          "eventCount": 3473
+        },
+        {
+          "name": "Ar Raqqah governorate",
+          "lat": 36.0334,
+          "lng": 38.9344,
+          "eventCount": 3165
+        },
+        {
+          "name": "Al Hasakah governorate",
+          "lat": 36.5261,
+          "lng": 40.7871,
+          "eventCount": 2126
+        },
+        {
+          "name": "Latakia governorate",
+          "lat": 35.6858,
+          "lng": 36.0864,
+          "eventCount": 1944
+        },
+        {
+          "name": "Unknown",
+          "lat": 35.0142,
+          "lng": 38.0714,
+          "eventCount": 1424
+        },
+        {
+          "name": "Quneitra governorate",
+          "lat": 33.109,
+          "lng": 35.8856,
+          "eventCount": 980
+        },
+        {
+          "name": "As Suwayda governorate",
+          "lat": 32.814,
+          "lng": 36.6714,
+          "eventCount": 276
+        },
+        {
+          "name": "Tartus governorate",
+          "lat": 35.0778,
+          "lng": 35.9839,
+          "eventCount": 64
+        }
+      ]
+    },
+    {
+      "id": "cameroonian-conflicts",
+      "name": "Cameroonian conflicts",
+      "location": "Cameroon Nigeria Niger Chad",
+      "countries": [
+        "Cameroon",
+        "Nigeria",
+        "Niger",
+        "Chad"
+      ],
+      "coordinates": {
+        "lat": 7.37,
+        "lng": 12.35
+      },
+      "startYear": 2012,
+      "deathToll": {
+        "total": 11000,
+        "totalDisplay": "11,000+",
+        "recent": 1826
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cameroonian_Civil_War_(disambiguation)",
+      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "affectedRegions": [
+        {
+          "name": "Far North region",
+          "lat": 11.3198,
+          "lng": 14.1171,
+          "eventCount": 820
+        },
+        {
+          "name": "North-West region",
+          "lat": 6.1248,
+          "lng": 10.3444,
+          "eventCount": 685
+        },
+        {
+          "name": "South-West region",
+          "lat": 4.8556,
+          "lng": 9.345,
+          "eventCount": 379
+        },
+        {
+          "name": "Unknown",
+          "lat": 5.5259,
+          "lng": 9.8567,
+          "eventCount": 11
+        },
+        {
+          "name": "South-West province",
+          "lat": 4.4857,
+          "lng": 8.7419,
+          "eventCount": 9
+        },
+        {
+          "name": "Far North province",
+          "lat": 11.9469,
+          "lng": 14.5226,
+          "eventCount": 9
+        },
+        {
+          "name": "West region",
+          "lat": 5.6791,
+          "lng": 10.2572,
+          "eventCount": 7
+        },
+        {
+          "name": "North-West province",
+          "lat": 6.0684,
+          "lng": 10.3444,
+          "eventCount": 6
+        },
+        {
+          "name": "Littoral province",
+          "lat": 4.0469,
+          "lng": 9.7084,
+          "eventCount": 5
+        },
+        {
+          "name": "Littoral region",
+          "lat": 4.4371,
+          "lng": 9.623,
+          "eventCount": 4
+        },
+        {
+          "name": "Centre region",
+          "lat": 3.8667,
+          "lng": 11.5167,
+          "eventCount": 3
+        },
+        {
+          "name": "Adamaoua region",
+          "lat": 7.9138,
+          "lng": 12.9142,
+          "eventCount": 2
+        },
+        {
+          "name": "Centre province",
+          "lat": 3.8667,
+          "lng": 11.5167,
+          "eventCount": 1
+        },
+        {
+          "name": "North region",
+          "lat": 7.7697,
+          "lng": 15.3616,
+          "eventCount": 1
+        },
+        {
+          "name": "Amadaoua province",
+          "lat": 6.5167,
+          "lng": 14.3,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "central-african-republic-civil-war",
+      "name": "Central African Republic Civil War",
+      "location": "Central African Republic Cameroon Democratic Republic of the Congo South Sudan",
+      "countries": [
+        "Central African Republic",
+        "Cameroon",
+        "Democratic Republic of the Congo",
+        "South Sudan"
+      ],
+      "coordinates": {
+        "lat": 6.61,
+        "lng": 20.94
+      },
+      "startYear": 2012,
+      "deathToll": {
+        "total": 16300,
+        "totalDisplay": "16,300+",
+        "recent": 1215
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Central_African_Republic_Civil_War",
+      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "affectedRegions": [
+        {
+          "name": "Ouaka province",
+          "lat": 5.6208,
+          "lng": 20.6316,
+          "eventCount": 205
+        },
+        {
+          "name": "Bangui province",
+          "lat": 4.3667,
+          "lng": 18.5833,
+          "eventCount": 200
+        },
+        {
+          "name": "Ouham province",
+          "lat": 6.993,
+          "lng": 17.8254,
+          "eventCount": 161
+        },
+        {
+          "name": "Haut-Mbomou province",
+          "lat": 5.4561,
+          "lng": 25.9974,
+          "eventCount": 117
+        },
+        {
+          "name": "Haute-Kotto province",
+          "lat": 6.882,
+          "lng": 22.3324,
+          "eventCount": 117
+        },
+        {
+          "name": "Ouham-Pendé province",
+          "lat": 6.9588,
+          "lng": 16.1036,
+          "eventCount": 113
+        },
+        {
+          "name": "Nana-Grébizi province",
+          "lat": 6.9393,
+          "lng": 19.2829,
+          "eventCount": 78
+        },
+        {
+          "name": "Ouaka prefecture",
+          "lat": 5.6577,
+          "lng": 20.7809,
+          "eventCount": 77
+        },
+        {
+          "name": "Basse-Kotto province",
+          "lat": 4.8893,
+          "lng": 21.2429,
+          "eventCount": 74
+        },
+        {
+          "name": "Mbomou province",
+          "lat": 5.1499,
+          "lng": 23.267,
+          "eventCount": 72
+        },
+        {
+          "name": "Nana-Mambéré prefecture",
+          "lat": 5.7755,
+          "lng": 15.3103,
+          "eventCount": 60
+        },
+        {
+          "name": "Ombella-M'Poko province",
+          "lat": 5.0071,
+          "lng": 17.9412,
+          "eventCount": 58
+        },
+        {
+          "name": "Unknown",
+          "lat": 6.8392,
+          "lng": 21.0409,
+          "eventCount": 43
+        },
+        {
+          "name": "Vakaga province",
+          "lat": 9.9348,
+          "lng": 22.7171,
+          "eventCount": 43
+        },
+        {
+          "name": "Lim-Pendé prefecture",
+          "lat": 7.3324,
+          "lng": 15.8135,
+          "eventCount": 43
+        },
+        {
+          "name": "Ouham-Pendé prefecture",
+          "lat": 6.6809,
+          "lng": 15.8812,
+          "eventCount": 38
+        },
+        {
+          "name": "Ouham prefecture",
+          "lat": 7.2285,
+          "lng": 17.2919,
+          "eventCount": 37
+        },
+        {
+          "name": "Haut-Mbomou prefecture",
+          "lat": 5.3305,
+          "lng": 25.7731,
+          "eventCount": 35
+        },
+        {
+          "name": "Kémo province",
+          "lat": 5.9091,
+          "lng": 19.1345,
+          "eventCount": 33
+        },
+        {
+          "name": "Mambéré-Kadéi province",
+          "lat": 4.6014,
+          "lng": 15.9309,
+          "eventCount": 33
+        }
+      ]
+    },
+    {
+      "id": "ethiopian-civil-conflict",
+      "name": "Ethiopian civil conflict",
+      "location": "Ethiopia",
+      "countries": [
+        "Ethiopia"
+      ],
+      "coordinates": {
+        "lat": 9.15,
+        "lng": 40.49
+      },
+      "startYear": 2018,
+      "deathToll": {
+        "total": 500000,
+        "totalDisplay": "500,000+",
+        "recent": 6316
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ethiopian_civil_conflict_(2018%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:54.156Z",
+      "affectedRegions": [
+        {
+          "name": "Oromiya state",
+          "lat": 8.1787,
+          "lng": 38.3022,
+          "eventCount": 2176
+        },
+        {
+          "name": "Somali state",
+          "lat": 7.3616,
+          "lng": 43.6892,
+          "eventCount": 768
+        },
+        {
+          "name": "Amhara state",
+          "lat": 11.4051,
+          "lng": 38.6609,
+          "eventCount": 664
+        },
+        {
+          "name": "Tigray state",
+          "lat": 13.8363,
+          "lng": 38.8495,
+          "eventCount": 249
+        },
+        {
+          "name": "Gambella state",
+          "lat": 7.8275,
+          "lng": 34.4247,
+          "eventCount": 95
+        },
+        {
+          "name": "SNNP state",
+          "lat": 5.9488,
+          "lng": 36.4546,
+          "eventCount": 94
+        },
+        {
+          "name": "Afar state",
+          "lat": 12.5766,
+          "lng": 40.2276,
+          "eventCount": 75
+        },
+        {
+          "name": "Eritrea province",
+          "lat": 15.2379,
+          "lng": 39.058,
+          "eventCount": 67
+        },
+        {
+          "name": "Benishangul-Gumuz state",
+          "lat": 10.448,
+          "lng": 35.8259,
+          "eventCount": 44
+        },
+        {
+          "name": "Unknown",
+          "lat": 8.8172,
+          "lng": 39.208,
+          "eventCount": 40
+        },
+        {
+          "name": "Wollo province",
+          "lat": 11.378,
+          "lng": 39.5574,
+          "eventCount": 34
+        },
+        {
+          "name": "Hararghe province",
+          "lat": 8.9935,
+          "lng": 42.226,
+          "eventCount": 28
+        },
+        {
+          "name": "Addis Ababa Chartered city",
+          "lat": 9.025,
+          "lng": 38.7469,
+          "eventCount": 28
+        },
+        {
+          "name": "Shewa province",
+          "lat": 9.6521,
+          "lng": 39.1176,
+          "eventCount": 27
+        },
+        {
+          "name": "Welega province",
+          "lat": 9.4866,
+          "lng": 35.462,
+          "eventCount": 26
+        },
+        {
+          "name": "Tigray province",
+          "lat": 13.6404,
+          "lng": 39.0626,
+          "eventCount": 22
+        },
+        {
+          "name": "Begemder province",
+          "lat": 12.2898,
+          "lng": 37.8463,
+          "eventCount": 19
+        },
+        {
+          "name": "Dire Dawa Chartered City state",
+          "lat": 9.5914,
+          "lng": 41.8754,
+          "eventCount": 16
+        },
+        {
+          "name": "Harari state",
+          "lat": 9.3094,
+          "lng": 42.1258,
+          "eventCount": 12
+        },
+        {
+          "name": "Kaffa province",
+          "lat": 6.4373,
+          "lng": 36.1086,
+          "eventCount": 8
+        }
+      ]
+    },
+    {
+      "id": "haitian-crisis",
+      "name": "Haitian crisis",
+      "location": "Haiti",
+      "countries": [
+        "Haiti"
+      ],
+      "coordinates": {
+        "lat": 18.97,
+        "lng": -72.29
+      },
+      "startYear": 2018,
+      "deathToll": {
+        "total": 20000,
+        "totalDisplay": "20,000+",
+        "recent": 2778
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Haitian_crisis_(2018%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:54.156Z",
+      "affectedRegions": [
+        {
+          "name": "Ouest department",
+          "lat": 18.5626,
+          "lng": -72.3223,
+          "eventCount": 279
+        },
+        {
+          "name": "L'Artibonite department",
+          "lat": 19.2042,
+          "lng": -72.5955,
+          "eventCount": 30
+        },
+        {
+          "name": "Unknown",
+          "lat": 19,
+          "lng": -72.4167,
+          "eventCount": 5
+        },
+        {
+          "name": "Centre department",
+          "lat": 19.0449,
+          "lng": -72.046,
+          "eventCount": 3
+        },
+        {
+          "name": "Nord department",
+          "lat": 19.76,
+          "lng": -72.2,
+          "eventCount": 1
+        },
+        {
+          "name": "Nord-Ouest department",
+          "lat": 19.9349,
+          "lng": -72.8309,
+          "eventCount": 1
+        },
+        {
+          "name": "Sud department",
+          "lat": 18.1948,
+          "lng": -73.7498,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "kurdish-nationalist-conflicts",
+      "name": "Kurdish nationalist conflicts",
+      "location": "Iran Iraq Syria Turkey",
+      "countries": [
+        "Iran",
+        "Iraq",
+        "Syria",
+        "Turkey"
+      ],
+      "coordinates": {
+        "lat": 36.4,
+        "lng": 44.35
+      },
+      "startYear": 1918,
+      "deathToll": {
+        "total": 135950,
+        "totalDisplay": "135,950+",
+        "recent": 300
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_Kurdish_uprisings",
+      "lastUpdated": "2026-04-17T09:10:55.198Z",
+      "affectedRegions": [
+        {
+          "name": "Rif Dimashq governorate",
+          "lat": 33.5498,
+          "lng": 36.4466,
+          "eventCount": 17141
+        },
+        {
+          "name": "Aleppo governorate",
+          "lat": 36.2829,
+          "lng": 37.2986,
+          "eventCount": 15791
+        },
+        {
+          "name": "Idlib governorate",
+          "lat": 35.7605,
+          "lng": 36.6335,
+          "eventCount": 9712
+        },
+        {
+          "name": "Daraa governorate",
+          "lat": 32.7789,
+          "lng": 36.1502,
+          "eventCount": 8274
+        },
+        {
+          "name": "Homs governorate",
+          "lat": 34.6884,
+          "lng": 37.1839,
+          "eventCount": 7941
+        },
+        {
+          "name": "Deir ez Zor governorate",
+          "lat": 35.1173,
+          "lng": 40.3667,
+          "eventCount": 7370
+        },
+        {
+          "name": "Hamah governorate",
+          "lat": 35.2835,
+          "lng": 36.8433,
+          "eventCount": 6470
+        },
+        {
+          "name": "Damascus governorate",
+          "lat": 33.5134,
+          "lng": 36.2916,
+          "eventCount": 3473
+        },
+        {
+          "name": "Ar Raqqah governorate",
+          "lat": 36.0334,
+          "lng": 38.9344,
+          "eventCount": 3165
+        },
+        {
+          "name": "Nīnawá province",
+          "lat": 36.32,
+          "lng": 42.9899,
+          "eventCount": 2308
+        },
+        {
+          "name": "Al Hasakah governorate",
+          "lat": 36.5261,
+          "lng": 40.7871,
+          "eventCount": 2126
+        },
+        {
+          "name": "Latakia governorate",
+          "lat": 35.6858,
+          "lng": 36.0864,
+          "eventCount": 1944
+        },
+        {
+          "name": "Baghdād province",
+          "lat": 33.3478,
+          "lng": 44.3874,
+          "eventCount": 1490
+        },
+        {
+          "name": "Unknown",
+          "lat": 35.0142,
+          "lng": 38.0714,
+          "eventCount": 1424
+        },
+        {
+          "name": "Al Anbār province",
+          "lat": 33.4813,
+          "lng": 42.7633,
+          "eventCount": 1229
+        },
+        {
+          "name": "Şırnak province",
+          "lat": 37.4347,
+          "lng": 42.5094,
+          "eventCount": 1047
+        },
+        {
+          "name": "Quneitra governorate",
+          "lat": 33.109,
+          "lng": 35.8856,
+          "eventCount": 980
+        },
+        {
+          "name": "Unknown",
+          "lat": 35.451,
+          "lng": 43.6818,
+          "eventCount": 898
+        },
+        {
+          "name": "Hakkari province",
+          "lat": 37.3997,
+          "lng": 44.0706,
+          "eventCount": 864
+        },
+        {
+          "name": "Şalāḩ ad Dīn province",
+          "lat": 34.5881,
+          "lng": 43.8964,
+          "eventCount": 771
+        }
+      ]
+    },
+    {
+      "id": "insurgencies-in-iran",
+      "name": "Insurgencies in Iran",
+      "location": "Iran Iraq Turkey",
+      "countries": [
+        "Iran",
+        "Iraq",
+        "Turkey"
+      ],
+      "coordinates": {
+        "lat": 32.43,
+        "lng": 53.69
+      },
+      "startYear": 1918,
+      "deathToll": {
+        "total": 47900,
+        "totalDisplay": "47,900+",
+        "recent": 63
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Iran",
+      "lastUpdated": "2026-04-17T09:10:55.199Z",
+      "affectedRegions": [
+        {
+          "name": "West Azarbaijan province",
+          "lat": 37.1741,
+          "lng": 45.2057,
+          "eventCount": 122
+        },
+        {
+          "name": "Sistan and Baluchestan province",
+          "lat": 28.3112,
+          "lng": 61.3099,
+          "eventCount": 107
+        },
+        {
+          "name": "Kordestan province",
+          "lat": 35.5773,
+          "lng": 46.4653,
+          "eventCount": 72
+        },
+        {
+          "name": "Tehran province",
+          "lat": 35.6693,
+          "lng": 51.3564,
+          "eventCount": 69
+        },
+        {
+          "name": "Unknown",
+          "lat": 34.474,
+          "lng": 48.5165,
+          "eventCount": 48
+        },
+        {
+          "name": "Kermanshah province",
+          "lat": 34.5358,
+          "lng": 46.6643,
+          "eventCount": 42
+        },
+        {
+          "name": "Khuzestan province",
+          "lat": 30.9928,
+          "lng": 48.6954,
+          "eventCount": 42
+        },
+        {
+          "name": "Ilam province",
+          "lat": 33.3233,
+          "lng": 46.5469,
+          "eventCount": 20
+        },
+        {
+          "name": "Fars province",
+          "lat": 29.6949,
+          "lng": 52.5937,
+          "eventCount": 17
+        },
+        {
+          "name": "Alborz province",
+          "lat": 35.7983,
+          "lng": 50.9889,
+          "eventCount": 16
+        },
+        {
+          "name": "Esfahan province",
+          "lat": 32.638,
+          "lng": 51.5833,
+          "eventCount": 15
+        },
+        {
+          "name": "Mazandaran province",
+          "lat": 36.5845,
+          "lng": 52.2855,
+          "eventCount": 11
+        },
+        {
+          "name": "Gilan province",
+          "lat": 37.4769,
+          "lng": 49.4088,
+          "eventCount": 9
+        },
+        {
+          "name": "Kerman province",
+          "lat": 29.8122,
+          "lng": 56.8222,
+          "eventCount": 6
+        },
+        {
+          "name": "Razavi Khorasan province",
+          "lat": 36.0381,
+          "lng": 59.969,
+          "eventCount": 4
+        },
+        {
+          "name": "East Azarbaijan province",
+          "lat": 37.9287,
+          "lng": 46.1897,
+          "eventCount": 4
+        },
+        {
+          "name": "Lorestan province",
+          "lat": 33.4389,
+          "lng": 49.0272,
+          "eventCount": 4
+        },
+        {
+          "name": "Zanjan province",
+          "lat": 36.6761,
+          "lng": 48.4933,
+          "eventCount": 4
+        },
+        {
+          "name": "Qazvin province",
+          "lat": 36.2179,
+          "lng": 49.9984,
+          "eventCount": 4
+        },
+        {
+          "name": "Hormozgan province",
+          "lat": 27.2723,
+          "lng": 56.5832,
+          "eventCount": 3
+        }
+      ]
+    },
+    {
+      "id": "insurgencies-in-turkey",
+      "name": "Insurgencies in Turkey",
+      "location": "Turkey Syria Iraq",
+      "countries": [
+        "Turkey",
+        "Syria",
+        "Iraq"
+      ],
+      "coordinates": {
+        "lat": 38.96,
+        "lng": 35.24
+      },
+      "startYear": 1922,
+      "deathToll": {
+        "total": 138000,
+        "totalDisplay": "138,000+",
+        "recent": 300
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Turkey",
+      "lastUpdated": "2026-04-17T09:10:55.199Z",
+      "affectedRegions": [
+        {
+          "name": "Şırnak province",
+          "lat": 37.4347,
+          "lng": 42.5094,
+          "eventCount": 1047
+        },
+        {
+          "name": "Hakkari province",
+          "lat": 37.3997,
+          "lng": 44.0706,
+          "eventCount": 864
+        },
+        {
+          "name": "Diyarbakır province",
+          "lat": 38.1701,
+          "lng": 40.5461,
+          "eventCount": 696
+        },
+        {
+          "name": "Tunceli province",
+          "lat": 39.1422,
+          "lng": 39.4713,
+          "eventCount": 590
+        },
+        {
+          "name": "Mardin province",
+          "lat": 37.3282,
+          "lng": 41.0543,
+          "eventCount": 507
+        },
+        {
+          "name": "Bingöl province",
+          "lat": 39.0376,
+          "lng": 40.6903,
+          "eventCount": 482
+        },
+        {
+          "name": "Siirt province",
+          "lat": 37.8242,
+          "lng": 42.2491,
+          "eventCount": 470
+        },
+        {
+          "name": "Van province",
+          "lat": 38.3489,
+          "lng": 43.5447,
+          "eventCount": 312
+        },
+        {
+          "name": "Unknown",
+          "lat": 37.9799,
+          "lng": 42.3652,
+          "eventCount": 285
+        },
+        {
+          "name": "Bitlis province",
+          "lat": 38.3644,
+          "lng": 42.2649,
+          "eventCount": 236
+        },
+        {
+          "name": "Batman province",
+          "lat": 38.0507,
+          "lng": 41.3899,
+          "eventCount": 236
+        },
+        {
+          "name": "Ağrı province",
+          "lat": 39.5965,
+          "lng": 43.5665,
+          "eventCount": 129
+        },
+        {
+          "name": "İstanbul province",
+          "lat": 41.0172,
+          "lng": 28.948,
+          "eventCount": 111
+        },
+        {
+          "name": "Muş province",
+          "lat": 38.9512,
+          "lng": 41.6965,
+          "eventCount": 98
+        },
+        {
+          "name": "Elazığ province",
+          "lat": 38.6358,
+          "lng": 39.7463,
+          "eventCount": 97
+        },
+        {
+          "name": "Kars province",
+          "lat": 40.2948,
+          "lng": 43.1874,
+          "eventCount": 85
+        },
+        {
+          "name": "Erzincan province",
+          "lat": 39.6456,
+          "lng": 39.3097,
+          "eventCount": 69
+        },
+        {
+          "name": "Kahramanmaraş province",
+          "lat": 37.8213,
+          "lng": 37.0563,
+          "eventCount": 65
+        },
+        {
+          "name": "Hatay province",
+          "lat": 36.5827,
+          "lng": 36.2854,
+          "eventCount": 64
+        },
+        {
+          "name": "Şanlıurfa province",
+          "lat": 37.2156,
+          "lng": 39.085,
+          "eventCount": 56
+        }
+      ]
+    },
+    {
+      "id": "jamaican-political-conflict",
+      "name": "Jamaican political conflict",
+      "location": "Jamaica",
+      "countries": [
+        "Jamaica"
+      ],
+      "coordinates": {
+        "lat": 18.11,
+        "lng": -77.3
+      },
+      "startYear": 1943,
+      "deathToll": {
+        "total": 1900,
+        "totalDisplay": "1,900+",
+        "recent": 290
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jamaican_political_conflict",
+      "lastUpdated": "2026-04-17T09:10:55.199Z",
+      "affectedRegions": [
+        {
+          "name": "Kingston parish",
+          "lat": 17.996,
+          "lng": -76.8,
+          "eventCount": 25
+        },
+        {
+          "name": "Saint Catherine parish",
+          "lat": 18.0415,
+          "lng": -76.9969,
+          "eventCount": 3
+        },
+        {
+          "name": "Unknown",
+          "lat": 18.25,
+          "lng": -77.5,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "kashmir-conflict",
+      "name": "Kashmir conflict",
+      "location": "India Pakistan China",
+      "countries": [
+        "India",
+        "Pakistan",
+        "China"
+      ],
+      "coordinates": {
+        "lat": 34.08,
+        "lng": 74.8
+      },
+      "startYear": 1947,
+      "deathToll": {
+        "total": 202200,
+        "totalDisplay": "202,200",
+        "recent": 975
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kashmir_conflict",
+      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "affectedRegions": [
+        {
+          "name": "Jammu and Kashmir state",
+          "lat": 33.8451,
+          "lng": 74.839,
+          "eventCount": 9133
+        },
+        {
+          "name": "Federally Administered Tribal Areas",
+          "lat": 33.5452,
+          "lng": 70.5964,
+          "eventCount": 2678
+        },
+        {
+          "name": "Khyber Pakhtunkwa province",
+          "lat": 33.7621,
+          "lng": 71.352,
+          "eventCount": 1961
+        },
+        {
+          "name": "Assam state",
+          "lat": 26.6046,
+          "lng": 92.5547,
+          "eventCount": 1411
+        },
+        {
+          "name": "Chhattisgarh state",
+          "lat": 19.1243,
+          "lng": 81.2249,
+          "eventCount": 1353
+        },
+        {
+          "name": "Balochistan province",
+          "lat": 28.3686,
+          "lng": 66.0282,
+          "eventCount": 1034
+        },
+        {
+          "name": "Manipur state",
+          "lat": 24.7645,
+          "lng": 93.8599,
+          "eventCount": 614
+        },
+        {
+          "name": "Jharkhand state",
+          "lat": 23.3759,
+          "lng": 85.2553,
+          "eventCount": 597
+        },
+        {
+          "name": "Andhra Pradesh state",
+          "lat": 17.4653,
+          "lng": 80.0271,
+          "eventCount": 481
+        },
+        {
+          "name": "Sindh province",
+          "lat": 25.0277,
+          "lng": 67.2016,
+          "eventCount": 400
+        },
+        {
+          "name": "Punjab state",
+          "lat": 31.1321,
+          "lng": 75.3199,
+          "eventCount": 388
+        },
+        {
+          "name": "Tripura state",
+          "lat": 23.8577,
+          "lng": 91.6646,
+          "eventCount": 383
+        },
+        {
+          "name": "Bihar state",
+          "lat": 25.0461,
+          "lng": 85.3034,
+          "eventCount": 328
+        },
+        {
+          "name": "Azad Jammu & Kashmir",
+          "lat": 33.8968,
+          "lng": 74.0385,
+          "eventCount": 309
+        },
+        {
+          "name": "West Bengal state",
+          "lat": 22.7496,
+          "lng": 87.0788,
+          "eventCount": 300
+        },
+        {
+          "name": "Maharashtra state",
+          "lat": 19.7919,
+          "lng": 79.4783,
+          "eventCount": 267
+        },
+        {
+          "name": "Nagaland state",
+          "lat": 26.008,
+          "lng": 94.274,
+          "eventCount": 246
+        },
+        {
+          "name": "Orissa state",
+          "lat": 19.5994,
+          "lng": 83.3776,
+          "eventCount": 196
+        },
+        {
+          "name": "Odisha state",
+          "lat": 19.3494,
+          "lng": 82.8828,
+          "eventCount": 180
+        },
+        {
+          "name": "Punjab province",
+          "lat": 31.7081,
+          "lng": 73.2547,
+          "eventCount": 177
+        }
+      ]
+    },
+    {
+      "id": "insurgencies-in-pakistan",
+      "name": "Insurgencies in Pakistan",
+      "location": "Pakistan Afghanistan Iran",
+      "countries": [
+        "Pakistan",
+        "Afghanistan",
+        "Iran"
+      ],
+      "coordinates": {
+        "lat": 30.38,
+        "lng": 69.35
+      },
+      "startYear": 1948,
+      "deathToll": {
+        "total": 23100,
+        "totalDisplay": "23,100+",
+        "recent": 985
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Pakistan",
+      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "affectedRegions": [
+        {
+          "name": "Federally Administered Tribal Areas",
+          "lat": 33.5452,
+          "lng": 70.5964,
+          "eventCount": 2678
+        },
+        {
+          "name": "Khyber Pakhtunkwa province",
+          "lat": 33.7621,
+          "lng": 71.352,
+          "eventCount": 1961
+        },
+        {
+          "name": "Balochistan province",
+          "lat": 28.3686,
+          "lng": 66.0282,
+          "eventCount": 1034
+        },
+        {
+          "name": "Sindh province",
+          "lat": 25.0277,
+          "lng": 67.2016,
+          "eventCount": 400
+        },
+        {
+          "name": "Azad Jammu & Kashmir",
+          "lat": 33.8968,
+          "lng": 74.0385,
+          "eventCount": 309
+        },
+        {
+          "name": "Punjab province",
+          "lat": 31.7081,
+          "lng": 73.2547,
+          "eventCount": 177
+        },
+        {
+          "name": "Unknown",
+          "lat": 32.1588,
+          "lng": 73.303,
+          "eventCount": 46
+        },
+        {
+          "name": "Islamabad Capital territory",
+          "lat": 33.69,
+          "lng": 73.0551,
+          "eventCount": 14
+        },
+        {
+          "name": "Gilgit-Baltistan",
+          "lat": 35.1844,
+          "lng": 75.1281,
+          "eventCount": 13
+        }
+      ]
+    },
+    {
+      "id": "insurgencies-in-india",
+      "name": "Insurgencies in India",
+      "location": "India Myanmar Bhutan",
+      "countries": [
+        "India",
+        "Myanmar",
+        "Bhutan"
+      ],
+      "coordinates": {
+        "lat": 20.59,
+        "lng": 78.96
+      },
+      "startYear": 1954,
+      "deathToll": {
+        "total": 81400,
+        "totalDisplay": "81,400",
+        "recent": 980
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_India",
+      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "affectedRegions": [
+        {
+          "name": "Jammu and Kashmir state",
+          "lat": 33.8451,
+          "lng": 74.839,
+          "eventCount": 9133
+        },
+        {
+          "name": "Assam state",
+          "lat": 26.6046,
+          "lng": 92.5547,
+          "eventCount": 1411
+        },
+        {
+          "name": "Chhattisgarh state",
+          "lat": 19.1243,
+          "lng": 81.2249,
+          "eventCount": 1353
+        },
+        {
+          "name": "Manipur state",
+          "lat": 24.7645,
+          "lng": 93.8599,
+          "eventCount": 614
+        },
+        {
+          "name": "Jharkhand state",
+          "lat": 23.3759,
+          "lng": 85.2553,
+          "eventCount": 597
+        },
+        {
+          "name": "Andhra Pradesh state",
+          "lat": 17.4653,
+          "lng": 80.0271,
+          "eventCount": 481
+        },
+        {
+          "name": "Punjab state",
+          "lat": 31.1321,
+          "lng": 75.3199,
+          "eventCount": 388
+        },
+        {
+          "name": "Tripura state",
+          "lat": 23.8577,
+          "lng": 91.6646,
+          "eventCount": 383
+        },
+        {
+          "name": "Bihar state",
+          "lat": 25.0461,
+          "lng": 85.3034,
+          "eventCount": 328
+        },
+        {
+          "name": "West Bengal state",
+          "lat": 22.7496,
+          "lng": 87.0788,
+          "eventCount": 300
+        },
+        {
+          "name": "Maharashtra state",
+          "lat": 19.7919,
+          "lng": 79.4783,
+          "eventCount": 267
+        },
+        {
+          "name": "Nagaland state",
+          "lat": 26.008,
+          "lng": 94.274,
+          "eventCount": 246
+        },
+        {
+          "name": "Orissa state",
+          "lat": 19.5994,
+          "lng": 83.3776,
+          "eventCount": 196
+        },
+        {
+          "name": "Odisha state",
+          "lat": 19.3494,
+          "lng": 82.8828,
+          "eventCount": 180
+        },
+        {
+          "name": "Unknown",
+          "lat": 28.8264,
+          "lng": 77.5597,
+          "eventCount": 107
+        },
+        {
+          "name": "Uttar Pradesh state",
+          "lat": 27.406,
+          "lng": 80.3001,
+          "eventCount": 92
+        },
+        {
+          "name": "Gujarat state",
+          "lat": 22.9083,
+          "lng": 72.7007,
+          "eventCount": 83
+        },
+        {
+          "name": "Meghalaya state",
+          "lat": 25.5304,
+          "lng": 90.7951,
+          "eventCount": 82
+        },
+        {
+          "name": "National Capital territory",
+          "lat": 28.6186,
+          "lng": 77.2117,
+          "eventCount": 57
+        },
+        {
+          "name": "Madhya Pradesh state",
+          "lat": 21.9753,
+          "lng": 79.5758,
+          "eventCount": 43
+        }
+      ]
+    },
+    {
+      "id": "papua-conflict",
+      "name": "Papua conflict",
+      "location": "Indonesia",
+      "countries": [
+        "Indonesia"
+      ],
+      "coordinates": {
+        "lat": -0.79,
+        "lng": 113.92
+      },
+      "startYear": 1962,
+      "deathToll": {
+        "total": 100400,
+        "totalDisplay": "100,400",
+        "recent": 255
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Papua_conflict",
+      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "affectedRegions": [
+        {
+          "name": "Aceh province",
+          "lat": 4.9008,
+          "lng": 96.6015,
+          "eventCount": 1196
+        },
+        {
+          "name": "Timor Timur province",
+          "lat": -8.8073,
+          "lng": 125.643,
+          "eventCount": 296
+        },
+        {
+          "name": "Papua province",
+          "lat": -3.9619,
+          "lng": 138.0088,
+          "eventCount": 137
+        },
+        {
+          "name": "Maluku province",
+          "lat": -3.7677,
+          "lng": 128.5234,
+          "eventCount": 95
+        },
+        {
+          "name": "Papua Tengah province",
+          "lat": -3.8259,
+          "lng": 137.2335,
+          "eventCount": 45
+        },
+        {
+          "name": "Papua Pegunungan province",
+          "lat": -4.56,
+          "lng": 139.1587,
+          "eventCount": 35
+        },
+        {
+          "name": "Kalimantan Tengah province",
+          "lat": -2.603,
+          "lng": 113.0907,
+          "eventCount": 23
+        },
+        {
+          "name": "Kalimantan Barat province",
+          "lat": 0.7311,
+          "lng": 109.4321,
+          "eventCount": 20
+        },
+        {
+          "name": "Irian Jaya province",
+          "lat": -3.6368,
+          "lng": 137.9958,
+          "eventCount": 18
+        },
+        {
+          "name": "Maluku Utara province",
+          "lat": 0.9612,
+          "lng": 127.6208,
+          "eventCount": 17
+        },
+        {
+          "name": "Sulawesi Tengah province",
+          "lat": -1.2135,
+          "lng": 120.7082,
+          "eventCount": 12
+        },
+        {
+          "name": "Nusa Tenggara Timur province",
+          "lat": -9.3785,
+          "lng": 124.2096,
+          "eventCount": 9
+        },
+        {
+          "name": "Papua Barat province",
+          "lat": -1.642,
+          "lng": 132.7542,
+          "eventCount": 7
+        },
+        {
+          "name": "Unknown",
+          "lat": -1.7916,
+          "lng": 112.3876,
+          "eventCount": 7
+        },
+        {
+          "name": "Sumatera Utara province",
+          "lat": 3.2667,
+          "lng": 98.6792,
+          "eventCount": 7
+        },
+        {
+          "name": "Jakarta Raya province",
+          "lat": -6.2,
+          "lng": 106.8167,
+          "eventCount": 6
+        },
+        {
+          "name": "Sulawesi Selatan province",
+          "lat": -3.8503,
+          "lng": 119.5244,
+          "eventCount": 5
+        },
+        {
+          "name": "Papua Barat Daya province",
+          "lat": -1.3333,
+          "lng": 132.5057,
+          "eventCount": 3
+        },
+        {
+          "name": "Yogyakarta province",
+          "lat": 0,
+          "lng": 110.3644,
+          "eventCount": 2
+        },
+        {
+          "name": "Jawa Barat province",
+          "lat": -6.4614,
+          "lng": 107.0517,
+          "eventCount": 2
+        }
+      ]
+    },
+    {
+      "id": "civil-conflict-in-the-philippines",
+      "name": "Civil conflict in the Philippines",
+      "location": "Philippines",
+      "countries": [
+        "Philippines"
+      ],
+      "coordinates": {
+        "lat": 12.88,
+        "lng": 121.77
+      },
+      "startYear": 1969,
+      "deathToll": {
+        "total": 166600,
+        "totalDisplay": "166,600",
+        "recent": 536
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Civil_conflict_in_the_Philippines",
+      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "affectedRegions": [
+        {
+          "name": "Sulu province",
+          "lat": 6.0089,
+          "lng": 121.0676,
+          "eventCount": 399
+        },
+        {
+          "name": "Maguindanao province",
+          "lat": 6.9982,
+          "lng": 124.4436,
+          "eventCount": 366
+        },
+        {
+          "name": "Basilan province",
+          "lat": 6.5527,
+          "lng": 122.0261,
+          "eventCount": 342
+        },
+        {
+          "name": "Cotabato province",
+          "lat": 7.1752,
+          "lng": 124.8152,
+          "eventCount": 228
+        },
+        {
+          "name": "Lanao del Sur province",
+          "lat": 7.9315,
+          "lng": 124.2783,
+          "eventCount": 193
+        },
+        {
+          "name": "Unknown",
+          "lat": 10.6233,
+          "lng": 123.2531,
+          "eventCount": 170
+        },
+        {
+          "name": "Negros Occidental province",
+          "lat": 10.3752,
+          "lng": 123.0043,
+          "eventCount": 133
+        },
+        {
+          "name": "Davao del Sur province",
+          "lat": 6.9722,
+          "lng": 125.4435,
+          "eventCount": 132
+        },
+        {
+          "name": "Metropolitan Manila province",
+          "lat": 14.6027,
+          "lng": 120.9996,
+          "eventCount": 114
+        },
+        {
+          "name": "Zamboanga del Sur province",
+          "lat": 7.2567,
+          "lng": 122.4729,
+          "eventCount": 108
+        },
+        {
+          "name": "Bukidnon province",
+          "lat": 7.982,
+          "lng": 125.0607,
+          "eventCount": 94
+        },
+        {
+          "name": "Compostela Valley province",
+          "lat": 7.5687,
+          "lng": 125.9916,
+          "eventCount": 93
+        },
+        {
+          "name": "Agusan del Sur province",
+          "lat": 8.4588,
+          "lng": 125.7427,
+          "eventCount": 91
+        },
+        {
+          "name": "Surigao del Sur province",
+          "lat": 8.8793,
+          "lng": 126.0606,
+          "eventCount": 88
+        },
+        {
+          "name": "Masbate province",
+          "lat": 12.321,
+          "lng": 123.5753,
+          "eventCount": 81
+        },
+        {
+          "name": "Sorsogon province",
+          "lat": 12.8323,
+          "lng": 123.9643,
+          "eventCount": 75
+        },
+        {
+          "name": "Negros Oriental province",
+          "lat": 9.9184,
+          "lng": 123.1554,
+          "eventCount": 73
+        },
+        {
+          "name": "Sultan Kudarat province",
+          "lat": 6.5644,
+          "lng": 124.4172,
+          "eventCount": 70
+        },
+        {
+          "name": "Lanao del Norte province",
+          "lat": 8.0485,
+          "lng": 124.0518,
+          "eventCount": 69
+        },
+        {
+          "name": "Quezon province",
+          "lat": 13.9902,
+          "lng": 121.9553,
+          "eventCount": 68
+        }
+      ]
+    },
+    {
+      "id": "cabinda-war",
+      "name": "Cabinda War",
+      "location": "Angola",
+      "countries": [
+        "Angola"
+      ],
+      "coordinates": {
+        "lat": -11.2,
+        "lng": 17.87
+      },
+      "startYear": 1975,
+      "deathToll": {
+        "total": 30200,
+        "totalDisplay": "30,200",
+        "recent": 200
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cabinda_War",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Cabinda province",
+          "lat": -4.9431,
+          "lng": 12.5389,
+          "eventCount": 331
+        },
+        {
+          "name": "Bie province",
+          "lat": -12.3886,
+          "lng": 17.0591,
+          "eventCount": 277
+        },
+        {
+          "name": "Huambo province",
+          "lat": -12.6082,
+          "lng": 15.6546,
+          "eventCount": 155
+        },
+        {
+          "name": "Malanje province",
+          "lat": -9.5268,
+          "lng": 16.364,
+          "eventCount": 155
+        },
+        {
+          "name": "Benguela province",
+          "lat": -12.8407,
+          "lng": 14.0675,
+          "eventCount": 141
+        },
+        {
+          "name": "Huila province",
+          "lat": -14.7497,
+          "lng": 14.8784,
+          "eventCount": 122
+        },
+        {
+          "name": "Cuanza Sul province",
+          "lat": -10.9598,
+          "lng": 14.7202,
+          "eventCount": 114
+        },
+        {
+          "name": "Unknown",
+          "lat": -12.2705,
+          "lng": 18.4268,
+          "eventCount": 103
+        },
+        {
+          "name": "Cuando Cubango province",
+          "lat": -15.6668,
+          "lng": 19.2878,
+          "eventCount": 96
+        },
+        {
+          "name": "Uige province",
+          "lat": -7.3292,
+          "lng": 15.4774,
+          "eventCount": 95
+        },
+        {
+          "name": "Lunda Norte province",
+          "lat": -8.384,
+          "lng": 20.1574,
+          "eventCount": 94
+        },
+        {
+          "name": "Moxico province",
+          "lat": -12.402,
+          "lng": 20.6063,
+          "eventCount": 81
+        },
+        {
+          "name": "Cuanza Norte province",
+          "lat": -9.02,
+          "lng": 14.8037,
+          "eventCount": 78
+        },
+        {
+          "name": "Bengo province",
+          "lat": -8.7376,
+          "lng": 13.9254,
+          "eventCount": 68
+        },
+        {
+          "name": "Lunda Sul province",
+          "lat": -9.8752,
+          "lng": 20.1467,
+          "eventCount": 59
+        },
+        {
+          "name": "Cunene province",
+          "lat": -16.1819,
+          "lng": 15.9982,
+          "eventCount": 35
+        },
+        {
+          "name": "Luanda province",
+          "lat": -9.0075,
+          "lng": 13.6575,
+          "eventCount": 32
+        },
+        {
+          "name": "Zaire province",
+          "lat": -6.4103,
+          "lng": 13.2065,
+          "eventCount": 26
+        },
+        {
+          "name": "Namibe province",
+          "lat": -14.9828,
+          "lng": 12.6232,
+          "eventCount": 8
+        }
+      ]
+    },
+    {
+      "id": "ethnic-violence-in-papua-new-guinea",
+      "name": "Ethnic violence in Papua New Guinea",
+      "location": "Papua New Guinea",
+      "countries": [
+        "Papua New Guinea"
+      ],
+      "coordinates": {
+        "lat": -6.31,
+        "lng": 143.96
+      },
+      "startYear": 1988,
+      "deathToll": {
+        "total": 15400,
+        "totalDisplay": "15,400",
+        "recent": 140
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ethnic_violence_in_Papua_New_Guinea",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Bougainville province",
+          "lat": -6.1502,
+          "lng": 155.2813,
+          "eventCount": 93
+        },
+        {
+          "name": "Enga province",
+          "lat": -5.4669,
+          "lng": 143.2736,
+          "eventCount": 11
+        },
+        {
+          "name": "Southern Highlands province",
+          "lat": -6.1349,
+          "lng": 143.5711,
+          "eventCount": 9
+        },
+        {
+          "name": "Eastern Highlands province",
+          "lat": -6.2902,
+          "lng": 145.8594,
+          "eventCount": 6
+        },
+        {
+          "name": "Unknown",
+          "lat": -7.5116,
+          "lng": 152.1042,
+          "eventCount": 4
+        },
+        {
+          "name": "National Capital district",
+          "lat": -9.4647,
+          "lng": 147.1925,
+          "eventCount": 3
+        },
+        {
+          "name": "Hela province",
+          "lat": -5.7651,
+          "lng": 142.8272,
+          "eventCount": 3
+        },
+        {
+          "name": "Sandaun province",
+          "lat": -3.6217,
+          "lng": 141.055,
+          "eventCount": 2
+        },
+        {
+          "name": "Milne Bay province",
+          "lat": -9.5263,
+          "lng": 150.6908,
+          "eventCount": 2
+        },
+        {
+          "name": "East Sepik province",
+          "lat": -4.1687,
+          "lng": 143.8925,
+          "eventCount": 2
+        },
+        {
+          "name": "Morobe province",
+          "lat": -6.7221,
+          "lng": 146.9847,
+          "eventCount": 1
+        },
+        {
+          "name": "Jiwaka province",
+          "lat": -5.8809,
+          "lng": 144.7071,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "armed-conflict-for-control-of-the-favelas",
+      "name": "Armed conflict for control of the favelas",
+      "location": "Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "coordinates": {
+        "lat": -14.24,
+        "lng": -51.93
+      },
+      "startYear": 1990,
+      "deathToll": {
+        "total": 800,
+        "totalDisplay": "800+",
+        "recent": 130
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Armed_conflict_for_control_of_the_favelas",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Ceará state",
+          "lat": -3.9741,
+          "lng": -38.7943,
+          "eventCount": 1122
+        },
+        {
+          "name": "Bahia state",
+          "lat": -11.6106,
+          "lng": -39.3438,
+          "eventCount": 954
+        },
+        {
+          "name": "Rio Grande do Norte state",
+          "lat": -5.4801,
+          "lng": -36.7991,
+          "eventCount": 816
+        },
+        {
+          "name": "Amazonas state",
+          "lat": -3.1058,
+          "lng": -60.0291,
+          "eventCount": 786
+        },
+        {
+          "name": "Acre state",
+          "lat": -9.7422,
+          "lng": -68.4062,
+          "eventCount": 740
+        },
+        {
+          "name": "Maranhão state",
+          "lat": -3.6178,
+          "lng": -44.7821,
+          "eventCount": 615
+        },
+        {
+          "name": "Piauí state",
+          "lat": -4.9771,
+          "lng": -42.625,
+          "eventCount": 518
+        },
+        {
+          "name": "Roraima state",
+          "lat": 2.6154,
+          "lng": -60.7052,
+          "eventCount": 475
+        },
+        {
+          "name": "Pernambuco state",
+          "lat": -8.9781,
+          "lng": -40.005,
+          "eventCount": 429
+        },
+        {
+          "name": "Rondônia state",
+          "lat": -9.5638,
+          "lng": -63.411,
+          "eventCount": 338
+        },
+        {
+          "name": "Amapá state",
+          "lat": 0.0264,
+          "lng": -51.1044,
+          "eventCount": 315
+        },
+        {
+          "name": "Rio de Janeiro state",
+          "lat": -22.8472,
+          "lng": -43.1983,
+          "eventCount": 249
+        },
+        {
+          "name": "Paraíba state",
+          "lat": -7.1107,
+          "lng": -35.2468,
+          "eventCount": 230
+        },
+        {
+          "name": "Alagoas state",
+          "lat": -9.647,
+          "lng": -36.0405,
+          "eventCount": 140
+        },
+        {
+          "name": "Sergipe state",
+          "lat": -10.8241,
+          "lng": -37.205,
+          "eventCount": 127
+        },
+        {
+          "name": "Rio Grande do Sul state",
+          "lat": -30.0102,
+          "lng": -51.2189,
+          "eventCount": 72
+        },
+        {
+          "name": "Mato Grosso state",
+          "lat": -14.2536,
+          "lng": -57.0742,
+          "eventCount": 48
+        },
+        {
+          "name": "Espírito Santo state",
+          "lat": -20.2706,
+          "lng": -40.4101,
+          "eventCount": 25
+        },
+        {
+          "name": "São Paulo state",
+          "lat": -23.3149,
+          "lng": -47.0183,
+          "eventCount": 18
+        },
+        {
+          "name": "Pará state",
+          "lat": -4.4326,
+          "lng": -49.9266,
+          "eventCount": 5
+        }
+      ]
+    },
+    {
+      "id": "insurgencies-in-bangladesh",
+      "name": "Insurgencies in Bangladesh",
+      "location": "Bangladesh Myanmar India",
+      "countries": [
+        "Bangladesh",
+        "Myanmar",
+        "India"
+      ],
+      "coordinates": {
+        "lat": 23.68,
+        "lng": 90.36
+      },
+      "startYear": 1999,
+      "deathToll": {
+        "total": 80100,
+        "totalDisplay": "80,100+",
+        "recent": 368
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Bangladesh",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Chittagong division",
+          "lat": 22.531,
+          "lng": 91.8371,
+          "eventCount": 237
+        },
+        {
+          "name": "Khulna division",
+          "lat": 23.2909,
+          "lng": 89.2021,
+          "eventCount": 167
+        },
+        {
+          "name": "Rajshahi division",
+          "lat": 24.4725,
+          "lng": 89.0571,
+          "eventCount": 94
+        },
+        {
+          "name": "Dhaka division",
+          "lat": 23.8434,
+          "lng": 90.3495,
+          "eventCount": 94
+        },
+        {
+          "name": "Unknown",
+          "lat": 22.0761,
+          "lng": 91.4722,
+          "eventCount": 24
+        },
+        {
+          "name": "Sylhet division",
+          "lat": 24.7795,
+          "lng": 91.8181,
+          "eventCount": 19
+        },
+        {
+          "name": "Barisāl division",
+          "lat": 22.5392,
+          "lng": 90.5304,
+          "eventCount": 15
+        },
+        {
+          "name": "Rangpur division",
+          "lat": 25.7937,
+          "lng": 89.2849,
+          "eventCount": 11
+        },
+        {
+          "name": "Mymensingh division",
+          "lat": 24.8159,
+          "lng": 90.3036,
+          "eventCount": 2
+        }
+      ]
+    },
+    {
+      "id": "iraqi-conflict",
+      "name": "Iraqi conflict",
+      "location": "Iraq",
+      "countries": [
+        "Iraq"
+      ],
+      "coordinates": {
+        "lat": 33.22,
+        "lng": 43.68
+      },
+      "startYear": 2003,
+      "deathToll": {
+        "total": 334700,
+        "totalDisplay": "334,700+",
+        "recent": 574
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Iraqi_conflict",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Nīnawá province",
+          "lat": 36.32,
+          "lng": 42.9899,
+          "eventCount": 2308
+        },
+        {
+          "name": "Baghdād province",
+          "lat": 33.3478,
+          "lng": 44.3874,
+          "eventCount": 1490
+        },
+        {
+          "name": "Al Anbār province",
+          "lat": 33.4813,
+          "lng": 42.7633,
+          "eventCount": 1229
+        },
+        {
+          "name": "Unknown",
+          "lat": 35.451,
+          "lng": 43.6818,
+          "eventCount": 898
+        },
+        {
+          "name": "Şalāḩ ad Dīn province",
+          "lat": 34.5881,
+          "lng": 43.8964,
+          "eventCount": 771
+        },
+        {
+          "name": "Diyālá province",
+          "lat": 33.9748,
+          "lng": 44.8777,
+          "eventCount": 706
+        },
+        {
+          "name": "Dahūk province",
+          "lat": 37.1282,
+          "lng": 43.3832,
+          "eventCount": 484
+        },
+        {
+          "name": "Kirkūk province",
+          "lat": 35.3507,
+          "lng": 44.1482,
+          "eventCount": 464
+        },
+        {
+          "name": "Arbīl province",
+          "lat": 36.3613,
+          "lng": 44.1765,
+          "eventCount": 268
+        },
+        {
+          "name": "Al Başrah province",
+          "lat": 30.529,
+          "lng": 47.7515,
+          "eventCount": 122
+        },
+        {
+          "name": "Bābil province",
+          "lat": 32.6851,
+          "lng": 44.3594,
+          "eventCount": 109
+        },
+        {
+          "name": "As Sulaymānīyah province",
+          "lat": 35.6435,
+          "lng": 45.4543,
+          "eventCount": 66
+        },
+        {
+          "name": "An Najaf province",
+          "lat": 31.9925,
+          "lng": 44.3536,
+          "eventCount": 65
+        },
+        {
+          "name": "Karbalā’ province",
+          "lat": 32.5922,
+          "lng": 44.0002,
+          "eventCount": 63
+        },
+        {
+          "name": "Maysān province",
+          "lat": 31.8433,
+          "lng": 47.0917,
+          "eventCount": 48
+        },
+        {
+          "name": "Sulaymānīyah province",
+          "lat": 35.6645,
+          "lng": 45.4565,
+          "eventCount": 48
+        },
+        {
+          "name": "Dhī Qār province",
+          "lat": 31.0441,
+          "lng": 46.2417,
+          "eventCount": 46
+        },
+        {
+          "name": "Wāsiţ province",
+          "lat": 32.7314,
+          "lng": 45.4589,
+          "eventCount": 46
+        },
+        {
+          "name": "At-Ta'mim province",
+          "lat": 35.4612,
+          "lng": 44.3644,
+          "eventCount": 39
+        },
+        {
+          "name": "Al Qādisīyah province",
+          "lat": 31.9545,
+          "lng": 44.9137,
+          "eventCount": 17
+        }
+      ]
+    },
+    {
+      "id": "libyan-crisis",
+      "name": "Libyan crisis",
+      "location": "Libya",
+      "countries": [
+        "Libya"
+      ],
+      "coordinates": {
+        "lat": 26.34,
+        "lng": 17.23
+      },
+      "startYear": 2011,
+      "deathToll": {
+        "total": 30300,
+        "totalDisplay": "30,300",
+        "recent": 282
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Libyan_crisis_(2011%E2%80%93present)",
+      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "affectedRegions": [
+        {
+          "name": "Tripoli district",
+          "lat": 32.8283,
+          "lng": 13.1638,
+          "eventCount": 219
+        },
+        {
+          "name": "Benghazi district",
+          "lat": 32.1129,
+          "lng": 20.1303,
+          "eventCount": 214
+        },
+        {
+          "name": "Surt district",
+          "lat": 31.1227,
+          "lng": 16.7988,
+          "eventCount": 192
+        },
+        {
+          "name": "Darnah district",
+          "lat": 32.7613,
+          "lng": 22.6175,
+          "eventCount": 110
+        },
+        {
+          "name": "Misrata district",
+          "lat": 32.1664,
+          "lng": 15.0385,
+          "eventCount": 106
+        },
+        {
+          "name": "Sabha district",
+          "lat": 26.9815,
+          "lng": 14.4195,
+          "eventCount": 46
+        },
+        {
+          "name": "Al Wahat district",
+          "lat": 30.5728,
+          "lng": 19.9791,
+          "eventCount": 38
+        },
+        {
+          "name": "Jabal al Gharbi district",
+          "lat": 31.9528,
+          "lng": 12.5018,
+          "eventCount": 37
+        },
+        {
+          "name": "Mourzouq district",
+          "lat": 25.758,
+          "lng": 14.4046,
+          "eventCount": 22
+        },
+        {
+          "name": "Unknown",
+          "lat": 29.0275,
+          "lng": 17.8939,
+          "eventCount": 20
+        },
+        {
+          "name": "Zawiyah district",
+          "lat": 32.6395,
+          "lng": 12.6707,
+          "eventCount": 18
+        },
+        {
+          "name": "Kufra district",
+          "lat": 24.0906,
+          "lng": 22.9542,
+          "eventCount": 17
+        },
+        {
+          "name": "Al Jufrah district",
+          "lat": 28.3495,
+          "lng": 17.105,
+          "eventCount": 16
+        },
+        {
+          "name": "Marqab district",
+          "lat": 32.4253,
+          "lng": 14.3135,
+          "eventCount": 16
+        },
+        {
+          "name": "An Nuqat al Khams district",
+          "lat": 32.8565,
+          "lng": 12.3277,
+          "eventCount": 14
+        },
+        {
+          "name": "Wādī al Ḩayāt district",
+          "lat": 26.5921,
+          "lng": 12.7805,
+          "eventCount": 8
+        },
+        {
+          "name": "Al Jafārah district",
+          "lat": 32.4829,
+          "lng": 13.0261,
+          "eventCount": 7
+        },
+        {
+          "name": "Tarhūnah district",
+          "lat": 32.435,
+          "lng": 13.6332,
+          "eventCount": 5
+        },
+        {
+          "name": "Nalut district",
+          "lat": 31.5128,
+          "lng": 11.1255,
+          "eventCount": 4
+        },
+        {
+          "name": "Jabal al-Akhdra district",
+          "lat": 32.7664,
+          "lng": 21.7417,
+          "eventCount": 2
+        }
+      ]
+    },
+    {
+      "id": "insurgency-in-cabo-delgado",
+      "name": "Insurgency in Cabo Delgado",
+      "location": "Mozambique Tanzania",
+      "countries": [
+        "Mozambique",
+        "Tanzania"
+      ],
+      "coordinates": {
+        "lat": -18.67,
+        "lng": 35.53
+      },
+      "startYear": 2017,
+      "deathToll": {
+        "total": 7800,
+        "totalDisplay": "7,800+",
+        "recent": 824
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Cabo_Delgado",
+      "lastUpdated": "2026-04-17T09:10:55.202Z",
+      "affectedRegions": [
+        {
+          "name": "Cabo Delgado province",
+          "lat": -11.8019,
+          "lng": 40.0766,
+          "eventCount": 959
+        },
+        {
+          "name": "Maputo province",
+          "lat": -25.6385,
+          "lng": 32.4644,
+          "eventCount": 79
+        },
+        {
+          "name": "Sofala province",
+          "lat": -19.3659,
+          "lng": 34.5371,
+          "eventCount": 69
+        },
+        {
+          "name": "Nampula province",
+          "lat": -14.8177,
+          "lng": 39.5301,
+          "eventCount": 57
+        },
+        {
+          "name": "Gaza province",
+          "lat": -24.466,
+          "lng": 33.2766,
+          "eventCount": 44
+        },
+        {
+          "name": "Unknown",
+          "lat": -19.2669,
+          "lng": 34.5475,
+          "eventCount": 36
+        },
+        {
+          "name": "Zambézia province",
+          "lat": -16.7995,
+          "lng": 36.808,
+          "eventCount": 33
+        },
+        {
+          "name": "Tete province",
+          "lat": -15.6156,
+          "lng": 33.3773,
+          "eventCount": 30
+        },
+        {
+          "name": "Inhambane province",
+          "lat": -23.4408,
+          "lng": 34.9339,
+          "eventCount": 24
+        },
+        {
+          "name": "Manica province",
+          "lat": -18.7835,
+          "lng": 33.4871,
+          "eventCount": 23
+        },
+        {
+          "name": "Niassa province",
+          "lat": -12.5568,
+          "lng": 37.3226,
+          "eventCount": 22
+        },
+        {
+          "name": "Maputo city province",
+          "lat": -25.9653,
+          "lng": 32.5892,
+          "eventCount": 16
+        }
+      ]
+    },
+    {
+      "id": "honduran-gang-crackdown",
+      "name": "Honduran gang crackdown",
+      "location": "Honduras",
+      "countries": [
+        "Honduras"
+      ],
+      "coordinates": {
+        "lat": 15.2,
+        "lng": -86.24
+      },
+      "startYear": 2022,
+      "deathToll": {
+        "total": 100,
+        "totalDisplay": "100+",
+        "recent": 561
+      },
+      "intensity": "minor_conflict",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honduran_gang_crackdown",
+      "lastUpdated": "2026-04-17T09:10:55.202Z",
+      "affectedRegions": [
+        {
+          "name": "Cortés department",
+          "lat": 15.5047,
+          "lng": -88.0176,
+          "eventCount": 29
+        },
+        {
+          "name": "Francisco Morazán department",
+          "lat": 14.118,
+          "lng": -87.2585,
+          "eventCount": 11
+        },
+        {
+          "name": "Atlántida department",
+          "lat": 15.7407,
+          "lng": -87.2075,
+          "eventCount": 4
+        },
+        {
+          "name": "Yoro department",
+          "lat": 15.3623,
+          "lng": -87.6995,
+          "eventCount": 2
+        },
+        {
+          "name": "Copán department",
+          "lat": 14.8,
+          "lng": -88.7833,
+          "eventCount": 1
+        },
+        {
+          "name": "El Paraíso department",
+          "lat": 14.1167,
+          "lng": -86.8667,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "cross-border-attacks-in-sabah",
+      "name": "Cross border attacks in Sabah",
+      "location": "Malaysia Philippines",
+      "countries": [
+        "Malaysia",
+        "Philippines"
+      ],
+      "coordinates": {
+        "lat": 4.21,
+        "lng": 101.98
+      },
+      "startYear": 1962,
+      "deathToll": {
+        "total": 134,
+        "totalDisplay": "134+",
+        "recent": 3
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cross_border_attacks_in_Sabah",
+      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "affectedRegions": [
+        {
+          "name": "Sulu province",
+          "lat": 6.0089,
+          "lng": 121.0676,
+          "eventCount": 399
+        },
+        {
+          "name": "Maguindanao province",
+          "lat": 6.9982,
+          "lng": 124.4436,
+          "eventCount": 366
+        },
+        {
+          "name": "Basilan province",
+          "lat": 6.5527,
+          "lng": 122.0261,
+          "eventCount": 342
+        },
+        {
+          "name": "Cotabato province",
+          "lat": 7.1752,
+          "lng": 124.8152,
+          "eventCount": 228
+        },
+        {
+          "name": "Lanao del Sur province",
+          "lat": 7.9315,
+          "lng": 124.2783,
+          "eventCount": 193
+        },
+        {
+          "name": "Unknown",
+          "lat": 10.6233,
+          "lng": 123.2531,
+          "eventCount": 170
+        },
+        {
+          "name": "Negros Occidental province",
+          "lat": 10.3752,
+          "lng": 123.0043,
+          "eventCount": 133
+        },
+        {
+          "name": "Davao del Sur province",
+          "lat": 6.9722,
+          "lng": 125.4435,
+          "eventCount": 132
+        },
+        {
+          "name": "Metropolitan Manila province",
+          "lat": 14.6027,
+          "lng": 120.9996,
+          "eventCount": 114
+        },
+        {
+          "name": "Zamboanga del Sur province",
+          "lat": 7.2567,
+          "lng": 122.4729,
+          "eventCount": 108
+        },
+        {
+          "name": "Bukidnon province",
+          "lat": 7.982,
+          "lng": 125.0607,
+          "eventCount": 94
+        },
+        {
+          "name": "Compostela Valley province",
+          "lat": 7.5687,
+          "lng": 125.9916,
+          "eventCount": 93
+        },
+        {
+          "name": "Agusan del Sur province",
+          "lat": 8.4588,
+          "lng": 125.7427,
+          "eventCount": 91
+        },
+        {
+          "name": "Surigao del Sur province",
+          "lat": 8.8793,
+          "lng": 126.0606,
+          "eventCount": 88
+        },
+        {
+          "name": "Masbate province",
+          "lat": 12.321,
+          "lng": 123.5753,
+          "eventCount": 81
+        },
+        {
+          "name": "Sorsogon province",
+          "lat": 12.8323,
+          "lng": 123.9643,
+          "eventCount": 75
+        },
+        {
+          "name": "Negros Oriental province",
+          "lat": 9.9184,
+          "lng": 123.1554,
+          "eventCount": 73
+        },
+        {
+          "name": "Sultan Kudarat province",
+          "lat": 6.5644,
+          "lng": 124.4172,
+          "eventCount": 70
+        },
+        {
+          "name": "Lanao del Norte province",
+          "lat": 8.0485,
+          "lng": 124.0518,
+          "eventCount": 69
+        },
+        {
+          "name": "Quezon province",
+          "lat": 13.9902,
+          "lng": 121.9553,
+          "eventCount": 68
+        }
+      ]
+    },
+    {
+      "id": "western-sahara-conflict",
+      "name": "Western Sahara conflict",
+      "location": "Morocco Sahrawi Republic",
+      "countries": [
+        "Morocco",
+        "Sahrawi Republic"
+      ],
+      "coordinates": {
+        "lat": 24.22,
+        "lng": -12.89
+      },
+      "startYear": 1970,
+      "deathToll": {
+        "total": 14000,
+        "totalDisplay": "14,000+",
+        "recent": 54
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Western_Sahara_conflict",
+      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "affectedRegions": [
+        {
+          "name": "Unknown",
+          "lat": 26.695,
+          "lng": -10.9831,
+          "eventCount": 7
+        },
+        {
+          "name": "Laâyoune-Sakia al Hamra region",
+          "lat": 26.3676,
+          "lng": -10.9413,
+          "eventCount": 6
+        },
+        {
+          "name": "Es Smara region",
+          "lat": 26.6271,
+          "lng": -11.3589,
+          "eventCount": 3
+        },
+        {
+          "name": "Grand Casablanca region",
+          "lat": 33.59,
+          "lng": -7.61,
+          "eventCount": 2
+        },
+        {
+          "name": "Guelmim-Oued Noun region",
+          "lat": 28.1667,
+          "lng": -9.4167,
+          "eventCount": 1
+        },
+        {
+          "name": "Dakhla-Oued Ed-Dahab region",
+          "lat": 23.4461,
+          "lng": -12.8267,
+          "eventCount": 1
+        },
+        {
+          "name": "Marrakesh-Tensift-El Haouz region",
+          "lat": 31.6349,
+          "lng": -7.9857,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "insurgency-in-laos",
+      "name": "Insurgency in Laos",
+      "location": "Laos",
+      "countries": [
+        "Laos"
+      ],
+      "coordinates": {
+        "lat": 19.86,
+        "lng": 102.5
+      },
+      "startYear": 1975,
+      "deathToll": {
+        "total": 100000,
+        "totalDisplay": "100,000+",
+        "recent": 5
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Laos",
+      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "affectedRegions": [
+        {
+          "name": "Bolikhamxai province",
+          "lat": 18.5242,
+          "lng": 103.9349,
+          "eventCount": 6
+        },
+        {
+          "name": "Xiangkhoang province",
+          "lat": 19.4716,
+          "lng": 103.4222,
+          "eventCount": 5
+        },
+        {
+          "name": "Vientiane province",
+          "lat": 18.7252,
+          "lng": 102.4268,
+          "eventCount": 4
+        },
+        {
+          "name": "Xaignabouli province",
+          "lat": 19.268,
+          "lng": 102.8766,
+          "eventCount": 3
+        },
+        {
+          "name": "Xaisomboun province",
+          "lat": 18.4906,
+          "lng": 103.0454,
+          "eventCount": 2
+        },
+        {
+          "name": "Oudomxai province",
+          "lat": 20.4401,
+          "lng": 101.8202,
+          "eventCount": 2
+        },
+        {
+          "name": "Salavan province",
+          "lat": 15.4219,
+          "lng": 106.384,
+          "eventCount": 1
+        },
+        {
+          "name": "Champasak province",
+          "lat": 15.163,
+          "lng": 105.5096,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "peruvian-conflict",
+      "name": "Peruvian conflict",
+      "location": "Peru",
+      "countries": [
+        "Peru"
+      ],
+      "coordinates": {
+        "lat": -9.19,
+        "lng": -75.02
+      },
+      "startYear": 1980,
+      "deathToll": {
+        "total": 70000,
+        "totalDisplay": "70,000",
+        "recent": 47
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peruvian_conflict",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "Lima department",
+          "lat": -11.9483,
+          "lng": -77.0299,
+          "eventCount": 159
+        },
+        {
+          "name": "Ayacucho department",
+          "lat": -13.4494,
+          "lng": -74.1491,
+          "eventCount": 151
+        },
+        {
+          "name": "Unknown",
+          "lat": -10.3597,
+          "lng": -75.4406,
+          "eventCount": 113
+        },
+        {
+          "name": "Junín department",
+          "lat": -11.5404,
+          "lng": -75.199,
+          "eventCount": 106
+        },
+        {
+          "name": "Huánuco department",
+          "lat": -9.2399,
+          "lng": -76.1584,
+          "eventCount": 65
+        },
+        {
+          "name": "San Martín department",
+          "lat": -7.6385,
+          "lng": -76.6526,
+          "eventCount": 34
+        },
+        {
+          "name": "Ayacucho region",
+          "lat": -12.9036,
+          "lng": -74.1576,
+          "eventCount": 26
+        },
+        {
+          "name": "Ancash department",
+          "lat": -9.5651,
+          "lng": -77.5616,
+          "eventCount": 22
+        },
+        {
+          "name": "Amazonas department",
+          "lat": -3.8183,
+          "lng": -78.1906,
+          "eventCount": 22
+        },
+        {
+          "name": "Huancavelica department",
+          "lat": -12.9296,
+          "lng": -74.8477,
+          "eventCount": 20
+        },
+        {
+          "name": "La Libertad department",
+          "lat": -7.9246,
+          "lng": -78.3998,
+          "eventCount": 19
+        },
+        {
+          "name": "Puno department",
+          "lat": -15.0946,
+          "lng": -70.0872,
+          "eventCount": 18
+        },
+        {
+          "name": "Junín region",
+          "lat": -11.6878,
+          "lng": -74.555,
+          "eventCount": 14
+        },
+        {
+          "name": "Huánuco region",
+          "lat": -9.2064,
+          "lng": -76.1288,
+          "eventCount": 11
+        },
+        {
+          "name": "Apurímac department",
+          "lat": -14.039,
+          "lng": -73.1804,
+          "eventCount": 10
+        },
+        {
+          "name": "Cusco department",
+          "lat": -13.7216,
+          "lng": -71.8721,
+          "eventCount": 9
+        },
+        {
+          "name": "Ica department",
+          "lat": -14.0557,
+          "lng": -75.6819,
+          "eventCount": 8
+        },
+        {
+          "name": "Pasco department",
+          "lat": -10.6124,
+          "lng": -75.8024,
+          "eventCount": 8
+        },
+        {
+          "name": "Ucayali department",
+          "lat": -9.2836,
+          "lng": -74.8374,
+          "eventCount": 7
+        },
+        {
+          "name": "Cusco region",
+          "lat": -12.4386,
+          "lng": -72.9854,
+          "eventCount": 5
+        }
+      ]
+    },
+    {
+      "id": "islamist-insurgency-in-egypt",
+      "name": "Islamist insurgency in Egypt",
+      "location": "Egypt",
+      "countries": [
+        "Egypt"
+      ],
+      "coordinates": {
+        "lat": 26.82,
+        "lng": 30.8
+      },
+      "startYear": 1981,
+      "deathToll": {
+        "total": 6000,
+        "totalDisplay": "6,000+",
+        "recent": 53
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Egypt",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "North Sinai governorate",
+          "lat": 31.0442,
+          "lng": 33.8133,
+          "eventCount": 553
+        },
+        {
+          "name": "Al Minya governorate",
+          "lat": 28.0561,
+          "lng": 30.748,
+          "eventCount": 153
+        },
+        {
+          "name": "Assiut governorate",
+          "lat": 27.4041,
+          "lng": 31.0016,
+          "eventCount": 125
+        },
+        {
+          "name": "Cairo governorate",
+          "lat": 30.0304,
+          "lng": 31.2481,
+          "eventCount": 64
+        },
+        {
+          "name": "Unknown",
+          "lat": 27.2113,
+          "lng": 32.0744,
+          "eventCount": 39
+        },
+        {
+          "name": "Alexandria governorate",
+          "lat": 31.2021,
+          "lng": 29.9378,
+          "eventCount": 23
+        },
+        {
+          "name": "Qena governorate",
+          "lat": 25.9964,
+          "lng": 32.4575,
+          "eventCount": 20
+        },
+        {
+          "name": "Central Sinai governorate",
+          "lat": 29.9,
+          "lng": 33.7,
+          "eventCount": 20
+        },
+        {
+          "name": "Sohag governorate",
+          "lat": 26.5766,
+          "lng": 31.6975,
+          "eventCount": 18
+        },
+        {
+          "name": "Aswan governorate",
+          "lat": 24.0967,
+          "lng": 32.8958,
+          "eventCount": 10
+        },
+        {
+          "name": "Giza governorate",
+          "lat": 29.9298,
+          "lng": 31.1747,
+          "eventCount": 9
+        },
+        {
+          "name": "Beni Suef governorate",
+          "lat": 29.0391,
+          "lng": 31.0047,
+          "eventCount": 9
+        },
+        {
+          "name": "Fayoum governorate",
+          "lat": 29.2936,
+          "lng": 30.7533,
+          "eventCount": 9
+        },
+        {
+          "name": "South Sinai governorate",
+          "lat": 28.7613,
+          "lng": 33.9447,
+          "eventCount": 9
+        },
+        {
+          "name": "Qalyubia governorate",
+          "lat": 30.21,
+          "lng": 31.2678,
+          "eventCount": 8
+        },
+        {
+          "name": "Assiut governorate",
+          "lat": 27.1944,
+          "lng": 31.1329,
+          "eventCount": 8
+        },
+        {
+          "name": "Red Sea governorate",
+          "lat": 27.0333,
+          "lng": 31.8188,
+          "eventCount": 6
+        },
+        {
+          "name": "Ismailia governorate",
+          "lat": 30.6891,
+          "lng": 32.2879,
+          "eventCount": 6
+        },
+        {
+          "name": "Suez governorate",
+          "lat": 29.9723,
+          "lng": 32.531,
+          "eventCount": 5
+        },
+        {
+          "name": "Dakahlia governorate",
+          "lat": 31.0441,
+          "lng": 31.4556,
+          "eventCount": 5
+        }
+      ]
+    },
+    {
+      "id": "casamance-conflict",
+      "name": "Casamance conflict",
+      "location": "Senegal Gambia",
+      "countries": [
+        "Senegal",
+        "Gambia"
+      ],
+      "coordinates": {
+        "lat": 14.5,
+        "lng": -14.45
+      },
+      "startYear": 1982,
+      "deathToll": {
+        "total": 5000,
+        "totalDisplay": "5,000+",
+        "recent": 6
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casamance_conflict",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "Ziguinchor region",
+          "lat": 12.6322,
+          "lng": -16.3511,
+          "eventCount": 213
+        },
+        {
+          "name": "Unknown",
+          "lat": 12.75,
+          "lng": -15.5,
+          "eventCount": 39
+        },
+        {
+          "name": "Kolda region",
+          "lat": 12.7294,
+          "lng": -15.5098,
+          "eventCount": 34
+        },
+        {
+          "name": "Dakar region",
+          "lat": 14.7423,
+          "lng": -17.3276,
+          "eventCount": 6
+        },
+        {
+          "name": "Tambacounda region",
+          "lat": 14.3919,
+          "lng": -12.7666,
+          "eventCount": 4
+        },
+        {
+          "name": "Sédhiou region",
+          "lat": 12.8386,
+          "lng": -15.7262,
+          "eventCount": 4
+        },
+        {
+          "name": "Saint-Louis region",
+          "lat": 16.0967,
+          "lng": -14.9263,
+          "eventCount": 3
+        },
+        {
+          "name": "Diourbel region",
+          "lat": 14.7217,
+          "lng": -16.1701,
+          "eventCount": 3
+        }
+      ]
+    },
+    {
+      "id": "nagorno-karabakh-conflict",
+      "name": "Nagorno-Karabakh conflict",
+      "location": "Armenia Azerbaijan",
+      "countries": [
+        "Armenia",
+        "Azerbaijan"
+      ],
+      "coordinates": {
+        "lat": 40.07,
+        "lng": 45.04
+      },
+      "startYear": 1988,
+      "deathToll": {
+        "total": 39800,
+        "totalDisplay": "39,800+",
+        "recent": 8
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "Unknown",
+          "lat": 40.0398,
+          "lng": 46.8527,
+          "eventCount": 383
+        },
+        {
+          "name": "Agdam rayon",
+          "lat": 40.0055,
+          "lng": 46.9953,
+          "eventCount": 66
+        },
+        {
+          "name": "Terter rayon",
+          "lat": 40.2925,
+          "lng": 46.8563,
+          "eventCount": 49
+        },
+        {
+          "name": "Khankendy city municipality",
+          "lat": 39.8217,
+          "lng": 46.7555,
+          "eventCount": 38
+        },
+        {
+          "name": "Fizuli rayon",
+          "lat": 39.5688,
+          "lng": 47.2475,
+          "eventCount": 36
+        },
+        {
+          "name": "Kelbajar rayon",
+          "lat": 40.1103,
+          "lng": 46.1845,
+          "eventCount": 28
+        },
+        {
+          "name": "Khojavend rayon",
+          "lat": 39.6747,
+          "lng": 47.0287,
+          "eventCount": 27
+        },
+        {
+          "name": "Geghark’unik’ province",
+          "lat": 40.2407,
+          "lng": 45.5974,
+          "eventCount": 17
+        },
+        {
+          "name": "Tavush province",
+          "lat": 40.9762,
+          "lng": 45.2225,
+          "eventCount": 17
+        },
+        {
+          "name": "Geranboy rayon",
+          "lat": 40.5179,
+          "lng": 46.7327,
+          "eventCount": 16
+        },
+        {
+          "name": "Khojaly rayon",
+          "lat": 39.9104,
+          "lng": 46.8207,
+          "eventCount": 15
+        },
+        {
+          "name": "Tovuz rayon",
+          "lat": 40.9557,
+          "lng": 45.6486,
+          "eventCount": 15
+        },
+        {
+          "name": "Gazakh rayon",
+          "lat": 41.1864,
+          "lng": 45.1139,
+          "eventCount": 14
+        },
+        {
+          "name": "Shusha rayon",
+          "lat": 39.7434,
+          "lng": 46.7354,
+          "eventCount": 10
+        },
+        {
+          "name": "Syunik province",
+          "lat": 39.2531,
+          "lng": 46.3834,
+          "eventCount": 7
+        },
+        {
+          "name": "Lachin rayon",
+          "lat": 39.6375,
+          "lng": 46.4591,
+          "eventCount": 7
+        },
+        {
+          "name": "Unknown",
+          "lat": 40.1354,
+          "lng": 45.1748,
+          "eventCount": 6
+        },
+        {
+          "name": "Barda rayon",
+          "lat": 40.3686,
+          "lng": 47.1554,
+          "eventCount": 6
+        },
+        {
+          "name": "Gadabey rayon",
+          "lat": 40.5466,
+          "lng": 45.6181,
+          "eventCount": 6
+        },
+        {
+          "name": "Ararat province",
+          "lat": 39.7457,
+          "lng": 44.8247,
+          "eventCount": 5
+        }
+      ]
+    },
+    {
+      "id": "north-caucasus-conflict",
+      "name": "North Caucasus conflict",
+      "location": "Russia Azerbaijan Georgia",
+      "countries": [
+        "Russia",
+        "Azerbaijan",
+        "Georgia"
+      ],
+      "coordinates": {
+        "lat": 43,
+        "lng": 45
+      },
+      "startYear": 1994,
+      "deathToll": {
+        "total": 0,
+        "totalDisplay": "0",
+        "recent": 9
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Russo-Caucasian_conflict",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "Chechnya republic",
+          "lat": 43.224,
+          "lng": 45.7901,
+          "eventCount": 1970
+        },
+        {
+          "name": "Dagestan republic",
+          "lat": 42.9479,
+          "lng": 47.1865,
+          "eventCount": 887
+        },
+        {
+          "name": "Kursk oblast",
+          "lat": 51.3463,
+          "lng": 35.2875,
+          "eventCount": 517
+        },
+        {
+          "name": "Ingushetia republic",
+          "lat": 43.2717,
+          "lng": 44.8534,
+          "eventCount": 397
+        },
+        {
+          "name": "Belgorod oblast",
+          "lat": 50.4923,
+          "lng": 36.7375,
+          "eventCount": 244
+        },
+        {
+          "name": "Kabardino-Balkaria republic",
+          "lat": 43.5407,
+          "lng": 43.5312,
+          "eventCount": 217
+        },
+        {
+          "name": "Unknown",
+          "lat": 45.7755,
+          "lng": 43.2588,
+          "eventCount": 58
+        },
+        {
+          "name": "Azerbaijan SSR",
+          "lat": 40.119,
+          "lng": 46.9244,
+          "eventCount": 52
+        },
+        {
+          "name": "Stavropol krai",
+          "lat": 44.5144,
+          "lng": 43.5845,
+          "eventCount": 51
+        },
+        {
+          "name": "Moscow gorod",
+          "lat": 55.7558,
+          "lng": 37.6173,
+          "eventCount": 31
+        },
+        {
+          "name": "Karachay-Cherkessia republic",
+          "lat": 43.9799,
+          "lng": 41.9904,
+          "eventCount": 24
+        },
+        {
+          "name": "Bryansk oblast",
+          "lat": 52.4118,
+          "lng": 33.0798,
+          "eventCount": 21
+        },
+        {
+          "name": "North Ossetia - Alania",
+          "lat": 43.1897,
+          "lng": 44.6511,
+          "eventCount": 19
+        },
+        {
+          "name": "Georgian SSR",
+          "lat": 42.2502,
+          "lng": 44.0534,
+          "eventCount": 19
+        },
+        {
+          "name": "Krasnodar krai",
+          "lat": 45.4916,
+          "lng": 38.3129,
+          "eventCount": 13
+        },
+        {
+          "name": "Moscow oblast",
+          "lat": 55.6643,
+          "lng": 37.7445,
+          "eventCount": 7
+        },
+        {
+          "name": "Volgograd oblast",
+          "lat": 48.9482,
+          "lng": 44.1151,
+          "eventCount": 7
+        },
+        {
+          "name": "Rostov oblast",
+          "lat": 48.0296,
+          "lng": 40.7107,
+          "eventCount": 6
+        },
+        {
+          "name": "Adygeya republic",
+          "lat": 44.7238,
+          "lng": 39.6458,
+          "eventCount": 5
+        },
+        {
+          "name": "Armenian SSR",
+          "lat": 40.3907,
+          "lng": 44.8721,
+          "eventCount": 4
+        }
+      ]
+    },
+    {
+      "id": "south-thailand-insurgency",
+      "name": "South Thailand insurgency",
+      "location": "Thailand",
+      "countries": [
+        "Thailand"
+      ],
+      "coordinates": {
+        "lat": 15.87,
+        "lng": 100.99
+      },
+      "startYear": 2004,
+      "deathToll": {
+        "total": 7300,
+        "totalDisplay": "7,300",
+        "recent": 51
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/South_Thailand_insurgency",
+      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "affectedRegions": [
+        {
+          "name": "Narathiwat province",
+          "lat": 6.2329,
+          "lng": 101.7256,
+          "eventCount": 881
+        },
+        {
+          "name": "Pattani province",
+          "lat": 6.7428,
+          "lng": 101.3613,
+          "eventCount": 860
+        },
+        {
+          "name": "Yala province",
+          "lat": 6.3738,
+          "lng": 101.2701,
+          "eventCount": 670
+        },
+        {
+          "name": "Songkhla province",
+          "lat": 6.7606,
+          "lng": 100.7688,
+          "eventCount": 64
+        },
+        {
+          "name": "Unknown",
+          "lat": 9.0741,
+          "lng": 100.676,
+          "eventCount": 53
+        },
+        {
+          "name": "Sisaket province",
+          "lat": 14.6801,
+          "lng": 104.3174,
+          "eventCount": 6
+        },
+        {
+          "name": "Tak province",
+          "lat": 16.7689,
+          "lng": 98.5106,
+          "eventCount": 5
+        },
+        {
+          "name": "Mae Hong Son province",
+          "lat": 18.8495,
+          "lng": 97.9536,
+          "eventCount": 4
+        },
+        {
+          "name": "Chiang Rai province",
+          "lat": 20.1736,
+          "lng": 99.8516,
+          "eventCount": 2
+        },
+        {
+          "name": "Sa Keao province",
+          "lat": 13.488,
+          "lng": 102.3108,
+          "eventCount": 2
+        },
+        {
+          "name": "Surin province",
+          "lat": 14.4531,
+          "lng": 103.6919,
+          "eventCount": 2
+        },
+        {
+          "name": "Kanchanaburi province",
+          "lat": 15.1555,
+          "lng": 98.4536,
+          "eventCount": 1
+        },
+        {
+          "name": "Sa Kaeo province",
+          "lat": 14.0061,
+          "lng": 102.8058,
+          "eventCount": 1
+        },
+        {
+          "name": "Trat province",
+          "lat": 12.2948,
+          "lng": 102.616,
+          "eventCount": 1
+        },
+        {
+          "name": "Chanthaburi province",
+          "lat": 12.9347,
+          "lng": 102.3719,
+          "eventCount": 1
+        }
+      ]
+    },
+    {
+      "id": "insurgency-in-paraguay",
+      "name": "Insurgency in Paraguay",
+      "location": "Paraguay",
+      "countries": [
+        "Paraguay"
+      ],
+      "coordinates": {
+        "lat": -23.44,
+        "lng": -58.44
+      },
+      "startYear": 2005,
+      "deathToll": {
+        "total": 150,
+        "totalDisplay": "150+",
+        "recent": 2
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Paraguay",
+      "lastUpdated": "2026-04-17T09:10:56.104Z",
+      "affectedRegions": [
+        {
+          "name": "Amambay department",
+          "lat": -22.5472,
+          "lng": -55.7333,
+          "eventCount": 3
+        },
+        {
+          "name": "Asunción department",
+          "lat": -25.2939,
+          "lng": -57.6111,
+          "eventCount": 2
+        }
+      ]
+    },
+    {
+      "id": "salvadoran-gang-crackdown",
+      "name": "Salvadoran gang crackdown",
+      "location": "El Salvador",
+      "countries": [
+        "El Salvador"
+      ],
+      "coordinates": {
+        "lat": 13.79,
+        "lng": -88.9
+      },
+      "startYear": 2022,
+      "deathToll": {
+        "total": 545,
+        "totalDisplay": "545+",
+        "recent": 10
+      },
+      "intensity": "skirmish",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salvadoran_gang_crackdown",
+      "lastUpdated": "2026-04-17T09:10:56.104Z",
+      "affectedRegions": [
+        {
+          "name": "San Salvador department",
+          "lat": 13.721,
+          "lng": -89.1933,
+          "eventCount": 37
+        },
+        {
+          "name": "Chalatenango department",
+          "lat": 14.157,
+          "lng": -89.0731,
+          "eventCount": 27
+        },
+        {
+          "name": "Unknown",
+          "lat": 13.8095,
+          "lng": -88.8812,
+          "eventCount": 23
+        },
+        {
+          "name": "La Libertad department",
+          "lat": 13.6737,
+          "lng": -89.3414,
+          "eventCount": 18
+        },
+        {
+          "name": "Morazán department",
+          "lat": 13.8153,
+          "lng": -88.1319,
+          "eventCount": 12
+        },
+        {
+          "name": "Usulután department",
+          "lat": 13.4121,
+          "lng": -88.4999,
+          "eventCount": 12
+        },
+        {
+          "name": "San Miguel department",
+          "lat": 13.5465,
+          "lng": -88.2415,
+          "eventCount": 12
+        },
+        {
+          "name": "Ahuachapán department",
+          "lat": 13.8784,
+          "lng": -89.8845,
+          "eventCount": 9
+        },
+        {
+          "name": "Sonsonate department",
+          "lat": 13.7291,
+          "lng": -89.7144,
+          "eventCount": 8
+        },
+        {
+          "name": "Santa Ana department",
+          "lat": 13.9728,
+          "lng": -89.5863,
+          "eventCount": 7
+        },
+        {
+          "name": "Cabañas department",
+          "lat": 13.8833,
+          "lng": -88.8389,
+          "eventCount": 6
+        },
+        {
+          "name": "San Vicente department",
+          "lat": 13.6709,
+          "lng": -88.7222,
+          "eventCount": 6
+        },
+        {
+          "name": "Cuscatlán department",
+          "lat": 13.7439,
+          "lng": -88.9547,
+          "eventCount": 6
+        },
+        {
+          "name": "La Unión department",
+          "lat": 13.4804,
+          "lng": -87.9622,
+          "eventCount": 4
+        },
+        {
+          "name": "La Paz department",
+          "lat": 13.4685,
+          "lng": -88.9404,
+          "eventCount": 3
+        }
+      ]
+    }
+  ],
+  "lastScraped": "2026-04-17T09:11:31.352Z",
+  "totalDeaths": 8035305
+}
