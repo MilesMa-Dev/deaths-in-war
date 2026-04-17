@@ -40,12 +40,12 @@ function escapeHtml(str: string): string {
     .replace(/"/g, '&quot;');
 }
 
-function loadConflictsData(): ConflictsData {
+function loadConflictsData(): ConflictsData | null {
   const localPath = path.join(__dirname, '..', '..', 'backend', 'src', 'data', 'conflicts.json');
   if (fs.existsSync(localPath)) {
     return JSON.parse(fs.readFileSync(localPath, 'utf-8'));
   }
-  throw new Error(`Conflicts data not found at ${localPath}. Run the backend scraper first.`);
+  return null;
 }
 
 function readDistHtml(): string {
@@ -417,6 +417,10 @@ function generateSitemap(conflicts: Conflict[], lastScraped: string): string {
 function main() {
   console.log('[Prerender] Loading conflict data...');
   const data = loadConflictsData();
+  if (!data) {
+    console.warn('[Prerender] Skipped — conflicts.json not found. SEO pages will not be generated.');
+    return;
+  }
   console.log(`[Prerender] Found ${data.conflicts.length} conflicts.`);
 
   const baseHtml = readDistHtml();
