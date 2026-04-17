@@ -1,4 +1,4 @@
-import { put, head, getDownloadUrl } from '@vercel/blob';
+import { put, get } from '@vercel/blob';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -10,6 +10,13 @@ const MANUAL_PATH = path.join(__dirname, 'data', 'manual-conflicts.json');
 const CONFLICTS_BLOB_KEY = 'conflicts.json';
 const CRAWLER_LOGS_BLOB_KEY = 'crawler-logs.json';
 const MAX_LOG_ENTRIES = 10_000;
+
+async function readBlob<T>(key: string): Promise<T | null> {
+  const result = await get(key, { access: 'private', useCache: false });
+  if (!result || result.statusCode !== 200) return null;
+  const text = await new Response(result.stream).text();
+  return JSON.parse(text) as T;
+}
 
 // ---------------------------------------------------------------------------
 // Conflict data — Vercel Blob
@@ -25,11 +32,8 @@ export async function saveData(data: ConflictsData): Promise<void> {
 
 export async function loadData(): Promise<ConflictsData | null> {
   try {
-    const meta = await head(CONFLICTS_BLOB_KEY);
-    const downloadUrl = await getDownloadUrl(meta.url);
-    const resp = await fetch(downloadUrl, { cache: 'no-store' });
-    if (!resp.ok) return null;
-    const data = (await resp.json()) as ConflictsData;
+    const data = await readBlob<ConflictsData>(CONFLICTS_BLOB_KEY);
+    if (!data) return null;
 
     const manual = loadManualConflicts();
     if (manual.length > 0) {
@@ -76,11 +80,7 @@ export async function saveCrawlerLogs(logs: CrawlerLogs): Promise<void> {
 
 export async function loadCrawlerLogs(): Promise<CrawlerLogs> {
   try {
-    const meta = await head(CRAWLER_LOGS_BLOB_KEY);
-    const downloadUrl = await getDownloadUrl(meta.url);
-    const resp = await fetch(downloadUrl, { cache: 'no-store' });
-    if (!resp.ok) return { entries: [] };
-    return (await resp.json()) as CrawlerLogs;
+    return (await readBlob<CrawlerLogs>(CRAWLER_LOGS_BLOB_KEY)) ?? { entries: [] };
   } catch {
     return { entries: [] };
   }
