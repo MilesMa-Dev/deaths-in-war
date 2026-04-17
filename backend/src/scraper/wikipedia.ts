@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import type { Element } from 'domhandler';
 import type { Conflict, ConflictsData } from '../types/index.js';
 import { getCoordinatesForCountries } from './country-coordinates.js';
 import { saveData, loadData } from './storage.js';
@@ -67,7 +68,7 @@ function parseNumber(raw: string): number {
   return isNaN(num) ? 0 : num;
 }
 
-function extractTextClean($el: cheerio.Cheerio<cheerio.Element>, $: cheerio.CheerioAPI): string {
+function extractTextClean($el: cheerio.Cheerio<Element>, $: cheerio.CheerioAPI): string {
   // Remove sup elements (citations) before extracting text
   $el.find('sup').remove();
   return $el.text().trim();
@@ -80,7 +81,7 @@ function slugify(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
-function extractCountriesFromCell($cell: cheerio.Cheerio<cheerio.Element>, $: cheerio.CheerioAPI): string[] {
+function extractCountriesFromCell($cell: cheerio.Cheerio<Element>, $: cheerio.CheerioAPI): string[] {
   // Extract country names from <a> link tags within the location cell
   const links = $cell.find('a');
   const countries: string[] = [];
@@ -153,7 +154,7 @@ async function discoverSections(): Promise<SectionDef[]> {
   return discovered;
 }
 
-function detectColumnMapping($: cheerio.CheerioAPI, table: cheerio.Cheerio<cheerio.Element>): Record<string, number> {
+function detectColumnMapping($: cheerio.CheerioAPI, table: cheerio.Cheerio<Element>): Record<string, number> {
   const headers = table.find('tr').first().find('th');
   const mapping: Record<string, number> = {};
   const claimed = new Set<number>();
