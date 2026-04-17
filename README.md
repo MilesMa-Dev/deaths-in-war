@@ -63,15 +63,6 @@ npx tsx src/scraper/export-regions.ts /path/to/GEDEvent_vXX_X.csv
 
 This regenerates `backend/src/data/regions-static.json`. Commit and push to update the deployment.
 
-## Deployment
-
-| Component | Platform | Plan |
-|-----------|----------|------|
-| Frontend | [Vercel](https://vercel.com) | Free |
-| Backend | [Render](https://render.com) | Free |
-
-The project includes `render.yaml` (Render Blueprint) and `frontend/vercel.json` for deployment configuration. Push to `main` triggers auto-deploy on both platforms.
-
 ## Tech Stack
 
 **Frontend:** React · TypeScript · Three.js · GSAP · Sass
