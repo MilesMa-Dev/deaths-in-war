@@ -23,7 +23,7 @@ If this visualization makes even one person pause and reflect, it has served its
 - Scrapes Wikipedia daily for up-to-date data on all ongoing armed conflicts
 - Renders an interactive **world map** with conflict markers sized by cumulative death toll
 - Classifies conflicts by intensity: major wars, wars, minor conflicts, and skirmishes
-- Shows affected regions per conflict using UCDP georeferenced event data![1776421490631](image/README/1776421490631.png)
+- Shows affected regions per conflict using UCDP georeferenced event data!
 
 ## Data Sources
 
