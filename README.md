@@ -35,10 +35,7 @@ If this visualization makes even one person pause and reflect, it has served its
 
 ## Live Demo
 
-| Component | URL |
-|-----------|-----|
-| Frontend | https://frontend-seven-lake-31.vercel.app |
-| Backend API | https://deaths-in-war-backend.onrender.com |
+https://frontend-seven-lake-31.vercel.app
 
 ## Getting Started
 
