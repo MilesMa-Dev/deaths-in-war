@@ -12,4 +12,8 @@ services:
         value: production
       - key: CORS_ORIGIN
         value: "*"
+      - key: ACLED_EMAIL
+        sync: false
+      - key: ACLED_PASSWORD
+        sync: false
     healthCheckPath: /health
