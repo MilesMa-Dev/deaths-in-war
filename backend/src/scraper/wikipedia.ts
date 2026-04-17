@@ -3,7 +3,7 @@ import * as cheerio from 'cheerio';
 import type { Element } from 'domhandler';
 import type { Conflict, ConflictsData } from '../types/index.js';
 import { getCoordinatesForCountries } from './country-coordinates.js';
-import { saveData, loadData } from './storage.js';
+import { saveData, loadData, loadManualConflicts } from './storage.js';
 import { loadStaticRegions } from './static-regions.js';
 
 const WIKI_API = 'https://en.wikipedia.org/w/api.php';
@@ -22,6 +22,7 @@ const CONFLICT_COORD_OVERRIDES: Record<string, { lat: number; lng: number }> = {
   'north-caucasus-conflict': { lat: 43.0, lng: 45.0 },
   'western-sahara-conflict': { lat: 24.22, lng: -12.89 },
   'kurdish-nationalist-conflicts': { lat: 36.40, lng: 44.35 },
+  'insurgencies-in-iran': { lat: 28.30, lng: 61.30 },
 };
 
 type Intensity = Conflict['intensity'];
@@ -389,6 +390,19 @@ export async function scrapeConflicts(): Promise<ConflictsData> {
     console.log(`[Scraper] Applied UCDP region data to ${enriched}/${allConflicts.length} conflicts.`);
   } else {
     console.warn('[Scraper] No region data file found, conflicts will lack affectedRegions.');
+  }
+
+  const manualConflicts = loadManualConflicts();
+  if (manualConflicts.length > 0) {
+    const scrapedIds = new Set(allConflicts.map(c => c.id));
+    let added = 0;
+    for (const mc of manualConflicts) {
+      if (!scrapedIds.has(mc.id)) {
+        allConflicts.push(mc);
+        added++;
+      }
+    }
+    console.log(`[Scraper] Merged ${added} manual conflict(s) not found in scraped data.`);
   }
 
   const totalDeaths = allConflicts.reduce((sum, c) => sum + c.deathToll.total, 0);

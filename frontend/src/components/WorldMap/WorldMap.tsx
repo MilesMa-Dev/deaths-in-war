@@ -319,6 +319,10 @@ export default function WorldMap({
   onConflictClickRef.current = onConflictClick;
   const onConflictHoverRef = useRef(onConflictHover);
   onConflictHoverRef.current = onConflictHover;
+  const regionMapRef = useRef<Map<number, [number, number]>>(new Map());
+  const regionBaseColorsRef = useRef<Float32Array | null>(null);
+  const regionTargetColorsRef = useRef<Float32Array | null>(null);
+  const regionAnimatingRef = useRef(false);
 
   const updateCamera = useCallback(() => {
     const t = threeRef.current;
@@ -483,6 +487,28 @@ export default function WorldMap({
         updateCamera();
       }
 
+      // Animate region dot colors towards targets
+      if (regionAnimatingRef.current && t.regionMarkerMesh) {
+        const target = regionTargetColorsRef.current;
+        const attr = t.regionMarkerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
+        if (target && attr) {
+          const arr = attr.array as Uint8Array;
+          let maxDelta = 0;
+          const lerpSpeed = 0.08;
+          for (let i = 0; i < arr.length; i++) {
+            const diff = target[i] - arr[i];
+            if (Math.abs(diff) > 0.5) {
+              arr[i] = Math.round(arr[i] + diff * lerpSpeed);
+              maxDelta = Math.max(maxDelta, Math.abs(diff));
+            } else {
+              arr[i] = Math.round(target[i]);
+            }
+          }
+          attr.needsUpdate = true;
+          if (maxDelta < 1) regionAnimatingRef.current = false;
+        }
+      }
+
       // Update pulse uniform
       const pulse = (Date.now() % PULSE_PERIOD) / PULSE_PERIOD;
       t.glowMaterial.uniforms.uPulse.value = pulse;
@@ -606,12 +632,17 @@ export default function WorldMap({
     t.regionGlowMesh = null;
 
     const allRegions: { lat: number; lng: number; eventCount: number; intensity: string }[] = [];
-    for (const c of conflicts) {
-      if (!c.affectedRegions) continue;
+    const newRegionMap = new Map<number, [number, number]>();
+    for (let ci = 0; ci < conflicts.length; ci++) {
+      const c = conflicts[ci];
+      if (!c.affectedRegions || c.affectedRegions.length === 0) continue;
+      const start = allRegions.length;
       for (const r of c.affectedRegions) {
         allRegions.push({ ...r, intensity: c.intensity });
       }
+      newRegionMap.set(ci, [start, allRegions.length]);
     }
+    regionMapRef.current = newRegionMap;
 
     if (allRegions.length > 0) {
       const rCount = allRegions.length;
@@ -641,6 +672,10 @@ export default function WorldMap({
         rMColor[i * 4 + 2] = REGION_COLOR[2];
         rMColor[i * 4 + 3] = 180 * alphaScale;
       }
+
+      regionBaseColorsRef.current = new Float32Array(rMColor);
+      regionTargetColorsRef.current = new Float32Array(rMColor);
+      regionAnimatingRef.current = false;
 
       const regionMarkerGeom = new THREE.InstancedBufferGeometry();
       regionMarkerGeom.index = baseQuad.index;
@@ -776,6 +811,39 @@ export default function WorldMap({
 
     // Hover / click via raycaster
     let lastHoveredIndex = -1;
+
+    const highlightRegions = (conflictIndex: number) => {
+      const base = regionBaseColorsRef.current;
+      const target = regionTargetColorsRef.current;
+      if (!base || !target) return;
+      const range = regionMapRef.current.get(conflictIndex);
+      if (!range) return;
+      for (let i = range[0]; i < range[1]; i++) {
+        const idx = i * 4;
+        target[idx] = Math.min(255, base[idx] * 1.35 + 20);
+        target[idx + 1] = Math.min(255, base[idx + 1] * 1.2 + 15);
+        target[idx + 2] = Math.min(255, base[idx + 2] * 1.1 + 10);
+        target[idx + 3] = Math.min(255, base[idx + 3] * 1.3);
+      }
+      regionAnimatingRef.current = true;
+    };
+
+    const restoreRegions = (conflictIndex: number) => {
+      const base = regionBaseColorsRef.current;
+      const target = regionTargetColorsRef.current;
+      if (!base || !target) return;
+      const range = regionMapRef.current.get(conflictIndex);
+      if (!range) return;
+      for (let i = range[0]; i < range[1]; i++) {
+        const idx = i * 4;
+        target[idx] = base[idx];
+        target[idx + 1] = base[idx + 1];
+        target[idx + 2] = base[idx + 2];
+        target[idx + 3] = base[idx + 3];
+      }
+      regionAnimatingRef.current = true;
+    };
+
     const onPointerMove = (e: PointerEvent) => {
       const t = threeRef.current;
       if (!t || panRef.current.active) return;
@@ -789,18 +857,18 @@ export default function WorldMap({
       if (intersects.length > 0) {
         const hit = intersects[0].object.userData as { conflict: Conflict; index: number };
         if (hit.index !== lastHoveredIndex) {
-          // Restore previous hovered marker alpha
           if (lastHoveredIndex >= 0 && t.markerMesh) {
             const attr = t.markerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
             attr.setW(lastHoveredIndex, 200);
             attr.needsUpdate = true;
+            restoreRegions(lastHoveredIndex);
           }
-          // Highlight new marker
           if (t.markerMesh) {
             const attr = t.markerMesh.geometry.getAttribute('instanceColor') as THREE.InstancedBufferAttribute;
             attr.setW(hit.index, 240);
             attr.needsUpdate = true;
           }
+          highlightRegions(hit.index);
           lastHoveredIndex = hit.index;
           onConflictHoverRef.current(hit.conflict);
         }
@@ -811,6 +879,7 @@ export default function WorldMap({
           attr.setW(lastHoveredIndex, 200);
           attr.needsUpdate = true;
         }
+        restoreRegions(lastHoveredIndex);
         lastHoveredIndex = -1;
         onConflictHoverRef.current(null);
         el.style.cursor = 'grab';
