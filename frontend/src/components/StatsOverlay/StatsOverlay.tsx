@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import type { StatsResponse } from '../../types';
-import { GSAP_EASE, MD_DURATION } from '../../hooks/useRevealAnimation';
+import { GSAP_EASE } from '../../hooks/useRevealAnimation';
 import styles from './StatsOverlay.module.scss';
 
 interface StatsOverlayProps {
