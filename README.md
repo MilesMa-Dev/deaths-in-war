@@ -1,8 +1,8 @@
 # Deaths in War
 
-> Every number is a life. Every dot on the map is someone's home.
+> Every number is a life. Every dot on the map is a community's home.
 
-An interactive 3D globe that visualizes ongoing armed conflicts worldwide and their human cost. Data is automatically scraped daily from Wikipedia's [List of ongoing armed conflicts](https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts), with affected regions derived from [UCDP GED](https://ucdp.uu.se/downloads/) (Uppsala Conflict Data Program).
+An interactive world map that visualizes ongoing armed conflicts worldwide and their human cost. Data is automatically scraped daily from Wikipedia's [List of ongoing armed conflicts](https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts), with affected regions derived from [UCDP GED](https://ucdp.uu.se/downloads/) (Uppsala Conflict Data Program).
 
 ## Why This Project?
 
@@ -10,7 +10,7 @@ War is not an abstraction. Behind every statistic are real people — parents, c
 
 Yet for most of us, conflicts happening thousands of miles away remain invisible. A headline scrolls past; a number is forgotten. We built this project because **numbers deserve to be felt, not just read**.
 
-By placing every ongoing conflict on a spinning globe — scaled by death toll, colored by intensity — we hope to make the human cost of war harder to ignore. Not to assign blame or take sides, but to ask a simple question:
+By placing every ongoing conflict on a world map — scaled by death toll, colored by intensity — we hope to make the human cost of war harder to ignore. Not to assign blame or take sides, but to ask a simple question:
 
 **How much longer?**
 
@@ -21,10 +21,9 @@ If this visualization makes even one person pause and reflect, it has served its
 ## What It Does
 
 - Scrapes Wikipedia daily for up-to-date data on all ongoing armed conflicts
-- Renders an interactive **3D globe** (Three.js) with conflict markers sized by cumulative death toll
+- Renders an interactive **world map** with conflict markers sized by cumulative death toll
 - Classifies conflicts by intensity: major wars, wars, minor conflicts, and skirmishes
-- Shows affected regions per conflict using UCDP georeferenced event data
-- Opens with a cinematic intro showing the total lives lost
+- Shows affected regions per conflict using UCDP georeferenced event data![1776421490631](image/README/1776421490631.png)
 
 ## Data Sources
 
@@ -35,7 +34,7 @@ If this visualization makes even one person pause and reflect, it has served its
 
 ## Live Demo
 
-https://frontend-seven-lake-31.vercel.app
+https://www.deaths-in-war.com
 
 ## Getting Started
 

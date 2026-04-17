@@ -26,17 +26,34 @@
 }
 
 .icon {
-  width: 20px;
-  height: 28px;
-  color: $text-medium;
+  width: 36px;
+  height: 36px;
+  color: $color-accent;
   flex-shrink: 0;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .titleGroup {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex: 1;
+}
+
+.githubLink {
+  color: $text-low;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 1;
+    color: $text-medium;
+  }
 }
 
 .title {
@@ -88,7 +105,6 @@
   @include text-display;
   color: $color-accent;
   white-space: nowrap;
-  opacity: 0;
   transform: translateY(110%);
 
   @include respond-to($bp-mobile) {
@@ -100,7 +116,6 @@
 .statValueSmall {
   @include text-headline;
   color: $text-high;
-  opacity: 0;
   transform: translateY(110%);
 }
 
