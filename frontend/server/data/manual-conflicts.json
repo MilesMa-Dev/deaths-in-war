@@ -1,0 +1,61 @@
+[
+  {
+    "id": "iran-war-2026",
+    "name": "Iran war (2026)",
+    "location": "Iran\n Israel\n Lebanon\n Iraq\n Saudi Arabia\n Kuwait\n Bahrain\n Qatar\n United Arab Emirates\n Oman\n Jordan\n Syria\n Turkey\n Azerbaijan\n Cyprus",
+    "countries": [
+      "Iran",
+      "Israel",
+      "United States",
+      "Lebanon",
+      "Iraq",
+      "Saudi Arabia",
+      "Kuwait",
+      "Bahrain",
+      "Qatar",
+      "United Arab Emirates",
+      "Oman",
+      "Jordan",
+      "Syria",
+      "Turkey",
+      "Azerbaijan",
+      "Cyprus"
+    ],
+    "coordinates": { "lat": 35.69, "lng": 51.39 },
+    "startYear": 2026,
+    "deathToll": {
+      "total": 3600,
+      "totalDisplay": "3,600+",
+      "recent": 3600
+    },
+    "intensity": "major_war",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Iran_war_(2026)",
+    "affectedRegions": [
+      { "name": "Kermanshah, Iran", "lat": 34.123, "lng": 47.2416, "eventCount": 20 },
+      { "name": "Qom & Tehran, Iran", "lat": 35.0593, "lng": 51.2049, "eventCount": 18 },
+      { "name": "Bandar Abbas, Iran", "lat": 26.7681, "lng": 55.9603, "eventCount": 17 },
+      { "name": "Tabriz, Iran", "lat": 37.813, "lng": 45.9495, "eventCount": 16 },
+      { "name": "Erbil, Iraq", "lat": 36.1383, "lng": 43.8232, "eventCount": 10 },
+      { "name": "Manama, Bahrain", "lat": 26.1795, "lng": 50.6511, "eventCount": 10 },
+      { "name": "Kish Island, Iran", "lat": 26.095, "lng": 54.5566, "eventCount": 9 },
+      { "name": "Haifa, Israel", "lat": 32.9869, "lng": 35.4074, "eventCount": 9 },
+      { "name": "Baghdad, Iraq", "lat": 33.1311, "lng": 44.1112, "eventCount": 8 },
+      { "name": "Ali Al Salem, Kuwait", "lat": 29.5639, "lng": 48.1659, "eventCount": 8 },
+      { "name": "Dezful, Iran", "lat": 31.953, "lng": 48.6807, "eventCount": 6 },
+      { "name": "Bushehr, Iran", "lat": 28.6175, "lng": 51.3477, "eventCount": 6 },
+      { "name": "Abu Dhabi, UAE", "lat": 24.6177, "lng": 54.7057, "eventCount": 6 },
+      { "name": "Jask, Iran", "lat": 25.0612, "lng": 57.0393, "eventCount": 6 },
+      { "name": "Chabahar, Iran", "lat": 25.341, "lng": 60.4532, "eventCount": 4 },
+      { "name": "Nasiriyah, Iraq", "lat": 30.527, "lng": 46.5221, "eventCount": 4 },
+      { "name": "Isfahan, Iran", "lat": 32.0273, "lng": 51.698, "eventCount": 3 },
+      { "name": "Qazvin, Iran", "lat": 36.0413, "lng": 50.0737, "eventCount": 3 },
+      { "name": "Shiraz, Iran", "lat": 29.1217, "lng": 53.106, "eventCount": 3 },
+      { "name": "Mahshahr, Iran", "lat": 30.5293, "lng": 49.4936, "eventCount": 3 },
+      { "name": "Baneh, Iran", "lat": 36.131, "lng": 45.8793, "eventCount": 3 },
+      { "name": "Kerman, Iran", "lat": 29.868, "lng": 56.369, "eventCount": 2 },
+      { "name": "Hermel, Lebanon", "lat": 34.4205, "lng": 36.115, "eventCount": 2 },
+      { "name": "Prince Sultan AB, Saudi Arabia", "lat": 24.388, "lng": 47.128, "eventCount": 2 },
+      { "name": "Persian Gulf", "lat": 27.0, "lng": 51.5, "eventCount": 2 }
+    ]
+  }
+]

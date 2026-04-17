@@ -39,18 +39,20 @@ https://www.deaths-in-war.com
 ## Getting Started
 
 ```bash
-# Backend
-cd backend
-npm install
-npm run dev             # http://localhost:3001
-
-# Frontend
 cd frontend
 npm install
 npm run dev             # http://localhost:5173
 ```
 
-The backend scrapes Wikipedia on first start and refreshes daily at 03:00 UTC. No database required — data is stored as a local JSON file. Region data is pre-computed from UCDP GED and bundled with the project.
+The API runs as Vercel Serverless Functions alongside the frontend. A daily Vercel Cron job at 03:00 UTC triggers `/api/cron/scrape` to refresh data from Wikipedia. Data is persisted in Vercel Blob storage. Region data is pre-computed from UCDP GED and bundled with the project.
+
+### Environment Variables
+
+| Variable | Purpose |
+|----------|---------|
+| `BLOB_READ_WRITE_TOKEN` | Vercel Blob access token (auto-generated when linking a Blob store) |
+| `CRON_SECRET` | Protects the `/api/cron/scrape` endpoint |
+| `CRAWLER_INGEST_SECRET` | Authenticates crawler log ingestion |
 
 ### Updating Region Data
 
@@ -61,13 +63,17 @@ cd backend
 npx tsx src/scraper/export-regions.ts /path/to/GEDEvent_vXX_X.csv
 ```
 
-This regenerates `backend/src/data/regions-static.json`. Commit and push to update the deployment.
+Copy the output to the frontend server data directory:
+
+```bash
+cp backend/src/data/regions-static.json frontend/server/data/regions-static.json
+```
 
 ## Tech Stack
 
 **Frontend:** React · TypeScript · Three.js · GSAP · Sass
 
-**Backend:** Node.js · Express · Cheerio · node-cron
+**Backend:** Vercel Serverless Functions · Vercel Blob · Vercel Cron · Cheerio
 
 ## Contributing
 

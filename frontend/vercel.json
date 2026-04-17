@@ -1,11 +1,13 @@
 {
   "installCommand": "npm install --include=dev",
   "buildCommand": "npm run build",
-  "rewrites": [
+  "crons": [
     {
-      "source": "/api/:path*",
-      "destination": "https://deaths-in-war-backend.onrender.com/api/:path*"
-    },
+      "path": "/api/cron/scrape",
+      "schedule": "0 3 * * *"
+    }
+  ],
+  "rewrites": [
     {
       "source": "/conflict/:slug",
       "destination": "/conflict/:slug/index.html"

@@ -19,7 +19,6 @@ const AI_BOT_PATTERNS: { pattern: RegExp; name: string }[] = [
   { pattern: /DuckDuckBot/i, name: 'DuckDuckBot' },
 ];
 
-const BACKEND_URL = 'https://deaths-in-war-backend.onrender.com';
 const INGEST_SECRET = process.env.CRAWLER_INGEST_SECRET || 'default-dev-secret';
 
 function identifyCrawler(ua: string): string | null {
@@ -29,9 +28,9 @@ function identifyCrawler(ua: string): string | null {
   return null;
 }
 
-async function sendLog(entry: Record<string, unknown>): Promise<void> {
+async function sendLog(origin: string, entry: Record<string, unknown>): Promise<void> {
   try {
-    await fetch(`${BACKEND_URL}/api/crawler-ingest`, {
+    await fetch(`${origin}/api/crawler-ingest`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -61,7 +60,7 @@ export default function middleware(request: Request, context: RequestContext) {
     ip: request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? '',
   };
 
-  context.waitUntil(sendLog(entry));
+  context.waitUntil(sendLog(url.origin, entry));
 }
 
 export const config = {
