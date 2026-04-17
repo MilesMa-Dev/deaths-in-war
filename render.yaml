@@ -12,4 +12,6 @@ services:
         value: production
       - key: CORS_ORIGIN
         value: "*"
+      - key: CRAWLER_INGEST_SECRET
+        sync: false
     healthCheckPath: /health

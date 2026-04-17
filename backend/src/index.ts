@@ -4,6 +4,8 @@ import compression from 'compression';
 import helmet from 'helmet';
 import cron from 'node-cron';
 import { conflictsRouter } from './routes/conflicts.js';
+import { crawlerStatsRouter } from './routes/crawler-stats.js';
+import { crawlerLoggerMiddleware } from './middleware/crawler-logger.js';
 import { scrapeConflicts } from './scraper/wikipedia.js';
 import { loadData } from './scraper/storage.js';
 
@@ -17,8 +19,10 @@ app.use(cors({
   origin: process.env.CORS_ORIGIN || '*',
 }));
 app.use(express.json());
+app.use(crawlerLoggerMiddleware);
 
 app.use('/api', conflictsRouter);
+app.use('/api', crawlerStatsRouter);
 
 app.get('/health', (_req, res) => {
   const data = loadData();

@@ -322,8 +322,8 @@ export default function WorldMap({
 
   const updateCamera = useCallback(() => {
     const t = threeRef.current;
-    if (!t) return;
-    const el = containerRef.current!;
+    const el = containerRef.current;
+    if (!t || !el) return;
     const vw = el.clientWidth;
     const vh = el.clientHeight;
     const v = viewRef.current;

@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState, useCallback, useEffect } from 'react';
-import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
+import { lazy, Suspense, useState, useCallback, useEffect, useRef } from 'react';
+import { useMatch } from 'react-router-dom';
 import { useConflicts } from './hooks/useConflicts';
 import StatsOverlay from './components/StatsOverlay/StatsOverlay';
 import ConflictPanel from './components/ConflictPanel/ConflictPanel';
@@ -8,31 +8,37 @@ import type { Conflict } from './types';
 
 const WorldMap = lazy(() => import('./components/WorldMap/WorldMap'));
 
-function GlobeView({ autoSelectSlug }: { autoSelectSlug?: string }) {
+export default function App() {
   const { conflicts, stats, loading } = useConflicts();
-  const navigate = useNavigate();
+  const conflictMatch = useMatch('/conflict/:slug');
+  const slug = conflictMatch?.params.slug;
+
   const [selectedConflict, setSelectedConflict] = useState<Conflict | null>(null);
   const [hoveredConflict, setHoveredConflict] = useState<Conflict | null>(null);
-  const [introComplete, setIntroComplete] = useState(!!autoSelectSlug);
+  const [introComplete, setIntroComplete] = useState(!!slug);
+  const initialSlugHandled = useRef(false);
 
   const dataReady = !loading && conflicts.length > 0;
   const ready = dataReady && introComplete;
 
   useEffect(() => {
-    if (!autoSelectSlug || !dataReady) return;
-    const match = conflicts.find(c => c.id === autoSelectSlug);
-    if (match) setSelectedConflict(match);
-  }, [autoSelectSlug, dataReady, conflicts]);
+    if (!slug || !dataReady || initialSlugHandled.current) return;
+    const match = conflicts.find(c => c.id === slug);
+    if (match) {
+      setSelectedConflict(match);
+      initialSlugHandled.current = true;
+    }
+  }, [slug, dataReady, conflicts]);
 
   const handleConflictClick = useCallback((conflict: Conflict) => {
     setSelectedConflict(conflict);
-    navigate(`/conflict/${conflict.id}`, { replace: true });
-  }, [navigate]);
+    window.history.replaceState(null, '', `/conflict/${conflict.id}`);
+  }, []);
 
   const handleClose = useCallback(() => {
     setSelectedConflict(null);
-    navigate('/', { replace: true });
-  }, [navigate]);
+    window.history.replaceState(null, '', '/');
+  }, []);
 
   const handleIntroComplete = useCallback(() => {
     setIntroComplete(true);
@@ -62,19 +68,5 @@ function GlobeView({ autoSelectSlug }: { autoSelectSlug?: string }) {
         onClose={handleClose}
       />
     </main>
-  );
-}
-
-function ConflictRoute() {
-  const { slug } = useParams<{ slug: string }>();
-  return <GlobeView autoSelectSlug={slug} />;
-}
-
-export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<GlobeView />} />
-      <Route path="/conflict/:slug" element={<ConflictRoute />} />
-    </Routes>
   );
 }
