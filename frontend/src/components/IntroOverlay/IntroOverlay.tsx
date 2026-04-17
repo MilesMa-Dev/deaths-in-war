@@ -15,16 +15,21 @@ export default function IntroOverlay({ totalDeaths, onComplete }: IntroOverlayPr
   onCompleteRef.current = onComplete;
 
   const formattedDeaths = totalDeaths.toLocaleString('en-US');
-  const tokens = [
-    { text: formattedDeaths, accent: true },
-    { text: 'lives', accent: false },
-    { text: 'have', accent: false },
-    { text: 'been', accent: false },
-    { text: 'lost', accent: false },
-    { text: 'in', accent: false },
-    { text: 'ongoing', accent: false },
-    { text: 'wars.', accent: false },
+  const lines = [
+    [{ text: formattedDeaths, accent: true }],
+    [
+      { text: 'lives', accent: false },
+      { text: 'have', accent: false },
+      { text: 'been', accent: false },
+      { text: 'lost', accent: false },
+    ],
+    [
+      { text: 'in', accent: false },
+      { text: 'ongoing', accent: false },
+      { text: 'wars.', accent: false },
+    ],
   ];
+  let wordIndex = 0;
 
   useEffect(() => {
     const els = wordEls.current.filter(Boolean) as HTMLSpanElement[];
@@ -63,18 +68,28 @@ export default function IntroOverlay({ totalDeaths, onComplete }: IntroOverlayPr
 
   return (
     <div ref={overlayRef} className={styles.overlay}>
-      <p className={styles.sentence}>
-        {tokens.map((token, i) => (
-          <span key={i} className={styles.wordMask}>
-            <span
-              ref={(el) => { wordEls.current[i] = el; }}
-              className={`${styles.word} ${token.accent ? styles.accent : ''}`}
-            >
-              {token.text}
-            </span>
-          </span>
-        ))}
-      </p>
+      <div className={styles.sentence}>
+        {lines.map((line, li) => {
+          const lineEl = (
+            <p key={li} className={styles.line}>
+              {line.map((token) => {
+                const i = wordIndex++;
+                return (
+                  <span key={i} className={styles.wordMask}>
+                    <span
+                      ref={(el) => { wordEls.current[i] = el; }}
+                      className={`${styles.word} ${token.accent ? styles.accent : ''}`}
+                    >
+                      {token.text}
+                    </span>
+                  </span>
+                );
+              })}
+            </p>
+          );
+          return lineEl;
+        })}
+      </div>
     </div>
   );
 }

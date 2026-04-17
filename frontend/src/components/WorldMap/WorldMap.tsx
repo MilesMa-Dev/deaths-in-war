@@ -832,15 +832,74 @@ export default function WorldMap({
       }
     };
 
+    // Pinch-to-zoom for touch devices
+    let pinchDist = 0;
+    let pinchZoomStart = 0;
+    let pinchActive = false;
+
+    const getTouchDist = (t1: Touch, t2: Touch) =>
+      Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
+
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        pinchActive = true;
+        pinchDist = getTouchDist(e.touches[0], e.touches[1]);
+        pinchZoomStart = targetRef.current.zoom;
+        if (flyTweenRef.current) {
+          flyTweenRef.current.kill();
+          flyTweenRef.current = null;
+        }
+      }
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (!pinchActive || e.touches.length < 2) return;
+      e.preventDefault();
+      const newDist = getTouchDist(e.touches[0], e.touches[1]);
+      const scale = newDist / pinchDist;
+      const newZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, pinchZoomStart + Math.log2(scale)));
+
+      const cx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      const cy = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      const elCx = el.clientWidth / 2;
+      const elCy = el.clientHeight / 2;
+      const geoFactor = 360 / 512;
+      const oldInv = 1 / Math.pow(2, targetRef.current.zoom);
+      const newInv = 1 / Math.pow(2, newZoom);
+      const dlng = (cx - elCx) * geoFactor * (oldInv - newInv);
+      const dlat = -(cy - elCy) * geoFactor * (oldInv - newInv);
+
+      targetRef.current.zoom = newZoom;
+      const clamped = clampPan(
+        targetRef.current.longitude + dlng,
+        targetRef.current.latitude + dlat,
+        newZoom
+      );
+      targetRef.current.longitude = clamped.longitude;
+      targetRef.current.latitude = clamped.latitude;
+      startSmoothing();
+    };
+
+    const onTouchEnd = (e: TouchEvent) => {
+      if (e.touches.length < 2) pinchActive = false;
+    };
+
     el.addEventListener('pointerdown', onDown);
     el.addEventListener('wheel', onWheel, { passive: false });
     el.addEventListener('pointermove', onPointerMove);
     el.addEventListener('click', onClick);
+    el.addEventListener('touchstart', onTouchStart, { passive: false });
+    el.addEventListener('touchmove', onTouchMove, { passive: false });
+    el.addEventListener('touchend', onTouchEnd);
     return () => {
       el.removeEventListener('pointerdown', onDown);
       el.removeEventListener('wheel', onWheel);
       el.removeEventListener('pointermove', onPointerMove);
       el.removeEventListener('click', onClick);
+      el.removeEventListener('touchstart', onTouchStart);
+      el.removeEventListener('touchmove', onTouchMove);
+      el.removeEventListener('touchend', onTouchEnd);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

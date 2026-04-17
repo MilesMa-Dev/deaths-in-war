@@ -20,12 +20,32 @@ $font-intro: 'Cinzel', 'Times New Roman', serif;
 
 .sentence {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
   align-items: baseline;
+  justify-content: center;
   gap: 0 clamp(6px, 0.8vw, 14px);
   white-space: nowrap;
   text-transform: uppercase;
+
+  @include respond-to($bp-mobile) {
+    flex-direction: column;
+    align-items: center;
+    white-space: normal;
+    gap: clamp(4px, 0.8vh, 12px) 0;
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0 clamp(6px, 0.8vw, 14px);
+
+  @include respond-to($bp-mobile) {
+    gap: 0 clamp(4px, 1.5vw, 10px);
+    white-space: nowrap;
+  }
 }
 
 .wordMask {
@@ -37,12 +57,16 @@ $font-intro: 'Cinzel', 'Times New Roman', serif;
   display: block;
   font-family: $font-intro;
   font-weight: 400;
-  font-size: clamp(13px, 2.5vw, 38px);
+  font-size: clamp(14px, 2.5vw, 38px);
   line-height: 1.4;
   color: $text-medium;
   letter-spacing: 0.12em;
   opacity: 0;
   transform: translateY(110%);
+
+  @include respond-to($bp-mobile) {
+    font-size: clamp(16px, 4.5vw, 28px);
+  }
 }
 
 .accent {
@@ -50,4 +74,8 @@ $font-intro: 'Cinzel', 'Times New Roman', serif;
   font-size: clamp(15px, 3.2vw, 50px);
   color: $color-accent;
   letter-spacing: 0.02em;
+
+  @include respond-to($bp-mobile) {
+    font-size: clamp(32px, 12vw, 56px);
+  }
 }

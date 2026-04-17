@@ -7,6 +7,8 @@
   left: 0;
   z-index: $z-overlay;
   padding: $space-lg $space-xl;
+  padding-top: max($space-lg, env(safe-area-inset-top));
+  padding-left: max($space-xl, env(safe-area-inset-left));
   display: flex;
   flex-direction: column;
   gap: $space-xl;
@@ -15,7 +17,17 @@
 
   @include respond-to($bp-mobile) {
     padding: $space-md;
+    padding-top: max($space-md, env(safe-area-inset-top));
+    padding-left: max($space-md, env(safe-area-inset-left));
     max-width: 280px;
+    gap: $space-lg;
+  }
+
+  @include respond-to($bp-small) {
+    padding: $space-sm;
+    padding-top: max($space-sm, env(safe-area-inset-top));
+    max-width: 240px;
+    gap: $space-md;
   }
 }
 
@@ -31,6 +43,11 @@
   color: $color-accent;
   flex-shrink: 0;
   opacity: 0.85;
+
+  @include respond-to($bp-small) {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .titleGroup {
@@ -63,6 +80,11 @@
   letter-spacing: 4px;
   color: $text-medium;
   line-height: 1.2;
+
+  @include respond-to($bp-small) {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
 }
 
 .updated {
@@ -82,6 +104,13 @@
 
   @include respond-to($bp-mobile) {
     min-width: 200px;
+    padding: $space-md;
+    gap: $space-sm;
+  }
+
+  @include respond-to($bp-small) {
+    min-width: 180px;
+    padding: $space-sm $space-md;
   }
 }
 
@@ -111,12 +140,22 @@
     font-size: 28px;
     line-height: 36px;
   }
+
+  @include respond-to($bp-small) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .statValueSmall {
   @include text-headline;
   color: $text-high;
   transform: translateY(110%);
+
+  @include respond-to($bp-small) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .divider {

@@ -9,6 +9,8 @@ interface ConflictPanelProps {
   onClose: () => void;
 }
 
+const BP_MOBILE = 600;
+
 const INTENSITY_LABELS: Record<string, string> = {
   major_war: 'Major War',
   war: 'War',
@@ -16,12 +18,19 @@ const INTENSITY_LABELS: Record<string, string> = {
   skirmish: 'Skirmish',
 };
 
+function isMobile() {
+  return window.innerWidth <= BP_MOBILE;
+}
+
+const SWIPE_CLOSE_THRESHOLD = 80;
+
 export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const scrimRef = useRef<HTMLDivElement>(null);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
   const closeTlRef = useRef<gsap.core.Timeline | null>(null);
   const closingRef = useRef(false);
+  const dragRef = useRef({ startY: 0, currentY: 0, dragging: false });
 
   const [displayConflict, setDisplayConflict] = useState<Conflict | null>(null);
 
@@ -39,6 +48,10 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
   useEffect(() => {
     if (!displayConflict || closingRef.current) return;
 
+    const mobile = isMobile();
+    const slideFrom = mobile ? { y: '100%', opacity: 0 } : { x: '100%', opacity: 0 };
+    const slideTo = mobile ? { y: '0%', opacity: 1 } : { x: '0%', opacity: 1 };
+
     const tl = gsap.timeline();
 
     tl.fromTo(
@@ -49,8 +62,8 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
 
     tl.fromTo(
       panelRef.current,
-      { x: '100%', opacity: 0 },
-      { x: '0%', opacity: 1, duration: MD_DURATION.long, ease: GSAP_EASE.emphasized },
+      slideFrom,
+      { ...slideTo, duration: MD_DURATION.long, ease: GSAP_EASE.emphasized },
       '-=0.2'
     );
 
@@ -71,11 +84,68 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
     return () => { tl.kill(); };
   }, [displayConflict]);
 
+  // Swipe-down-to-close on mobile
+  useEffect(() => {
+    const panel = panelRef.current;
+    if (!displayConflict || !panel || closingRef.current) return;
+    if (!isMobile()) return;
+
+    const onTouchStart = (e: TouchEvent) => {
+      if (panel.scrollTop > 0) return;
+      dragRef.current = { startY: e.touches[0].clientY, currentY: e.touches[0].clientY, dragging: false };
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      const d = dragRef.current;
+      const dy = e.touches[0].clientY - d.startY;
+      if (!d.dragging && dy > 8) {
+        d.dragging = true;
+      }
+      if (!d.dragging) return;
+
+      d.currentY = e.touches[0].clientY;
+      const offset = Math.max(0, d.currentY - d.startY);
+      panel.style.transform = `translateY(${offset}px)`;
+      panel.style.transition = 'none';
+    };
+
+    const onTouchEnd = () => {
+      const d = dragRef.current;
+      if (!d.dragging) return;
+      d.dragging = false;
+      const offset = Math.max(0, d.currentY - d.startY);
+
+      if (offset > SWIPE_CLOSE_THRESHOLD) {
+        panel.style.transition = '';
+        panel.style.transform = '';
+        gsap.set(panel, { y: offset });
+        handleClose();
+      } else {
+        panel.style.transition = 'transform 0.25s cubic-bezier(0.2, 0, 0, 1)';
+        panel.style.transform = 'translateY(0)';
+      }
+    };
+
+    panel.addEventListener('touchstart', onTouchStart, { passive: true });
+    panel.addEventListener('touchmove', onTouchMove, { passive: true });
+    panel.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return () => {
+      panel.removeEventListener('touchstart', onTouchStart);
+      panel.removeEventListener('touchmove', onTouchMove);
+      panel.removeEventListener('touchend', onTouchEnd);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [displayConflict]);
+
   const handleClose = () => {
     if (closingRef.current) return;
     closingRef.current = true;
 
     onClose();
+
+    const mobile = isMobile();
+    const slideOut = mobile ? { y: '100%' } : { x: '100%' };
 
     const tl = gsap.timeline({
       onComplete: () => {
@@ -87,7 +157,7 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
     closeTlRef.current = tl;
 
     tl.to(panelRef.current, {
-      x: '100%',
+      ...slideOut,
       opacity: 0,
       duration: MD_DURATION.medium,
       ease: GSAP_EASE.emphasizedAccelerate,
@@ -115,6 +185,7 @@ export default function ConflictPanel({ conflict, onClose }: ConflictPanelProps)
         style={{ opacity: 0 }}
       />
       <aside ref={panelRef} className={styles.panel} style={{ opacity: 0 }} role="complementary" aria-label="Conflict details">
+        <div className={styles.dragHandle} aria-hidden="true"><span /></div>
         <button className={styles.closeBtn} onClick={handleClose} aria-label="Close">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="18" y1="6" x2="6" y2="18" />

@@ -7,6 +7,7 @@
   z-index: $z-map;
   opacity: 0;
   background: $bg-primary;
+  touch-action: none;
 }
 .threeCanvas {
   position: absolute;
@@ -49,6 +50,15 @@
   @include surface-card;
   z-index: $z-overlay;
   pointer-events: none;
+
+  @include respond-to($bp-mobile) {
+    bottom: auto;
+    top: $space-xs;
+    right: $space-md;
+    left: auto;
+    transform: none;
+    padding: $space-xs $space-md;
+  }
 }
 
 .tooltipName {
