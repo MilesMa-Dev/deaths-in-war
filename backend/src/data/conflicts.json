@@ -39,7 +39,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Arab%E2%80%93Israeli_conflict",
-      "lastUpdated": "2026-04-17T09:10:53.346Z",
+      "lastUpdated": "2026-04-18T11:01:00.826Z",
       "affectedRegions": [
         {
           "name": "Gaza Strip",
@@ -120,7 +120,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Myanmar_conflict",
-      "lastUpdated": "2026-04-17T09:10:53.347Z",
+      "lastUpdated": "2026-04-18T11:01:00.827Z",
       "affectedRegions": [
         {
           "name": "Sagaing region",
@@ -269,7 +269,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Sudanese_Civil_War",
-      "lastUpdated": "2026-04-17T09:10:53.347Z",
+      "lastUpdated": "2026-04-18T11:01:00.828Z",
       "affectedRegions": [
         {
           "name": "North Darfur state",
@@ -417,7 +417,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Congolese_Civil_War_(disambiguation)",
-      "lastUpdated": "2026-04-17T09:10:53.348Z",
+      "lastUpdated": "2026-04-18T11:01:00.828Z",
       "affectedRegions": [
         {
           "name": "Nord Kivu province",
@@ -561,7 +561,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Somali_Civil_War",
-      "lastUpdated": "2026-04-17T09:10:53.348Z",
+      "lastUpdated": "2026-04-18T11:01:00.829Z",
       "affectedRegions": [
         {
           "name": "Banaadir region",
@@ -711,7 +711,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_the_Maghreb_(2002%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:53.349Z",
+      "lastUpdated": "2026-04-18T11:01:00.830Z",
       "affectedRegions": [
         {
           "name": "Mopti region",
@@ -860,7 +860,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mexican_drug_war",
-      "lastUpdated": "2026-04-17T09:10:53.349Z",
+      "lastUpdated": "2026-04-18T11:01:00.830Z",
       "affectedRegions": [
         {
           "name": "Chihuahua state",
@@ -1005,7 +1005,7 @@
       },
       "intensity": "major_war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
-      "lastUpdated": "2026-04-17T09:10:53.350Z",
+      "lastUpdated": "2026-04-18T11:01:00.830Z",
       "affectedRegions": [
         {
           "name": "Donetsk oblast",
@@ -1130,6 +1130,151 @@
       ]
     },
     {
+      "id": "insurgencies-in-iran",
+      "name": "Insurgencies in Iran",
+      "location": "Iran Iraq Turkey",
+      "countries": [
+        "Iran",
+        "Iraq",
+        "Turkey"
+      ],
+      "coordinates": {
+        "lat": 28.3,
+        "lng": 61.3
+      },
+      "startYear": 1918,
+      "deathToll": {
+        "total": 47900,
+        "totalDisplay": "47,900+",
+        "recent": 63
+      },
+      "intensity": "war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Iran",
+      "lastUpdated": "2026-04-18T11:01:01.954Z",
+      "affectedRegions": [
+        {
+          "name": "West Azarbaijan province",
+          "lat": 37.1741,
+          "lng": 45.2057,
+          "eventCount": 122
+        },
+        {
+          "name": "Sistan and Baluchestan province",
+          "lat": 28.3112,
+          "lng": 61.3099,
+          "eventCount": 107
+        },
+        {
+          "name": "Kordestan province",
+          "lat": 35.5773,
+          "lng": 46.4653,
+          "eventCount": 72
+        },
+        {
+          "name": "Tehran province",
+          "lat": 35.6693,
+          "lng": 51.3564,
+          "eventCount": 69
+        },
+        {
+          "name": "Unknown",
+          "lat": 34.474,
+          "lng": 48.5165,
+          "eventCount": 48
+        },
+        {
+          "name": "Kermanshah province",
+          "lat": 34.5358,
+          "lng": 46.6643,
+          "eventCount": 42
+        },
+        {
+          "name": "Khuzestan province",
+          "lat": 30.9928,
+          "lng": 48.6954,
+          "eventCount": 42
+        },
+        {
+          "name": "Ilam province",
+          "lat": 33.3233,
+          "lng": 46.5469,
+          "eventCount": 20
+        },
+        {
+          "name": "Fars province",
+          "lat": 29.6949,
+          "lng": 52.5937,
+          "eventCount": 17
+        },
+        {
+          "name": "Alborz province",
+          "lat": 35.7983,
+          "lng": 50.9889,
+          "eventCount": 16
+        },
+        {
+          "name": "Esfahan province",
+          "lat": 32.638,
+          "lng": 51.5833,
+          "eventCount": 15
+        },
+        {
+          "name": "Mazandaran province",
+          "lat": 36.5845,
+          "lng": 52.2855,
+          "eventCount": 11
+        },
+        {
+          "name": "Gilan province",
+          "lat": 37.4769,
+          "lng": 49.4088,
+          "eventCount": 9
+        },
+        {
+          "name": "Kerman province",
+          "lat": 29.8122,
+          "lng": 56.8222,
+          "eventCount": 6
+        },
+        {
+          "name": "Razavi Khorasan province",
+          "lat": 36.0381,
+          "lng": 59.969,
+          "eventCount": 4
+        },
+        {
+          "name": "East Azarbaijan province",
+          "lat": 37.9287,
+          "lng": 46.1897,
+          "eventCount": 4
+        },
+        {
+          "name": "Lorestan province",
+          "lat": 33.4389,
+          "lng": 49.0272,
+          "eventCount": 4
+        },
+        {
+          "name": "Zanjan province",
+          "lat": 36.6761,
+          "lng": 48.4933,
+          "eventCount": 4
+        },
+        {
+          "name": "Qazvin province",
+          "lat": 36.2179,
+          "lng": 49.9984,
+          "eventCount": 4
+        },
+        {
+          "name": "Hormozgan province",
+          "lat": 27.2723,
+          "lng": 56.5832,
+          "eventCount": 3
+        }
+      ]
+    },
+    {
       "id": "colombian-conflict",
       "name": "Colombian conflict",
       "location": "Colombia Venezuela Ecuador",
@@ -1150,7 +1295,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Colombian_conflict",
-      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "lastUpdated": "2026-04-18T11:01:01.954Z",
       "affectedRegions": [
         {
           "name": "Antioquia department",
@@ -1295,7 +1440,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Afghan_conflict",
-      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "lastUpdated": "2026-04-18T11:01:01.955Z",
       "affectedRegions": [
         {
           "name": "Hilmand province",
@@ -1439,7 +1584,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Ecuador",
-      "lastUpdated": "2026-04-17T09:10:54.153Z",
+      "lastUpdated": "2026-04-18T11:01:01.955Z",
       "affectedRegions": [
         {
           "name": "Manabí province",
@@ -1543,7 +1688,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Communal_conflicts_in_Nigeria",
-      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "lastUpdated": "2026-04-18T11:01:01.956Z",
       "affectedRegions": [
         {
           "name": "Borno state",
@@ -1687,7 +1832,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Crisis_in_Venezuela",
-      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "lastUpdated": "2026-04-18T11:01:01.956Z",
       "affectedRegions": [
         {
           "name": "Unknown",
@@ -1833,7 +1978,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:54.154Z",
+      "lastUpdated": "2026-04-18T11:01:01.956Z",
       "affectedRegions": [
         {
           "name": "Abyan governorate",
@@ -1980,7 +2125,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Syrian_conflict_(2024%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "lastUpdated": "2026-04-18T11:01:01.957Z",
       "affectedRegions": [
         {
           "name": "Rif Dimashq governorate",
@@ -2096,7 +2241,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Cameroonian_Civil_War_(disambiguation)",
-      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "lastUpdated": "2026-04-18T11:01:01.957Z",
       "affectedRegions": [
         {
           "name": "Far North region",
@@ -2212,7 +2357,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Central_African_Republic_Civil_War",
-      "lastUpdated": "2026-04-17T09:10:54.155Z",
+      "lastUpdated": "2026-04-18T11:01:01.958Z",
       "affectedRegions": [
         {
           "name": "Ouaka province",
@@ -2355,7 +2500,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ethiopian_civil_conflict_(2018%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:54.156Z",
+      "lastUpdated": "2026-04-18T11:01:01.958Z",
       "affectedRegions": [
         {
           "name": "Oromiya state",
@@ -2498,7 +2643,7 @@
       },
       "intensity": "war",
       "sourceUrl": "https://en.wikipedia.org/wiki/Haitian_crisis_(2018%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:54.156Z",
+      "lastUpdated": "2026-04-18T11:01:01.958Z",
       "affectedRegions": [
         {
           "name": "Ouest department",
@@ -2566,7 +2711,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_Kurdish_uprisings",
-      "lastUpdated": "2026-04-17T09:10:55.198Z",
+      "lastUpdated": "2026-04-18T11:01:03.000Z",
       "affectedRegions": [
         {
           "name": "Rif Dimashq governorate",
@@ -2691,151 +2836,6 @@
       ]
     },
     {
-      "id": "insurgencies-in-iran",
-      "name": "Insurgencies in Iran",
-      "location": "Iran Iraq Turkey",
-      "countries": [
-        "Iran",
-        "Iraq",
-        "Turkey"
-      ],
-      "coordinates": {
-        "lat": 28.3,
-        "lng": 61.3
-      },
-      "startYear": 1918,
-      "deathToll": {
-        "total": 47900,
-        "totalDisplay": "47,900+",
-        "recent": 63
-      },
-      "intensity": "minor_conflict",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Iran",
-      "lastUpdated": "2026-04-17T09:10:55.199Z",
-      "affectedRegions": [
-        {
-          "name": "West Azarbaijan province",
-          "lat": 37.1741,
-          "lng": 45.2057,
-          "eventCount": 122
-        },
-        {
-          "name": "Sistan and Baluchestan province",
-          "lat": 28.3112,
-          "lng": 61.3099,
-          "eventCount": 107
-        },
-        {
-          "name": "Kordestan province",
-          "lat": 35.5773,
-          "lng": 46.4653,
-          "eventCount": 72
-        },
-        {
-          "name": "Tehran province",
-          "lat": 35.6693,
-          "lng": 51.3564,
-          "eventCount": 69
-        },
-        {
-          "name": "Unknown",
-          "lat": 34.474,
-          "lng": 48.5165,
-          "eventCount": 48
-        },
-        {
-          "name": "Kermanshah province",
-          "lat": 34.5358,
-          "lng": 46.6643,
-          "eventCount": 42
-        },
-        {
-          "name": "Khuzestan province",
-          "lat": 30.9928,
-          "lng": 48.6954,
-          "eventCount": 42
-        },
-        {
-          "name": "Ilam province",
-          "lat": 33.3233,
-          "lng": 46.5469,
-          "eventCount": 20
-        },
-        {
-          "name": "Fars province",
-          "lat": 29.6949,
-          "lng": 52.5937,
-          "eventCount": 17
-        },
-        {
-          "name": "Alborz province",
-          "lat": 35.7983,
-          "lng": 50.9889,
-          "eventCount": 16
-        },
-        {
-          "name": "Esfahan province",
-          "lat": 32.638,
-          "lng": 51.5833,
-          "eventCount": 15
-        },
-        {
-          "name": "Mazandaran province",
-          "lat": 36.5845,
-          "lng": 52.2855,
-          "eventCount": 11
-        },
-        {
-          "name": "Gilan province",
-          "lat": 37.4769,
-          "lng": 49.4088,
-          "eventCount": 9
-        },
-        {
-          "name": "Kerman province",
-          "lat": 29.8122,
-          "lng": 56.8222,
-          "eventCount": 6
-        },
-        {
-          "name": "Razavi Khorasan province",
-          "lat": 36.0381,
-          "lng": 59.969,
-          "eventCount": 4
-        },
-        {
-          "name": "East Azarbaijan province",
-          "lat": 37.9287,
-          "lng": 46.1897,
-          "eventCount": 4
-        },
-        {
-          "name": "Lorestan province",
-          "lat": 33.4389,
-          "lng": 49.0272,
-          "eventCount": 4
-        },
-        {
-          "name": "Zanjan province",
-          "lat": 36.6761,
-          "lng": 48.4933,
-          "eventCount": 4
-        },
-        {
-          "name": "Qazvin province",
-          "lat": 36.2179,
-          "lng": 49.9984,
-          "eventCount": 4
-        },
-        {
-          "name": "Hormozgan province",
-          "lat": 27.2723,
-          "lng": 56.5832,
-          "eventCount": 3
-        }
-      ]
-    },
-    {
       "id": "insurgencies-in-turkey",
       "name": "Insurgencies in Turkey",
       "location": "Turkey Syria Iraq",
@@ -2856,7 +2856,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Turkey",
-      "lastUpdated": "2026-04-17T09:10:55.199Z",
+      "lastUpdated": "2026-04-18T11:01:03.000Z",
       "affectedRegions": [
         {
           "name": "Şırnak province",
@@ -2999,7 +2999,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jamaican_political_conflict",
-      "lastUpdated": "2026-04-17T09:10:55.199Z",
+      "lastUpdated": "2026-04-18T11:01:03.000Z",
       "affectedRegions": [
         {
           "name": "Kingston parish",
@@ -3042,7 +3042,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kashmir_conflict",
-      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "lastUpdated": "2026-04-18T11:01:03.001Z",
       "affectedRegions": [
         {
           "name": "Jammu and Kashmir state",
@@ -3187,7 +3187,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Pakistan",
-      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "lastUpdated": "2026-04-18T11:01:03.001Z",
       "affectedRegions": [
         {
           "name": "Federally Administered Tribal Areas",
@@ -3266,7 +3266,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_India",
-      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "lastUpdated": "2026-04-18T11:01:03.001Z",
       "affectedRegions": [
         {
           "name": "Jammu and Kashmir state",
@@ -3409,7 +3409,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Papua_conflict",
-      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "lastUpdated": "2026-04-18T11:01:03.002Z",
       "affectedRegions": [
         {
           "name": "Aceh province",
@@ -3552,7 +3552,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Civil_conflict_in_the_Philippines",
-      "lastUpdated": "2026-04-17T09:10:55.200Z",
+      "lastUpdated": "2026-04-18T11:01:03.002Z",
       "affectedRegions": [
         {
           "name": "Sulu province",
@@ -3695,7 +3695,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Cabinda_War",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.002Z",
       "affectedRegions": [
         {
           "name": "Cabinda province",
@@ -3832,7 +3832,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ethnic_violence_in_Papua_New_Guinea",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.002Z",
       "affectedRegions": [
         {
           "name": "Bougainville province",
@@ -3927,7 +3927,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Armed_conflict_for_control_of_the_favelas",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.003Z",
       "affectedRegions": [
         {
           "name": "Ceará state",
@@ -4072,7 +4072,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Bangladesh",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.005Z",
       "affectedRegions": [
         {
           "name": "Chittagong division",
@@ -4149,7 +4149,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Iraqi_conflict",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.005Z",
       "affectedRegions": [
         {
           "name": "Nīnawá province",
@@ -4292,7 +4292,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Libyan_crisis_(2011%E2%80%93present)",
-      "lastUpdated": "2026-04-17T09:10:55.201Z",
+      "lastUpdated": "2026-04-18T11:01:03.005Z",
       "affectedRegions": [
         {
           "name": "Tripoli district",
@@ -4436,7 +4436,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Cabo_Delgado",
-      "lastUpdated": "2026-04-17T09:10:55.202Z",
+      "lastUpdated": "2026-04-18T11:01:03.006Z",
       "affectedRegions": [
         {
           "name": "Cabo Delgado province",
@@ -4531,7 +4531,7 @@
       },
       "intensity": "minor_conflict",
       "sourceUrl": "https://en.wikipedia.org/wiki/Honduran_gang_crackdown",
-      "lastUpdated": "2026-04-17T09:10:55.202Z",
+      "lastUpdated": "2026-04-18T11:01:03.006Z",
       "affectedRegions": [
         {
           "name": "Cortés department",
@@ -4591,7 +4591,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Cross_border_attacks_in_Sabah",
-      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "lastUpdated": "2026-04-18T11:01:03.826Z",
       "affectedRegions": [
         {
           "name": "Sulu province",
@@ -4735,7 +4735,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Western_Sahara_conflict",
-      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "lastUpdated": "2026-04-18T11:01:03.826Z",
       "affectedRegions": [
         {
           "name": "Unknown",
@@ -4800,7 +4800,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Laos",
-      "lastUpdated": "2026-04-17T09:10:56.102Z",
+      "lastUpdated": "2026-04-18T11:01:03.826Z",
       "affectedRegions": [
         {
           "name": "Bolikhamxai province",
@@ -4871,7 +4871,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Peruvian_conflict",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.826Z",
       "affectedRegions": [
         {
           "name": "Lima department",
@@ -5014,7 +5014,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Terrorism_in_Egypt",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.827Z",
       "affectedRegions": [
         {
           "name": "North Sinai governorate",
@@ -5158,7 +5158,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Casamance_conflict",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.827Z",
       "affectedRegions": [
         {
           "name": "Ziguinchor region",
@@ -5230,7 +5230,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.828Z",
       "affectedRegions": [
         {
           "name": "Unknown",
@@ -5375,7 +5375,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Russo-Caucasian_conflict",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.828Z",
       "affectedRegions": [
         {
           "name": "Chechnya republic",
@@ -5518,7 +5518,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/South_Thailand_insurgency",
-      "lastUpdated": "2026-04-17T09:10:56.103Z",
+      "lastUpdated": "2026-04-18T11:01:03.829Z",
       "affectedRegions": [
         {
           "name": "Narathiwat province",
@@ -5631,7 +5631,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Insurgency_in_Paraguay",
-      "lastUpdated": "2026-04-17T09:10:56.104Z",
+      "lastUpdated": "2026-04-18T11:01:03.829Z",
       "affectedRegions": [
         {
           "name": "Amambay department",
@@ -5666,7 +5666,7 @@
       },
       "intensity": "skirmish",
       "sourceUrl": "https://en.wikipedia.org/wiki/Salvadoran_gang_crackdown",
-      "lastUpdated": "2026-04-17T09:10:56.104Z",
+      "lastUpdated": "2026-04-18T11:01:03.829Z",
       "affectedRegions": [
         {
           "name": "San Salvador department",
@@ -5759,8 +5759,196 @@
           "eventCount": 3
         }
       ]
+    },
+    {
+      "id": "iran-war-2026",
+      "name": "Iran war (2026)",
+      "location": "Iran\n Israel\n Lebanon\n Iraq\n Saudi Arabia\n Kuwait\n Bahrain\n Qatar\n United Arab Emirates\n Oman\n Jordan\n Syria\n Turkey\n Azerbaijan\n Cyprus",
+      "countries": [
+        "Iran",
+        "Israel",
+        "United States",
+        "Lebanon",
+        "Iraq",
+        "Saudi Arabia",
+        "Kuwait",
+        "Bahrain",
+        "Qatar",
+        "United Arab Emirates",
+        "Oman",
+        "Jordan",
+        "Syria",
+        "Turkey",
+        "Azerbaijan",
+        "Cyprus"
+      ],
+      "coordinates": {
+        "lat": 35.69,
+        "lng": 51.39
+      },
+      "startYear": 2026,
+      "deathToll": {
+        "total": 3600,
+        "totalDisplay": "3,600+",
+        "recent": 3600
+      },
+      "intensity": "major_war",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Iran_war_(2026)",
+      "affectedRegions": [
+        {
+          "name": "Kermanshah, Iran",
+          "lat": 34.123,
+          "lng": 47.2416,
+          "eventCount": 20
+        },
+        {
+          "name": "Qom & Tehran, Iran",
+          "lat": 35.0593,
+          "lng": 51.2049,
+          "eventCount": 18
+        },
+        {
+          "name": "Bandar Abbas, Iran",
+          "lat": 26.7681,
+          "lng": 55.9603,
+          "eventCount": 17
+        },
+        {
+          "name": "Tabriz, Iran",
+          "lat": 37.813,
+          "lng": 45.9495,
+          "eventCount": 16
+        },
+        {
+          "name": "Erbil, Iraq",
+          "lat": 36.1383,
+          "lng": 43.8232,
+          "eventCount": 10
+        },
+        {
+          "name": "Manama, Bahrain",
+          "lat": 26.1795,
+          "lng": 50.6511,
+          "eventCount": 10
+        },
+        {
+          "name": "Kish Island, Iran",
+          "lat": 26.095,
+          "lng": 54.5566,
+          "eventCount": 9
+        },
+        {
+          "name": "Haifa, Israel",
+          "lat": 32.9869,
+          "lng": 35.4074,
+          "eventCount": 9
+        },
+        {
+          "name": "Baghdad, Iraq",
+          "lat": 33.1311,
+          "lng": 44.1112,
+          "eventCount": 8
+        },
+        {
+          "name": "Ali Al Salem, Kuwait",
+          "lat": 29.5639,
+          "lng": 48.1659,
+          "eventCount": 8
+        },
+        {
+          "name": "Dezful, Iran",
+          "lat": 31.953,
+          "lng": 48.6807,
+          "eventCount": 6
+        },
+        {
+          "name": "Bushehr, Iran",
+          "lat": 28.6175,
+          "lng": 51.3477,
+          "eventCount": 6
+        },
+        {
+          "name": "Abu Dhabi, UAE",
+          "lat": 24.6177,
+          "lng": 54.7057,
+          "eventCount": 6
+        },
+        {
+          "name": "Jask, Iran",
+          "lat": 25.0612,
+          "lng": 57.0393,
+          "eventCount": 6
+        },
+        {
+          "name": "Chabahar, Iran",
+          "lat": 25.341,
+          "lng": 60.4532,
+          "eventCount": 4
+        },
+        {
+          "name": "Nasiriyah, Iraq",
+          "lat": 30.527,
+          "lng": 46.5221,
+          "eventCount": 4
+        },
+        {
+          "name": "Isfahan, Iran",
+          "lat": 32.0273,
+          "lng": 51.698,
+          "eventCount": 3
+        },
+        {
+          "name": "Qazvin, Iran",
+          "lat": 36.0413,
+          "lng": 50.0737,
+          "eventCount": 3
+        },
+        {
+          "name": "Shiraz, Iran",
+          "lat": 29.1217,
+          "lng": 53.106,
+          "eventCount": 3
+        },
+        {
+          "name": "Mahshahr, Iran",
+          "lat": 30.5293,
+          "lng": 49.4936,
+          "eventCount": 3
+        },
+        {
+          "name": "Baneh, Iran",
+          "lat": 36.131,
+          "lng": 45.8793,
+          "eventCount": 3
+        },
+        {
+          "name": "Kerman, Iran",
+          "lat": 29.868,
+          "lng": 56.369,
+          "eventCount": 2
+        },
+        {
+          "name": "Hermel, Lebanon",
+          "lat": 34.4205,
+          "lng": 36.115,
+          "eventCount": 2
+        },
+        {
+          "name": "Prince Sultan AB, Saudi Arabia",
+          "lat": 24.388,
+          "lng": 47.128,
+          "eventCount": 2
+        },
+        {
+          "name": "Persian Gulf",
+          "lat": 27,
+          "lng": 51.5,
+          "eventCount": 2
+        }
+      ],
+      "lastUpdated": "2026-04-18T11:01:03.832Z"
     }
   ],
-  "lastScraped": "2026-04-17T09:11:31.352Z",
-  "totalDeaths": 8035305
+  "lastScraped": "2026-04-18T11:01:03.833Z",
+  "totalDeaths": 8038905
 }
