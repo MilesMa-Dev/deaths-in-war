@@ -10,6 +10,6 @@ export default async function handler(_req: VercelRequest, res: VercelResponse) 
   }
   res.setHeader('Cache-Control', API_CACHE_HEADER);
   res.setHeader('X-Robots-Tag', 'noindex');
-  res.setHeader('Link', '<https://deaths-in-war.vercel.app/>; rel="canonical"');
+  res.setHeader('Link', '<https://www.deaths-in-war.com/>; rel="canonical"');
   res.json(data.conflicts);
 }

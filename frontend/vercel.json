@@ -7,6 +7,14 @@
       "schedule": "0 3 * * *"
     }
   ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "deaths-in-war.vercel.app" }],
+      "destination": "https://www.deaths-in-war.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/conflict/:slug",

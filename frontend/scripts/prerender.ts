@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.join(__dirname, '..', 'dist');
-const SITE_URL = 'https://deaths-in-war.vercel.app';
+const SITE_URL = 'https://www.deaths-in-war.com';
 
 const INTENSITY_LABELS: Record<string, string> = {
   major_war: 'Major War (10,000+ deaths/year)',
