@@ -1,31 +1,115 @@
 User-agent: *
 Allow: /
-Sitemap: https://deaths-in-war.vercel.app/sitemap.xml
+Sitemap: https://www.deaths-in-war.com/sitemap.xml
 
-# AI Crawlers
+# OpenAI
 User-agent: GPTBot
 Allow: /
-
 User-agent: ChatGPT-User
 Allow: /
-
-User-agent: ClaudeBot
+User-agent: OAI-SearchBot
 Allow: /
 
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
+# Google
 User-agent: Google-Extended
 Allow: /
+User-agent: GoogleOther
+Allow: /
 
+# Microsoft
+User-agent: Bingbot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
 User-agent: Amazonbot
 Allow: /
 
+# DeepSeek (深度求索)
+User-agent: DeepSeekBot
+Allow: /
+
+# ByteDance (字节跳动) / 豆包
+User-agent: Doubaobot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: TikTokSpider
+Allow: /
+
+# Moonshot AI (月之暗面) / Kimi
+User-agent: Kimibot
+Allow: /
+User-agent: MoonshotBot
+Allow: /
+
+# Alibaba (阿里巴巴) / 通义千问
+User-agent: QwenBot
+Allow: /
+User-agent: TongyiBot
+Allow: /
+User-agent: AlibabaBot
+Allow: /
+
+# Zhipu AI (智谱) / ChatGLM
+User-agent: ChatGLM-Spider
+Allow: /
+
+# Baidu (百度)
+User-agent: Baiduspider
+Allow: /
+
+# xAI
+User-agent: Grok-bot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Cohere
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Meta-ExternalAgent
+# Other AI
+User-agent: CCBot
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: Bravebot
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: YandexBot
 Allow: /
